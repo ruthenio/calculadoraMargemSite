@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Margem — Calcule Margem de Lucro, Markup e Preço de Venda</title>
+<meta name="description" content="Calculadora de margem online e gratuita. Descubra a margem de lucro, o markup e o preço de venda ideal do seu produto em segundos, com fórmulas e tabela comparativa.">
+<meta name="keywords" content="calculadora de margem, calcular margem de lucro, markup, preço de venda, margem x markup">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de Margem — Calcule Margem de Lucro, Markup e Preço de Venda">
+<meta property="og:description" content="Ferramenta gratuita para calcular margem de lucro, markup e preço de venda do seu produto.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- AdSense: cole aqui a tag <script> de verificação do site assim que a conta for aprovada -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>Calculadora de Margem</h1>
+    <p class="tagline">Calcule margem de lucro, markup e preço de venda em segundos</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- AD SLOT: topo da página, formato banner responsivo -->
+  <div class="ad-slot ad-slot--top" aria-hidden="true">
+    <!-- Cole aqui o <ins class="adsbygoogle"> do bloco de anúncio "Topo" -->
+    <span class="ad-slot__label">Publicidade</span>
+  </div>
+
+  <section class="intro">
+    <p>Use as calculadoras abaixo para descobrir, a partir do preço de custo, qual é a <strong>margem de lucro</strong>, o <strong>markup</strong> ou o <strong>preço de venda ideal</strong> do seu produto.</p>
+  </section>
+
+  <section class="calculators">
+
+    <article class="card" id="calc-margem-markup">
+      <h2>Descubra a margem e o markup</h2>
+      <p class="card-desc">Informe o preço de custo e o preço de venda para calcular o lucro, a margem e o markup.</p>
+
+      <div class="field">
+        <label for="custo1">Preço de custo (R$)</label>
+        <input type="number" id="custo1" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 2,99">
+      </div>
+
+      <div class="field">
+        <label for="venda1">Preço de venda (R$)</label>
+        <input type="number" id="venda1" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 4,98">
+      </div>
+
+      <div class="results">
+        <div class="result">
+          <span class="result-label">Lucro</span>
+          <span class="result-value" id="res-lucro">—</span>
+        </div>
+        <div class="result result--highlight">
+          <span class="result-label">Margem</span>
+          <span class="result-value" id="res-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Markup</span>
+          <span class="result-value" id="res-markup">—</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="calc-preco-venda">
+      <h2>Descubra o preço de venda</h2>
+      <p class="card-desc">Informe o preço de custo e a margem de lucro desejada para calcular o preço de venda.</p>
+
+      <div class="field">
+        <label for="custo2">Preço de custo (R$)</label>
+        <input type="number" id="custo2" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 2,99">
+      </div>
+
+      <div class="field">
+        <label for="margem2">Margem desejada (%)</label>
+        <input type="number" id="margem2" inputmode="decimal" min="0" max="99.99" step="0.1" placeholder="Ex: 40">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Preço de venda</span>
+          <span class="result-value" id="res-venda">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Lucro</span>
+          <span class="result-value" id="res-lucro2">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Markup equivalente</span>
+          <span class="result-value" id="res-markup2">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- AD SLOT: meio do conteúdo, entre calculadoras e texto explicativo -->
+  <div class="ad-slot ad-slot--inline" aria-hidden="true">
+    <!-- Cole aqui o <ins class="adsbygoogle"> do bloco de anúncio "Meio de conteúdo" -->
+    <span class="ad-slot__label">Publicidade</span>
+  </div>
+
+  <section class="explainer">
+    <h2>Margem ou markup: qual é a diferença?</h2>
+    <p><strong>Margem de lucro</strong> é o percentual do <em>preço de venda</em> que corresponde ao lucro. <strong>Markup</strong> é o percentual aplicado sobre o <em>preço de custo</em> para chegar ao preço de venda. Os dois partem do mesmo lucro, mas usam bases de cálculo diferentes — por isso números iguais de margem e markup nunca representam o mesmo resultado.</p>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Margem</h3>
+        <code>Margem = Lucro ÷ Preço de Venda</code>
+      </div>
+      <div class="formula-box">
+        <h3>Markup</h3>
+        <code>Markup = Lucro ÷ Preço de Custo</code>
+      </div>
+      <div class="formula-box">
+        <h3>Preço de venda a partir da margem</h3>
+        <code>Preço de Venda = Custo ÷ (1 − Margem)</code>
+      </div>
+    </div>
+
+    <p>Um erro comum é precificar usando o markup como se fosse a margem. Um markup de 40% não gera uma margem de 40% — gera uma margem de cerca de 28,6%. Por isso, ao planejar a rentabilidade do negócio, o mais seguro é trabalhar diretamente com a <strong>margem</strong>, que representa de forma direta quanto do preço de venda fica como lucro.</p>
+  </section>
+
+  <section class="table-section">
+    <h2>Tabela comparativa: margem x markup</h2>
+    <p>Veja a equivalência entre margem de lucro e markup para os percentuais mais usados:</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Margem</th><th>Markup equivalente</th></tr>
+        </thead>
+        <tbody id="tabela-comparativa-body">
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- AD SLOT: rodapé do conteúdo -->
+  <div class="ad-slot ad-slot--bottom" aria-hidden="true">
+    <!-- Cole aqui o <ins class="adsbygoogle"> do bloco de anúncio "Rodapé" -->
+    <span class="ad-slot__label">Publicidade</span>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Calculadora de Margem — ferramenta gratuita para cálculo de margem de lucro, markup e preço de venda.</p>
+  </div>
+</footer>
+
+<script src="js/calculadora.js"></script>
+</body>
+</html>
