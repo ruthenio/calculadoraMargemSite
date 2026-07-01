@@ -723,6 +723,279 @@ td:last-child, th:last-child {
 /* ===========================
    RESPONSIVIDADE
 =========================== */
+/* ===========================
+   SITE BRAND (páginas internas)
+=========================== */
+.site-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: var(--color-primary-dark);
+}
+.site-brand a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===========================
+   CAMPO COM HINT
+=========================== */
+.field-hint {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* ===========================
+   FIELDSET DE GRUPO
+=========================== */
+.field-group {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.field-group legend {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0 6px;
+}
+
+.field--inline {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.field--inline label {
+  flex: 1;
+  margin-bottom: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.field--inline input {
+  width: 90px;
+  flex-shrink: 0;
+  text-align: right;
+  padding: 8px 10px;
+}
+
+/* ===========================
+   MARKUP DIVISOR
+=========================== */
+.divisor-section {
+  margin-bottom: 24px;
+}
+
+.divisor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+@media (max-width: 780px) {
+  .divisor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.divisor-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Presets de marketplace */
+.marketplace-presets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.presets-label {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.preset-btn {
+  padding: 5px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.preset-btn:hover {
+  background: var(--color-highlight-bg);
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.preset-btn--clear {
+  color: var(--color-text-muted);
+}
+
+/* Painel de resultados do divisor */
+.divisor-result-panel {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  position: sticky;
+  top: 56px;
+}
+
+.divisor-placeholder {
+  padding: 32px 20px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+.divisor-error {
+  padding: 20px;
+  color: #c2410c;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.divisor-output {
+  display: flex;
+  flex-direction: column;
+}
+
+.divisor-main {
+  background: var(--color-primary-dark);
+  color: #fff;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.divisor-main-label {
+  font-size: 0.88rem;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.divisor-main-value {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.divisor-rows {
+  padding: 8px 0;
+}
+
+.divisor-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 18px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  gap: 12px;
+}
+
+.divisor-row:last-child {
+  border-bottom: none;
+}
+
+.divisor-row span {
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+.divisor-row strong {
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.divisor-row--highlight {
+  background: var(--color-highlight-bg);
+}
+
+.divisor-row--highlight strong {
+  color: var(--color-primary-dark);
+}
+
+/* ===========================
+   BARRA DE COMPOSIÇÃO DO PREÇO
+=========================== */
+.pv-bar-wrap {
+  padding: 14px 18px 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pv-bar {
+  display: flex;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.pv-bar-cost   { background: #94a3b8; }
+.pv-bar-taxes  { background: #f97316; }
+.pv-bar-profit { background: #22c55e; }
+
+.pv-bar-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+}
+
+.pv-legend-cost,
+.pv-legend-taxes,
+.pv-legend-profit {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pv-legend-cost::before   { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: #94a3b8; }
+.pv-legend-taxes::before  { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: #f97316; }
+.pv-legend-profit::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: #22c55e; }
+
+/* ===========================
+   STATUS DE META (calc verificar)
+=========================== */
+.result--ok {
+  background: var(--color-highlight-bg);
+  border: 1px solid #bfe7d3;
+}
+
+.result--ok .result-value {
+  color: var(--color-primary-dark);
+}
+
+.result--warn {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
+.result--warn .result-value {
+  color: #c2410c;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
 @media (max-width: 720px) {
   .site-header h1 {
     font-size: 1.55rem;

@@ -4,29 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora de Preço de Venda Online Grátis — CalculaMargem</title>
-<meta name="description" content="Calcule o preço de venda ideal para seu produto considerando custo, margem, impostos e taxas de marketplace. Fórmulas, exemplos e guia completo de precificação.">
+<meta name="description" content="Calcule o preço de venda ideal em segundos: versão rápida, verificação de margem e calculadora completa com custos, despesas, impostos, taxas de marketplace e simulador de cenários.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://calculamargem.com.br/calculadora-preco-venda/">
+
 <meta property="og:type" content="website">
-<meta property="og:title" content="Calculadora de Preço de Venda — CalculaMargem">
-<meta property="og:description" content="Calcule o preço de venda ideal considerando custo, margem, impostos e taxas.">
+<meta property="og:title" content="Calculadora de Preço de Venda Online Grátis — CalculaMargem">
+<meta property="og:description" content="Calcule o preço de venda considerando todos os custos, despesas, impostos e margem desejada. Com simulador de cenários e presets de marketplace.">
 <meta property="og:url" content="https://calculamargem.com.br/calculadora-preco-venda/">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="CalculaMargem">
+
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Preço de Venda Online Grátis — CalculaMargem">
+<meta name="twitter:description" content="Calcule o preço de venda com custos, despesas, impostos e simulador de cenários. Ferramenta gratuita.">
+
 <link rel="stylesheet" href="../css/style.css">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" },
-    { "@type": "ListItem", "position": 2, "name": "Calculadora de Preço de Venda", "item": "https://calculamargem.com.br/calculadora-preco-venda/" }
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculadora de Preço de Venda", "item": "https://calculamargem.com.br/calculadora-preco-venda/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/calculadora-preco-venda/",
+      "name": "Calculadora de Preço de Venda Online Grátis",
+      "description": "Calcule o preço de venda ideal considerando todos os custos, despesas, impostos e margem de lucro desejada.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/#website" }
+    }
   ]
 }
 </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L3J38JGCBN');</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
 </head>
 <body>
 
@@ -34,9 +60,9 @@
 
 <header class="site-header">
   <div class="container">
-    <p style="font-size:1.3rem;font-weight:700;color:var(--color-primary-dark);margin:0 0 6px"><a href="/" style="color:inherit;text-decoration:none">CalculaMargem</a></p>
+    <p class="site-brand"><a href="/">CalculaMargem</a></p>
     <h1>Calculadora de Preço de Venda</h1>
-    <p class="tagline">Descubra o preço de venda ideal a partir do custo e da margem de lucro desejada</p>
+    <p class="tagline">Do custo ao preço ideal — rápido, completo e com simulador de cenários</p>
   </div>
 </header>
 
@@ -55,85 +81,335 @@
 <main class="container" id="main">
 
   <nav class="breadcrumb" aria-label="Localização">
-    <a href="/">Início</a> <span>›</span> <span>Calculadora de Preço de Venda</span>
+    <a href="/">Início</a>
+    <span aria-hidden="true">›</span>
+    <span>Calculadora de Preço de Venda</span>
   </nav>
 
-  <div class="coming-soon-banner">
-    A calculadora avançada de preço de venda está em desenvolvimento. Por enquanto, acesse a <a href="/#calc-preco-venda">Calculadora de Margem na página inicial</a> — ela já calcula o preço de venda a partir do custo e da margem desejada.
-  </div>
+  <section class="intro">
+    <p>Três modos em uma página: cálculo <strong>rápido</strong> pelo custo e margem, <strong>verificação</strong> se um preço já praticado é suficiente, e a calculadora <strong>completa</strong> com todos os custos, despesas, impostos e simulador de preços para múltiplas margens.</p>
+  </section>
 
-  <section class="content-section">
-    <h2>Como Calcular o Preço de Venda</h2>
-    <p>O preço de venda pode ser calculado de forma simples usando a fórmula da margem de lucro:</p>
+  <!-- ====================================================
+       CALCULADORAS 1 e 2 — lado a lado
+  ===================================================== -->
+  <section class="calculators" aria-label="Calculadoras rápidas de preço de venda">
 
-    <div class="formula-highlight">
-      <strong>Preço de Venda = Custo ÷ (1 − Margem desejada)</strong>
-    </div>
+    <article class="card" id="calc-pv-rapido">
+      <h2>Calcular preço de venda</h2>
+      <p class="card-desc">Informe o custo e a margem desejada para obter o preço de venda em segundos.</p>
 
-    <div class="example-box">
-      <h3>Exemplos Rápidos</h3>
-      <table>
-        <thead>
-          <tr><th>Custo</th><th>Margem desejada</th><th>Preço de Venda</th><th>Lucro</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>R$ 30,00</td><td>25%</td><td>R$ 40,00</td><td>R$ 10,00</td></tr>
-          <tr><td>R$ 50,00</td><td>30%</td><td>R$ 71,43</td><td>R$ 21,43</td></tr>
-          <tr><td>R$ 80,00</td><td>40%</td><td>R$ 133,33</td><td>R$ 53,33</td></tr>
-          <tr><td>R$ 120,00</td><td>45%</td><td>R$ 218,18</td><td>R$ 98,18</td></tr>
-          <tr><td>R$ 200,00</td><td>50%</td><td>R$ 400,00</td><td>R$ 200,00</td></tr>
-        </tbody>
-      </table>
+      <div class="field">
+        <label for="r-custo">Preço de custo (R$)</label>
+        <input type="number" id="r-custo" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 60,00">
+      </div>
+      <div class="field">
+        <label for="r-margem">Margem desejada (%)</label>
+        <input type="number" id="r-margem" inputmode="decimal" min="0" max="99.9" step="0.5" placeholder="Ex: 35">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Preço de venda</span>
+          <span class="result-value" id="r-pv">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Lucro</span>
+          <span class="result-value" id="r-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Markup equivalente</span>
+          <span class="result-value" id="r-markup">—</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="calc-pv-verificar">
+      <h2>Verificar se o preço é suficiente</h2>
+      <p class="card-desc">Informe o custo e o preço que você pratica para ver a margem real e se está no nível desejado.</p>
+
+      <div class="field">
+        <label for="v-custo">Preço de custo (R$)</label>
+        <input type="number" id="v-custo" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 60,00">
+      </div>
+      <div class="field">
+        <label for="v-pv">Preço de venda atual (R$)</label>
+        <input type="number" id="v-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 95,00">
+      </div>
+      <div class="field">
+        <label for="v-meta">Meta de margem (%)</label>
+        <input type="number" id="v-meta" inputmode="decimal" min="0" max="99" step="0.5" placeholder="Ex: 30">
+      </div>
+
+      <div class="results">
+        <div class="result" id="v-status-box">
+          <span class="result-label">Status</span>
+          <span class="result-value" id="v-status">—</span>
+        </div>
+        <div class="result result--highlight">
+          <span class="result-label">Margem atual</span>
+          <span class="result-value" id="v-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Lucro atual</span>
+          <span class="result-value" id="v-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Preço para atingir meta</span>
+          <span class="result-value" id="v-pv-meta">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       CALCULADORA COMPLETA
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-completa">
+    <h2>Calculadora Completa de Preço de Venda</h2>
+    <p>Informe <strong>todos os custos do produto</strong> e as <strong>despesas variáveis da venda</strong> para calcular o preço mínimo necessário para atingir sua margem de lucro real.</p>
+
+    <div class="divisor-grid">
+
+      <!-- INPUTS -->
+      <div class="divisor-inputs">
+
+        <fieldset class="field-group">
+          <legend>Custos diretos do produto (R$)</legend>
+          <div class="field field--inline">
+            <label for="c-produto">Custo do produto / mercadoria</label>
+            <input type="number" id="c-produto" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-embalagem">Embalagem (caixa, fita, papel)</label>
+            <input type="number" id="c-embalagem" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-frete-entrada">Frete de entrada / CIF</label>
+            <input type="number" id="c-frete-entrada" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-fixo">Rateio de custos fixos</label>
+            <input type="number" id="c-fixo" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-outros-custo">Outros custos diretos</label>
+            <input type="number" id="c-outros-custo" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>Despesas variáveis da venda (% sobre o preço de venda)</legend>
+          <div class="field field--inline">
+            <label for="c-comissao">Comissão de marketplace / plataforma</label>
+            <input type="number" id="c-comissao" inputmode="decimal" min="0" max="50" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-gateway">Gateway de pagamento / cartão</label>
+            <input type="number" id="c-gateway" inputmode="decimal" min="0" max="20" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-frete-saida">Frete de saída subsidiado</label>
+            <input type="number" id="c-frete-saida" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-imposto">Impostos sobre a venda</label>
+            <input type="number" id="c-imposto" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-outros-desp">Outras despesas variáveis</label>
+            <input type="number" id="c-outros-desp" inputmode="decimal" min="0" max="20" step="0.1" placeholder="0">
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="c-margem">Margem líquida desejada (%)
+            <span class="field-hint">percentual de lucro real sobre o preço de venda final</span>
+          </label>
+          <input type="number" id="c-margem" inputmode="decimal" min="0" max="90" step="0.5" placeholder="Ex: 25">
+        </div>
+
+        <div class="marketplace-presets">
+          <span class="presets-label">Despesas de:</span>
+          <button type="button" class="preset-btn" data-comissao="13" data-gateway="2.99" data-frete="0" data-imposto="0" data-outros="0">Mercado Livre</button>
+          <button type="button" class="preset-btn" data-comissao="13" data-gateway="2.5" data-frete="0" data-imposto="0" data-outros="0">Shopee</button>
+          <button type="button" class="preset-btn" data-comissao="12" data-gateway="2.5" data-frete="0" data-imposto="0" data-outros="0">Amazon</button>
+          <button type="button" class="preset-btn" data-comissao="0" data-gateway="2.8" data-frete="0" data-imposto="0" data-outros="0">Loja própria</button>
+          <button type="button" class="preset-btn preset-btn--clear">Limpar taxas</button>
+        </div>
+
+      </div>
+
+      <!-- RESULTADO -->
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="completa-panel">
+          <div class="divisor-placeholder">
+            <p>Preencha o custo do produto e a margem desejada para calcular.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="content-section">
-    <h2>Preço de Venda para Marketplaces</h2>
-    <p>Ao vender em marketplaces, o preço de venda precisa cobrir as comissões da plataforma além do custo e da margem desejada. Use a fórmula do markup divisor:</p>
+  <!-- ====================================================
+       SIMULADOR DE CENÁRIOS
+  ===================================================== -->
+  <section class="content-section" id="simulador">
+    <h2>Simulador de Preços por Margem</h2>
+    <p>Veja quanto cobrar para atingir diferentes metas de margem, usando os custos e despesas da calculadora acima.</p>
 
-    <div class="formula-highlight">
-      <strong>Preço de Venda = Custo ÷ (1 − Comissão% − Margem%)</strong>
+    <div id="sim-aviso" class="tip-box" style="margin-bottom:16px">
+      Preencha os campos da <strong>Calculadora Completa</strong> acima para ativar o simulador.
     </div>
+
+    <div id="sim-tabela-wrap" style="display:none">
+      <div class="table-wrapper">
+        <table id="sim-tabela">
+          <thead>
+            <tr>
+              <th>Margem desejada</th>
+              <th>Preço de venda</th>
+              <th>Lucro (R$)</th>
+              <th>Markup equiv.</th>
+            </tr>
+          </thead>
+          <tbody id="sim-body"></tbody>
+        </table>
+      </div>
+      <p class="table-note" id="sim-note"></p>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       CONTEÚDO EDITORIAL
+  ===================================================== -->
+  <section class="content-section" id="como-calcular">
+    <h2>Como Calcular o Preço de Venda Corretamente</h2>
+    <p>O erro mais comum na precificação é definir o preço de venda apenas com base na concorrência, sem saber se ele cobre todos os custos e ainda gera lucro. O método correto tem quatro componentes:</p>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Fórmula simples</h3>
+        <code>PV = Custo ÷ (1 − Margem)</code>
+      </div>
+      <div class="formula-box">
+        <h3>Com despesas variáveis</h3>
+        <code>PV = CMV ÷ (1 − Desp% − Margem%)</code>
+      </div>
+      <div class="formula-box">
+        <h3>Verificação</h3>
+        <code>Margem = (PV − CMV − Desp) ÷ PV</code>
+      </div>
+    </div>
+
+    <h3>Os quatro componentes do preço de venda</h3>
+    <ol class="steps-list">
+      <li>
+        <strong>CMV — Custo das Mercadorias Vendidas</strong><br>
+        Produto + embalagem + frete de entrada + rateio de custos fixos. Tudo que você gasta <em>antes</em> de vender.
+      </li>
+      <li>
+        <strong>Despesas variáveis de venda</strong><br>
+        Comissão de marketplace, taxa de cartão/gateway, frete subsidiado ao cliente, impostos sobre o faturamento.
+      </li>
+      <li>
+        <strong>Margem de lucro líquida desejada</strong><br>
+        O percentual do preço de venda que vai representar lucro real — após pagar tudo acima.
+      </li>
+      <li>
+        <strong>Validação de mercado</strong><br>
+        Compare o preço calculado com a concorrência. Se estiver muito acima, revise os custos ou mude o posicionamento do produto.
+      </li>
+    </ol>
+
+    <div class="alert-box">
+      <strong>Atenção:</strong> Aplicar uma margem de 30% sobre um custo que não inclui embalagem, frete ou rateio de fixos resulta em um lucro real muito menor — ou até prejuízo. Sempre some <em>todos</em> os custos antes de calcular o preço.
+    </div>
+  </section>
+
+  <section class="content-section" id="exemplos-marketplace">
+    <h2>Exemplos por Canal de Venda</h2>
+    <p>Para o mesmo produto com custo de <strong>R$ 45,00</strong> (produto + embalagem + frete de entrada) e margem desejada de <strong>25%</strong>:</p>
 
     <div class="table-wrapper">
       <table>
         <thead>
-          <tr><th>Marketplace</th><th>Comissão típica</th><th>Custo R$ 50 + Margem 25%</th><th>Preço sugerido</th></tr>
+          <tr>
+            <th>Canal de venda</th>
+            <th>Taxas variáveis</th>
+            <th>Divisor</th>
+            <th>Preço sugerido</th>
+            <th>Lucro</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td>Mercado Livre</td><td>13%</td><td>1 − 0,13 − 0,25 = 0,62</td><td><strong>R$ 80,65</strong></td></tr>
-          <tr><td>Shopee</td><td>13%</td><td>1 − 0,13 − 0,25 = 0,62</td><td><strong>R$ 80,65</strong></td></tr>
-          <tr><td>Amazon</td><td>12%</td><td>1 − 0,12 − 0,25 = 0,63</td><td><strong>R$ 79,37</strong></td></tr>
-          <tr><td>Loja própria</td><td>0% (só gateway ~3%)</td><td>1 − 0,03 − 0,25 = 0,72</td><td><strong>R$ 69,44</strong></td></tr>
+          <tr>
+            <td>Mercado Livre</td>
+            <td>13% + 3% = 16%</td>
+            <td>1 − 0,16 − 0,25 = <strong>0,59</strong></td>
+            <td><strong>R$ 76,27</strong></td>
+            <td>R$ 19,07</td>
+          </tr>
+          <tr>
+            <td>Shopee</td>
+            <td>13% + 2,5% = 15,5%</td>
+            <td>1 − 0,155 − 0,25 = <strong>0,595</strong></td>
+            <td><strong>R$ 75,63</strong></td>
+            <td>R$ 18,91</td>
+          </tr>
+          <tr>
+            <td>Amazon</td>
+            <td>12% + 2,5% = 14,5%</td>
+            <td>1 − 0,145 − 0,25 = <strong>0,605</strong></td>
+            <td><strong>R$ 74,38</strong></td>
+            <td>R$ 18,60</td>
+          </tr>
+          <tr>
+            <td>Loja própria (e-comm.)</td>
+            <td>2,8% gateway</td>
+            <td>1 − 0,028 − 0,25 = <strong>0,722</strong></td>
+            <td><strong>R$ 62,33</strong></td>
+            <td>R$ 15,58</td>
+          </tr>
+          <tr>
+            <td>Loja física</td>
+            <td>0%</td>
+            <td>1 − 0 − 0,25 = <strong>0,75</strong></td>
+            <td><strong>R$ 60,00</strong></td>
+            <td>R$ 15,00</td>
+          </tr>
         </tbody>
       </table>
     </div>
 
     <div class="tip-box">
-      <strong>Conclusão:</strong> Vender na própria loja online é significativamente mais rentável do que em marketplaces. Se o preço de venda for o mesmo, a margem na loja própria é muito maior. Se o objetivo for competitividade, a loja própria pode oferecer preço menor com a mesma margem.
+      <strong>Conclusão prática:</strong> Para o mesmo produto e a mesma margem de 25%, você precisa cobrar R$ 76,27 no Mercado Livre mas apenas R$ 60,00 numa loja física. Se praticar o mesmo preço em todos os canais, a margem no marketplace vai a zero — ou entrará em prejuízo.
     </div>
   </section>
 
-  <section class="content-section">
-    <h2>Tabela de Preço de Venda por Margem</h2>
-    <p>Custo fixo de R$ 100,00 — quanto cobrar para cada meta de margem:</p>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr><th>Margem desejada</th><th>Preço de Venda</th><th>Lucro por unidade</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>10%</td><td>R$ 111,11</td><td>R$ 11,11</td></tr>
-          <tr><td>20%</td><td>R$ 125,00</td><td>R$ 25,00</td></tr>
-          <tr><td>30%</td><td>R$ 142,86</td><td>R$ 42,86</td></tr>
-          <tr><td>40%</td><td>R$ 166,67</td><td>R$ 66,67</td></tr>
-          <tr><td>50%</td><td>R$ 200,00</td><td>R$ 100,00</td></tr>
-          <tr><td>60%</td><td>R$ 250,00</td><td>R$ 150,00</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <section class="content-section" id="erros-precificacao">
+    <h2>Erros que Destroem a Margem sem que Você Perceba</h2>
 
-    <p>Para calcular com seus próprios valores, use a <a href="/">Calculadora de Margem</a> — basta informar o custo e a margem desejada.</p>
+    <div class="error-grid">
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Não incluir o rateio de fixos</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Aluguel, salários e energia existem mesmo quando não há vendas. Se não forem incluídos no preço, a margem bruta não paga as contas do mês.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Ignorar a taxa de devolução</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">No e-commerce, devoluções de 3% a 8% são comuns. Cada devolução absorve o custo do produto + frete (ida e volta). Adicione de 2% a 5% como despesa variável.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Esquecer os impostos sobre a venda</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">No Simples Nacional, a alíquota cresce com o faturamento (de 4% a 19%). Se você crescer de faixa, o preço que antes cobria os custos pode passar a gerar prejuízo.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Usar markup e chamar de margem</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Um markup de 40% sobre o custo resulta em margem de 28,6%, não 40%. Quem usa esse atalho pode estar trabalhando com margem 30% menor do que imagina.</p>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -144,11 +420,271 @@
       <a href="/">Calculadora de Margem</a>
       <a href="/calculadora-markup/">Calculadora de Markup</a>
       <a href="/calculadora-preco-venda/">Preço de Venda</a>
+      <a href="/calculadora-desconto/">Calculadora de Desconto</a>
       <a href="/formacao-de-preco/">Formação de Preço</a>
     </nav>
     <p>© 2025 CalculaMargem — Ferramenta gratuita para cálculo de margem de lucro, markup e preço de venda.</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(String(el ? el.value : "").replace(",", "."));
+    return isNaN(v) ? null : v;
+  }
+
+  function pct(el) {
+    var v = num(el);
+    return v === null ? 0 : v / 100;
+  }
+
+  // -------------------------------------------------------
+  // Calc 1 — Rápido: custo + margem → PV
+  // -------------------------------------------------------
+  var rCusto  = document.getElementById("r-custo");
+  var rMargem = document.getElementById("r-margem");
+  var rPv     = document.getElementById("r-pv");
+  var rLucro  = document.getElementById("r-lucro");
+  var rMarkup = document.getElementById("r-markup");
+
+  function calcRapido() {
+    var c = num(rCusto);
+    var m = num(rMargem);
+
+    if (c === null || m === null || c <= 0 || m < 0 || m >= 100) {
+      rPv.textContent = rLucro.textContent = rMarkup.textContent = "—";
+      return;
+    }
+
+    var mf    = m / 100;
+    var pv    = c / (1 - mf);
+    var lucro = pv - c;
+
+    rPv.textContent     = fmt(pv);
+    rLucro.textContent  = fmt(lucro);
+    rMarkup.textContent = fmtPct(lucro / c);
+  }
+
+  rCusto.addEventListener("input", calcRapido);
+  rMargem.addEventListener("input", calcRapido);
+
+  // -------------------------------------------------------
+  // Calc 2 — Verificar: custo + PV + meta → status
+  // -------------------------------------------------------
+  var vCusto   = document.getElementById("v-custo");
+  var vPv      = document.getElementById("v-pv");
+  var vMeta    = document.getElementById("v-meta");
+  var vStatus  = document.getElementById("v-status");
+  var vStatusBox = document.getElementById("v-status-box");
+  var vMargem  = document.getElementById("v-margem");
+  var vLucro   = document.getElementById("v-lucro");
+  var vPvMeta  = document.getElementById("v-pv-meta");
+
+  function calcVerificar() {
+    var c  = num(vCusto);
+    var pv = num(vPv);
+    var mt = num(vMeta);
+
+    if (c === null || pv === null || c <= 0 || pv <= 0) {
+      vStatus.textContent = vMargem.textContent = vLucro.textContent = vPvMeta.textContent = "—";
+      vStatusBox.className = "result";
+      return;
+    }
+
+    var lucro  = pv - c;
+    var margem = lucro / pv;
+
+    vMargem.textContent = fmtPct(margem);
+    vLucro.textContent  = fmt(lucro);
+
+    if (mt !== null && mt > 0) {
+      var pvNecessario = c / (1 - mt / 100);
+      vPvMeta.textContent = fmt(pvNecessario);
+
+      if (margem >= mt / 100 - 0.0001) {
+        vStatus.textContent  = "✓ Meta atingida";
+        vStatusBox.className = "result result--ok";
+      } else {
+        vStatus.textContent  = "✗ Abaixo da meta";
+        vStatusBox.className = "result result--warn";
+      }
+    } else {
+      vPvMeta.textContent = "—";
+      vStatus.textContent = lucro >= 0 ? "Com lucro" : "Prejuízo";
+      vStatusBox.className = lucro >= 0 ? "result result--ok" : "result result--warn";
+    }
+  }
+
+  [vCusto, vPv, vMeta].forEach(function (el) { el.addEventListener("input", calcVerificar); });
+
+  // -------------------------------------------------------
+  // Calc 3 — Completa + Simulador
+  // -------------------------------------------------------
+  var cProduto     = document.getElementById("c-produto");
+  var cEmbalagem   = document.getElementById("c-embalagem");
+  var cFreteEntrada= document.getElementById("c-frete-entrada");
+  var cFixo        = document.getElementById("c-fixo");
+  var cOutrosCusto = document.getElementById("c-outros-custo");
+  var cComissao    = document.getElementById("c-comissao");
+  var cGateway     = document.getElementById("c-gateway");
+  var cFreteSaida  = document.getElementById("c-frete-saida");
+  var cImposto     = document.getElementById("c-imposto");
+  var cOutrosDesp  = document.getElementById("c-outros-desp");
+  var cMargem      = document.getElementById("c-margem");
+  var completaPanel= document.getElementById("completa-panel");
+
+  var simAviso    = document.getElementById("sim-aviso");
+  var simWrap     = document.getElementById("sim-tabela-wrap");
+  var simBody     = document.getElementById("sim-body");
+  var simNote     = document.getElementById("sim-note");
+
+  function calcCompleta() {
+    var produto     = num(cProduto)      || 0;
+    var embalagem   = num(cEmbalagem)    || 0;
+    var freteEnt    = num(cFreteEntrada) || 0;
+    var fixo        = num(cFixo)         || 0;
+    var outrosCusto = num(cOutrosCusto)  || 0;
+
+    var cmv = produto + embalagem + freteEnt + fixo + outrosCusto;
+
+    var comissao    = pct(cComissao);
+    var gateway     = pct(cGateway);
+    var freteSaida  = pct(cFreteSaida);
+    var imposto     = pct(cImposto);
+    var outrosDesp  = pct(cOutrosDesp);
+    var totalDesp   = comissao + gateway + freteSaida + imposto + outrosDesp;
+
+    var margemPct   = num(cMargem);
+    var margemFrac  = margemPct !== null ? margemPct / 100 : null;
+
+    // Precisa de pelo menos CMV > 0 e margem
+    if (cmv <= 0 || margemFrac === null) {
+      completaPanel.innerHTML = '<div class="divisor-placeholder"><p>Preencha o custo do produto e a margem desejada para calcular.</p></div>';
+      simAviso.style.display  = "block";
+      simWrap.style.display   = "none";
+      return;
+    }
+
+    var divisor = 1 - totalDesp - margemFrac;
+
+    if (divisor <= 0) {
+      completaPanel.innerHTML = '<div class="divisor-error">A soma das despesas (' + fmtPct(totalDesp) + ') + margem (' + fmtPct(margemFrac) + ') ultrapassa 100%. Reduza os valores.</div>';
+      simAviso.style.display = "block";
+      simWrap.style.display  = "none";
+      return;
+    }
+
+    var pv       = cmv / divisor;
+    var lucro    = pv * margemFrac;
+    var totalTax = pv * totalDesp;
+    var mkSimp   = (pv - cmv) / cmv;
+
+    // Percentuais para a barra
+    var pctCmv  = cmv / pv;
+    var pctTax  = totalDesp;
+    var pctLuc  = margemFrac;
+
+    completaPanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Preço de venda sugerido</div>' +
+          '<div class="divisor-main-value">' + fmt(pv) + '</div>' +
+        '</div>' +
+        '<div class="pv-bar-wrap">' +
+          '<div class="pv-bar">' +
+            '<div class="pv-bar-cost"  style="width:' + (pctCmv * 100).toFixed(1) + '%" title="Custo: ' + fmtPct(pctCmv) + '"></div>' +
+            '<div class="pv-bar-taxes" style="width:' + (pctTax * 100).toFixed(1) + '%" title="Taxas: ' + fmtPct(pctTax) + '"></div>' +
+            '<div class="pv-bar-profit"style="width:' + (pctLuc * 100).toFixed(1) + '%" title="Lucro: ' + fmtPct(pctLuc) + '"></div>' +
+          '</div>' +
+          '<div class="pv-bar-legend">' +
+            '<span class="pv-legend-cost">Custo ' + fmtPct(pctCmv) + '</span>' +
+            '<span class="pv-legend-taxes">Taxas ' + fmtPct(pctTax) + '</span>' +
+            '<span class="pv-legend-profit">Lucro ' + fmtPct(pctLuc) + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          '<div class="divisor-row"><span>CMV total</span><strong>' + fmt(cmv) + '</strong></div>' +
+          '<div class="divisor-row"><span>Despesas variáveis (' + fmtPct(totalDesp) + ')</span><strong>' + fmt(totalTax) + '</strong></div>' +
+          '<div class="divisor-row divisor-row--highlight"><span>Lucro líquido (' + fmtPct(margemFrac) + ')</span><strong>' + fmt(lucro) + '</strong></div>' +
+          '<div class="divisor-row"><span>Divisor</span><strong>' + divisor.toLocaleString("pt-BR", {minimumFractionDigits:4,maximumFractionDigits:4}) + '</strong></div>' +
+          '<div class="divisor-row"><span>Markup equivalente</span><strong>' + fmtPct(mkSimp) + '</strong></div>' +
+        '</div>' +
+      '</div>';
+
+    // Atualiza simulador
+    simAviso.style.display = "none";
+    simWrap.style.display  = "block";
+    simNote.textContent    = "CMV: " + fmt(cmv) + " | Despesas variáveis: " + fmtPct(totalDesp) + " | Divisor base: 1 − " + fmtPct(totalDesp) + " − margem";
+
+    var margens = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50];
+    simBody.innerHTML = "";
+
+    margens.forEach(function (mg) {
+      var div = 1 - totalDesp - mg;
+      var tr  = document.createElement("tr");
+
+      if (div <= 0) {
+        tr.innerHTML =
+          "<td>" + fmtPct(mg) + "</td>" +
+          "<td colspan='3' style='color:#c2410c;font-size:0.85rem'>Despesas + margem > 100% — inviável</td>";
+      } else {
+        var pvSim    = cmv / div;
+        var lucroSim = pvSim * mg;
+        var mkSim    = (pvSim - cmv) / cmv;
+
+        tr.innerHTML =
+          "<td>" + fmtPct(mg) + "</td>" +
+          "<td>" + fmt(pvSim) + "</td>" +
+          "<td>" + fmt(lucroSim) + "</td>" +
+          "<td>" + fmtPct(mkSim) + "</td>";
+
+        if (Math.abs(mg - margemFrac) < 0.001) {
+          tr.style.background    = "var(--color-highlight-bg)";
+          tr.style.fontWeight    = "600";
+        }
+      }
+      simBody.appendChild(tr);
+    });
+  }
+
+  var completaInputs = [
+    cProduto, cEmbalagem, cFreteEntrada, cFixo, cOutrosCusto,
+    cComissao, cGateway, cFreteSaida, cImposto, cOutrosDesp, cMargem
+  ];
+  completaInputs.forEach(function (el) { el.addEventListener("input", calcCompleta); });
+
+  // Presets de marketplace
+  document.querySelectorAll(".preset-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (btn.classList.contains("preset-btn--clear")) {
+        cComissao.value = cGateway.value = cFreteSaida.value = cImposto.value = cOutrosDesp.value = "";
+      } else {
+        cComissao.value   = btn.dataset.comissao;
+        cGateway.value    = btn.dataset.gateway;
+        cFreteSaida.value = btn.dataset.frete;
+        cImposto.value    = btn.dataset.imposto;
+        cOutrosDesp.value = btn.dataset.outros;
+      }
+      calcCompleta();
+    });
+  });
+
+})();
+</script>
 
 </body>
 </html>
