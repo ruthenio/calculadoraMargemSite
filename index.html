@@ -3,49 +3,296 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de Margem — Calcule Margem de Lucro, Markup e Preço de Venda</title>
-<meta name="description" content="Calculadora de margem online e gratuita. Descubra a margem de lucro, o markup e o preço de venda ideal do seu produto em segundos, com fórmulas e tabela comparativa.">
-<meta name="keywords" content="calculadora de margem, calcular margem de lucro, markup, preço de venda, margem x markup">
+<title>Calculadora de Margem de Lucro Online Grátis — CalculaMargem</title>
+<meta name="description" content="Calcule margem de lucro, markup e preço de venda em segundos. Ferramenta gratuita com guia completo, fórmulas, exemplos reais por segmento e FAQ com 22 perguntas.">
+<meta name="keywords" content="calculadora de margem, calcular margem de lucro, markup, preço de venda, margem x markup, formação de preço, precificação">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="/">
+<link rel="canonical" href="https://calculamargem.com.br/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Calculadora de Margem — Calcule Margem de Lucro, Markup e Preço de Venda">
-<meta property="og:description" content="Ferramenta gratuita para calcular margem de lucro, markup e preço de venda do seu produto.">
+<meta property="og:title" content="Calculadora de Margem de Lucro Online Grátis — CalculaMargem">
+<meta property="og:description" content="Calcule margem de lucro, markup e preço de venda em segundos. Guia completo com fórmulas, exemplos reais e FAQ.">
+<meta property="og:url" content="https://calculamargem.com.br/">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="CalculaMargem">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Margem de Lucro Online Grátis — CalculaMargem">
+<meta name="twitter:description" content="Calcule margem de lucro, markup e preço de venda em segundos. Ferramenta gratuita.">
 
 <link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://calculamargem.com.br/#organization",
+      "name": "CalculaMargem",
+      "url": "https://calculamargem.com.br",
+      "description": "Portal de referência sobre margem de lucro, markup e formação de preços"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://calculamargem.com.br/#website",
+      "url": "https://calculamargem.com.br",
+      "name": "CalculaMargem",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://calculamargem.com.br/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://calculamargem.com.br/#webpage",
+      "url": "https://calculamargem.com.br/",
+      "name": "Calculadora de Margem de Lucro Online Grátis",
+      "description": "Calcule margem de lucro, markup e preço de venda gratuitamente.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/#website" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é margem de lucro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margem de lucro é o percentual do preço de venda que representa o lucro obtido numa venda. Se um produto custa R$ 60 e é vendido por R$ 100, o lucro é R$ 40 e a margem é 40% (40 ÷ 100). É diferente do markup, que calcula o lucro sobre o custo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é a diferença entre margem de lucro e markup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margem usa o preço de venda como base (Lucro ÷ Venda), enquanto markup usa o custo como base (Lucro ÷ Custo). Um markup de 40% equivale a uma margem de apenas 28,57%, porque as bases de cálculo são diferentes. Confundir os dois é um dos erros mais comuns na precificação."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular a margem de lucro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margem (%) = [(Preço de Venda − Custo) ÷ Preço de Venda] × 100. Exemplo: custo R$ 50, venda R$ 80. Lucro = R$ 30. Margem = (30 ÷ 80) × 100 = 37,5%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é markup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Markup é o percentual aplicado sobre o preço de custo para se chegar ao preço de venda. Fórmula: Markup (%) = [(Preço de Venda − Custo) ÷ Custo] × 100. Um produto que custa R$ 50 e vende por R$ 80 tem markup de 60%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular o markup de um produto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Markup (%) = [(Venda − Custo) ÷ Custo] × 100. Ou, a partir da margem desejada: Markup = Margem ÷ (1 − Margem). Exemplo com margem de 30%: Markup = 0,30 ÷ 0,70 = 0,4286 = 42,86%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é a fórmula do preço de venda a partir da margem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Preço de Venda = Custo ÷ (1 − Margem). Exemplo: custo R$ 60, margem desejada 40%. Preço de Venda = 60 ÷ (1 − 0,40) = 60 ÷ 0,60 = R$ 100,00."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual margem de lucro é considerada boa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende do segmento. No varejo de alimentos, margens entre 20% e 40% são comuns. Em restaurantes, entre 30% e 60%. No e-commerce, entre 25% e 50%. Farmácias giram entre 20% e 35%. O mais importante é que a margem cubra todos os custos fixos e variáveis e ainda gere lucro líquido positivo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é lucro bruto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lucro bruto é a diferença entre o preço de venda e o custo direto do produto (CMV — Custo das Mercadorias Vendidas). Ele não desconta despesas operacionais como aluguel, salários ou impostos sobre o faturamento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é lucro líquido?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lucro líquido é o que sobra após descontar todos os custos e despesas: CMV, despesas fixas (aluguel, salários), despesas variáveis (comissões, fretes, taxas de marketplace) e impostos. É o indicador mais completo da rentabilidade real do negócio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é a diferença entre custo e despesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custo é o gasto diretamente relacionado à produção ou compra do produto (matéria-prima, embalagem, frete de entrada). Despesa é o gasto necessário para operar o negócio, mas não ligado diretamente ao produto (aluguel, energia elétrica, salário administrativo). Ambos devem ser considerados na formação do preço."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como usar a Calculadora de Margem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A calculadora tem dois modos. No primeiro, você informa o preço de custo e o preço de venda para descobrir o lucro, a margem e o markup. No segundo, você informa o preço de custo e a margem desejada para calcular automaticamente o preço de venda ideal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é margem de contribuição?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margem de contribuição é o valor que sobra do preço de venda após deduzir apenas os custos e despesas variáveis. Ela indica quanto cada produto contribui para cobrir os custos fixos e gerar lucro. Fórmula: MC = Preço de Venda − Custos Variáveis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular o ponto de equilíbrio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ponto de equilíbrio (PE) = Custos Fixos Totais ÷ Margem de Contribuição Unitária. Ele indica quantas unidades precisam ser vendidas para que o negócio não tenha prejuízo. Por exemplo, com R$ 5.000 de custos fixos e margem de contribuição de R$ 25 por produto, o PE é de 200 unidades/mês."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a margem de lucro ideal para e-commerce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No e-commerce, a margem precisa absorver frete, embalagem, plataforma (geralmente 2% a 5%), gateway de pagamento (cerca de 2,5% a 3%) e possíveis devoluções. Uma margem bruta mínima de 35% a 45% é recomendada para que a margem líquida fique positiva após todas as despesas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como precificar produtos no Mercado Livre?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No Mercado Livre, a taxa de comissão varia de 11% a 16% dependendo da categoria. Some ainda 2,99% de tarifa por parcelamento em 12x. Para uma margem líquida de 15%, sua margem bruta deve ser de pelo menos 30% a 35%. Use a calculadora informando todos os custos, incluindo comissões."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular margem de lucro no Shopee e Amazon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shopee cobra comissão de 12% a 14% por venda. Amazon cobra entre 8% e 15% dependendo da categoria, mais taxa de logística se usar FBA. Inclua todas essas taxas como custo variável antes de calcular a margem. A margem bruta deve compensar também frete, embalagem e eventuais reembolsos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a margem de lucro típica de um restaurante?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Restaurantes trabalham com markup de ingredientes entre 200% e 400% (margem de 66% a 80% sobre o prato), mas a margem líquida após pagar aluguel, funcionários, energia e impostos costuma ficar entre 5% e 15%. O controle do food cost (custo do insumo sobre o preço do prato) deve ficar entre 25% e 35%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como definir margem de lucro para uma farmácia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Farmácias trabalham com margens distintas por categoria: medicamentos genéricos têm margem controlada (em torno de 20% a 28%), enquanto cosméticos e suplementos permitem margens de 40% a 60%. A regulação da ANVISA e os convênios com planos de saúde também afetam a precificação."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Um markup de 40% é igual a uma margem de 40%?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Um markup de 40% significa que você adicionou 40% sobre o custo. Se o custo é R$ 100 e o markup é 40%, o preço de venda é R$ 140. A margem nesse caso é 40 ÷ 140 = 28,57%. Nunca confunda as duas métricas: markup de 40% ≠ margem de 40%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que fazer quando a margem de lucro está muito baixa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Existem três caminhos: (1) aumentar o preço de venda, comunicando o valor do produto ao cliente; (2) reduzir custos, negociando com fornecedores ou otimizando processos; (3) reposicionar o produto, focando em um público disposto a pagar mais. Cortar custos sem critério pode prejudicar a qualidade e perder clientes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular a margem de lucro sobre o preço de venda?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Essa é exatamente a definição padrão de margem. Fórmula: Margem = (Venda − Custo) ÷ Venda. Exemplo: venda de R$ 150, custo de R$ 90. Lucro = R$ 60. Margem = 60 ÷ 150 = 0,40 = 40%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é a diferença entre margem bruta e margem líquida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margem bruta considera apenas o custo direto do produto (CMV). Margem líquida desconta também todas as despesas operacionais e impostos. Para decisões estratégicas sobre precificação, use a margem líquida. Para analisar a eficiência produtiva, use a margem bruta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Devo usar margem ou markup para precificar meus produtos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prefira trabalhar com margem, pois ela representa diretamente o percentual do preço de venda que é lucro — é mais intuitiva para metas financeiras. O markup é mais prático para aplicação rápida sobre o custo, mas exige atenção para não confundir com a margem equivalente. Use a tabela comparativa da calculadora para converter entre os dois."
+      }
+    }
+  ]
+}
+</script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
      crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-L3J38JGCBN');
 </script>
-
 </head>
 <body>
 
+<a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
 <header class="site-header">
   <div class="container">
-    <h1>Calculadora de Margem</h1>
-    <p class="tagline">Calcule margem de lucro, markup e preço de venda em segundos</p>
+    <h1>Calculadora de Margem de Lucro</h1>
+    <p class="tagline">Calcule margem, markup e preço de venda em segundos — gratuitamente</p>
   </div>
 </header>
 
-<main class="container">
+<nav class="site-nav" aria-label="Navegação principal">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/" aria-current="page">Início</a></li>
+      <li><a href="/calculadora-markup/">Calc. Markup</a></li>
+      <li><a href="/calculadora-preco-venda/">Preço de Venda</a></li>
+      <li><a href="/formacao-de-preco/">Formação de Preço</a></li>
+      <li><a href="/como-calcular-markup/">Como Calcular</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container" id="main">
 
   <section class="intro">
     <p>Use as calculadoras abaixo para descobrir, a partir do preço de custo, qual é a <strong>margem de lucro</strong>, o <strong>markup</strong> ou o <strong>preço de venda ideal</strong> do seu produto.</p>
   </section>
 
-  <section class="calculators">
+  <section class="calculators" aria-label="Calculadoras de margem">
 
     <article class="card" id="calc-margem-markup">
       <h2>Descubra a margem e o markup</h2>
@@ -109,9 +356,87 @@
 
   </section>
 
-  <section class="explainer">
-    <h2>Margem ou markup: qual é a diferença?</h2>
-    <p><strong>Margem de lucro</strong> é o percentual do <em>preço de venda</em> que corresponde ao lucro. <strong>Markup</strong> é o percentual aplicado sobre o <em>preço de custo</em> para chegar ao preço de venda. Os dois partem do mesmo lucro, mas usam bases de cálculo diferentes — por isso números iguais de margem e markup nunca representam o mesmo resultado.</p>
+  <!-- ====================================================
+       SEÇÃO: O QUE É MARGEM DE LUCRO
+  ===================================================== -->
+  <section class="content-section" id="o-que-e-margem-de-lucro">
+    <h2>O que é Margem de Lucro?</h2>
+    <p>Margem de lucro é o percentual do <strong>preço de venda</strong> que representa o lucro obtido em cada transação comercial. É um dos indicadores financeiros mais importantes para qualquer negócio, pois mede de forma direta a rentabilidade de cada produto ou serviço vendido.</p>
+
+    <p>A fórmula da margem de lucro é:</p>
+
+    <div class="formula-highlight">
+      <strong>Margem (%) = [(Preço de Venda − Custo) ÷ Preço de Venda] × 100</strong>
+    </div>
+
+    <p>Exemplo prático: um produto com custo de <strong>R$ 60,00</strong> vendido por <strong>R$ 100,00</strong> gera lucro de R$ 40,00 e margem de <strong>40%</strong> — porque R$ 40 representam 40% dos R$ 100 de venda.</p>
+
+    <h3>Por que a margem de lucro é tão importante?</h3>
+    <p>Sem conhecer sua margem, você pode estar vendendo muito e ainda assim ter prejuízo. Isso acontece quando os custos fixos e variáveis consomem todo o lucro aparente. Acompanhar a margem permite:</p>
+    <ul>
+      <li>Identificar quais produtos são mais rentáveis</li>
+      <li>Tomar decisões de desconto sem sacrificar o lucro</li>
+      <li>Planejar metas de faturamento com base no lucro real</li>
+      <li>Comparar rentabilidade entre categorias de produto</li>
+      <li>Negociar com fornecedores sabendo o limite mínimo de custo</li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>Dica:</strong> Existem três tipos de margem de lucro que você deve conhecer: <strong>margem bruta</strong> (descontando apenas o custo do produto), <strong>margem operacional</strong> (descontando também despesas operacionais) e <strong>margem líquida</strong> (descontando tudo, incluindo impostos). Para precificação, use a margem bruta como ponto de partida.
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: COMO CALCULAR
+  ===================================================== -->
+  <section class="content-section" id="como-calcular-margem-de-lucro">
+    <h2>Como Calcular Margem de Lucro: Passo a Passo</h2>
+    <p>Calcular a margem de lucro é simples quando você tem clareza sobre todos os custos envolvidos. Siga os passos abaixo:</p>
+
+    <ol class="steps-list">
+      <li>
+        <strong>Levante o custo total do produto</strong><br>
+        Inclua o preço de compra ou produção, frete de entrada, embalagem e qualquer outro gasto diretamente ligado ao produto.
+      </li>
+      <li>
+        <strong>Defina o preço de venda</strong><br>
+        O preço pelo qual o cliente paga. Em marketplaces, use o preço final antes da comissão da plataforma.
+      </li>
+      <li>
+        <strong>Calcule o lucro bruto</strong><br>
+        Lucro = Preço de Venda − Custo Total
+      </li>
+      <li>
+        <strong>Calcule a margem</strong><br>
+        Margem = Lucro ÷ Preço de Venda × 100
+      </li>
+    </ol>
+
+    <div class="example-box">
+      <h3>Exemplo resolvido</h3>
+      <p>Uma lojista compra bolsas por <strong>R$ 85,00</strong> (incluindo frete) e vende por <strong>R$ 149,90</strong>.</p>
+      <ul>
+        <li>Lucro = R$ 149,90 − R$ 85,00 = <strong>R$ 64,90</strong></li>
+        <li>Margem = R$ 64,90 ÷ R$ 149,90 × 100 = <strong>43,3%</strong></li>
+      </ul>
+      <p>Isso significa que de cada R$ 100 arrecadados com a venda, R$ 43,30 são lucro bruto — antes de pagar aluguel, salários e impostos.</p>
+    </div>
+
+    <h3>Como calcular o preço de venda a partir da margem desejada</h3>
+    <p>Se você sabe o custo e quer garantir uma margem específica, a fórmula é:</p>
+    <div class="formula-highlight">
+      <strong>Preço de Venda = Custo ÷ (1 − Margem desejada)</strong>
+    </div>
+    <p>Exemplo: custo de R$ 85,00, margem desejada de 40%.<br>
+    Preço de Venda = 85 ÷ (1 − 0,40) = 85 ÷ 0,60 = <strong>R$ 141,67</strong></p>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: MARGEM vs MARKUP
+  ===================================================== -->
+  <section class="content-section explainer" id="margem-vs-markup">
+    <h2>Margem de Lucro vs. Markup: Entenda a Diferença</h2>
+    <p><strong>Margem de lucro</strong> calcula o percentual de lucro sobre o <em>preço de venda</em>. <strong>Markup</strong> calcula o percentual de lucro sobre o <em>custo</em>. Os dois partem do mesmo lucro absoluto, mas usam bases diferentes — e por isso um markup de 40% nunca equivale a uma margem de 40%.</p>
 
     <div class="formulas">
       <div class="formula-box">
@@ -123,25 +448,460 @@
         <code>Markup = Lucro ÷ Preço de Custo</code>
       </div>
       <div class="formula-box">
-        <h3>Preço de venda a partir da margem</h3>
-        <code>Preço de Venda = Custo ÷ (1 − Margem)</code>
+        <h3>Preço de Venda</h3>
+        <code>PV = Custo ÷ (1 − Margem)</code>
       </div>
     </div>
 
-    <p>Um erro comum é precificar usando o markup como se fosse a margem. Um markup de 40% não gera uma margem de 40% — gera uma margem de cerca de 28,6%. Por isso, ao planejar a rentabilidade do negócio, o mais seguro é trabalhar diretamente com a <strong>margem</strong>, que representa de forma direta quanto do preço de venda fica como lucro.</p>
+    <div class="alert-box">
+      <strong>Erro clássico:</strong> Um empresário aplica markup de 40% achando que vai ter 40% de margem. Se o custo é R$ 100 e ele adiciona 40%, o preço de venda é R$ 140. A margem real é 40 ÷ 140 = <strong>28,57%</strong>, não 40%. A diferença pode significar prejuízo no final do mês.
+    </div>
+
+    <h3>Como converter markup em margem (e vice-versa)</h3>
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Markup → Margem</h3>
+        <code>Margem = Markup ÷ (1 + Markup)</code>
+      </div>
+      <div class="formula-box">
+        <h3>Margem → Markup</h3>
+        <code>Markup = Margem ÷ (1 − Margem)</code>
+      </div>
+    </div>
   </section>
 
-  <section class="table-section">
-    <h2>Tabela comparativa: margem x markup</h2>
-    <p>Veja a equivalência entre margem de lucro e markup para os percentuais mais usados:</p>
+  <!-- ====================================================
+       TABELA COMPARATIVA
+  ===================================================== -->
+  <section class="content-section table-section" id="tabela-comparativa">
+    <h2>Tabela Comparativa: Margem × Markup</h2>
+    <p>Veja a equivalência entre margem de lucro e markup para os percentuais mais usados no comércio:</p>
     <div class="table-wrapper">
       <table>
         <thead>
-          <tr><th>Margem</th><th>Markup equivalente</th></tr>
+          <tr><th>Margem de Lucro</th><th>Markup equivalente</th></tr>
         </thead>
         <tbody id="tabela-comparativa-body">
         </tbody>
       </table>
+    </div>
+    <p class="table-note">A margem sempre será menor que o markup equivalente — porque ela é calculada sobre um valor maior (o preço de venda).</p>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: COMO CALCULAR MARKUP
+  ===================================================== -->
+  <section class="content-section" id="como-calcular-markup">
+    <h2>Como Calcular o Markup</h2>
+    <p>O markup é amplamente usado no varejo e na indústria para fixar preços de forma rápida. Existem duas formas de calculá-lo:</p>
+
+    <h3>1. A partir do custo e do preço de venda</h3>
+    <div class="formula-highlight">
+      <strong>Markup (%) = [(Preço de Venda − Custo) ÷ Custo] × 100</strong>
+    </div>
+    <p>Exemplo: produto comprado por R$ 50 e vendido por R$ 80.<br>
+    Markup = (80 − 50) ÷ 50 × 100 = 30 ÷ 50 × 100 = <strong>60%</strong><br>
+    (A margem de lucro nesse caso seria 30 ÷ 80 = <strong>37,5%</strong>)</p>
+
+    <h3>2. A partir da margem de lucro desejada</h3>
+    <div class="formula-highlight">
+      <strong>Markup = Margem ÷ (1 − Margem)</strong>
+    </div>
+    <p>Exemplo: margem desejada de 35%.<br>
+    Markup = 0,35 ÷ (1 − 0,35) = 0,35 ÷ 0,65 = 0,5385 = <strong>53,85%</strong></p>
+
+    <div class="tip-box">
+      <strong>Quando usar markup?</strong> O markup é prático quando você precisa aplicar um fator fixo sobre uma grade inteira de produtos. Por exemplo, ao definir que toda a linha de perfumaria terá markup de 100% (que equivale a uma margem de 50%). Mas sempre confirme a margem equivalente para garantir que os custos fixos serão cobertos.
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: COMO DEFINIR PREÇO DE VENDA
+  ===================================================== -->
+  <section class="content-section" id="como-definir-preco-de-venda">
+    <h2>Como Definir o Preço de Venda Corretamente</h2>
+    <p>O preço de venda não pode ser definido apenas com base na concorrência ou na intuição. Um preço mal calculado pode gerar prejuízo mesmo com alto volume de vendas. Siga este método:</p>
+
+    <ol class="steps-list">
+      <li>
+        <strong>Some todos os custos diretos</strong><br>
+        Preço de compra + frete de entrada + embalagem + etiquetas + outros custos ligados ao produto.
+      </li>
+      <li>
+        <strong>Some as despesas variáveis da venda</strong><br>
+        Comissão de marketplace (ex.: 13% no Mercado Livre), taxa de cartão (ex.: 2,8%), frete de saída quando subsidiado, impostos sobre venda (Simples Nacional, ICMS, etc.).
+      </li>
+      <li>
+        <strong>Calcule o rateio dos custos fixos</strong><br>
+        Divida seus custos fixos mensais (aluguel, salários, energia, internet) pelo número de produtos vendidos no mês. Adicione esse valor ao custo unitário.
+      </li>
+      <li>
+        <strong>Defina a margem de lucro líquida desejada</strong><br>
+        Com base na sua meta de rentabilidade, aplique a fórmula: PV = Custo Total ÷ (1 − Margem).
+      </li>
+      <li>
+        <strong>Valide contra a concorrência</strong><br>
+        Compare o preço calculado com os concorrentes. Se estiver muito acima, revise os custos ou avalie se o produto justifica o preço pelo seu valor percebido.
+      </li>
+    </ol>
+
+    <div class="example-box">
+      <h3>Exemplo: definindo o preço de venda para e-commerce</h3>
+      <table>
+        <thead><tr><th>Item</th><th>Valor</th></tr></thead>
+        <tbody>
+          <tr><td>Custo do produto</td><td>R$ 45,00</td></tr>
+          <tr><td>Embalagem + fita</td><td>R$ 3,50</td></tr>
+          <tr><td>Frete de entrada</td><td>R$ 2,00</td></tr>
+          <tr><td>Rateio custos fixos</td><td>R$ 8,00</td></tr>
+          <tr><td><strong>Custo total unitário</strong></td><td><strong>R$ 58,50</strong></td></tr>
+        </tbody>
+      </table>
+      <p>Com margem desejada de 35%:<br>
+      Preço de Venda = R$ 58,50 ÷ (1 − 0,35) = R$ 58,50 ÷ 0,65 = <strong>R$ 90,00</strong></p>
+      <p>Ao vender por R$ 90,00, a loja garante R$ 31,50 de lucro por unidade, com margem efetiva de 35%.</p>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: PRINCIPAIS ERROS
+  ===================================================== -->
+  <section class="content-section" id="erros-na-precificacao">
+    <h2>Principais Erros na Formação de Preços</h2>
+    <p>Conhecer os erros mais comuns é tão importante quanto dominar as fórmulas. Veja os que mais prejudicam a rentabilidade dos negócios:</p>
+
+    <div class="error-grid">
+      <div class="error-item">
+        <h3>1. Confundir margem com markup</h3>
+        <p>O erro mais frequente. Aplicar 30% de markup achando que vai obter 30% de margem gera uma margem real de apenas 23,1%. Em escala, essa diferença pode representar prejuízo mensal.</p>
+      </div>
+      <div class="error-item">
+        <h3>2. Ignorar os custos fixos no preço</h3>
+        <p>Aluguel, salários, energia e internet existem mesmo quando não há vendas. Se esses custos não forem rateados no preço dos produtos, a margem bruta se transforma em prejuízo líquido.</p>
+      </div>
+      <div class="error-item">
+        <h3>3. Não incluir as taxas de marketplace</h3>
+        <p>Comissões de Mercado Livre, Shopee e Amazon somam entre 12% e 16% do preço de venda. Ignorá-las é um dos motivos mais comuns de vender muito e lucrar pouco.</p>
+      </div>
+      <div class="error-item">
+        <h3>4. Precificar baseado apenas na concorrência</h3>
+        <p>Copiar o preço do concorrente sem saber seus próprios custos é perigoso. Ele pode ter condições de compra, escala ou estrutura operacional completamente diferentes das suas.</p>
+      </div>
+      <div class="error-item">
+        <h3>5. Não revisar os preços periodicamente</h3>
+        <p>Custos mudam: fornecedores reajustam preços, fretes sobem, impostos mudam. Um preço que era lucrativo em janeiro pode gerar prejuízo em julho sem que o empresário perceba.</p>
+      </div>
+      <div class="error-item">
+        <h3>6. Ignorar o impacto dos descontos na margem</h3>
+        <p>Um desconto de 10% no preço de venda pode reduzir a margem em muito mais do que 10%. Em um produto com margem de 30%, um desconto de 10% reduz o lucro em 33%. Use sempre a calculadora antes de oferecer descontos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: EXEMPLOS POR SEGMENTO
+  ===================================================== -->
+  <section class="content-section" id="exemplos-por-segmento">
+    <h2>Exemplos de Margem de Lucro por Segmento</h2>
+    <p>Cada setor tem dinâmicas de custo e margem muito diferentes. Veja exemplos práticos para os principais segmentos do comércio brasileiro:</p>
+
+    <div class="segment-grid">
+
+      <div class="segment-card">
+        <h3>Supermercado e Mercado</h3>
+        <p>No varejo alimentar, margens brutas por categoria variam muito. Hortifruti e laticínios giram entre <strong>20% e 35%</strong>, enquanto bebidas e produtos de higiene podem chegar a <strong>40% a 50%</strong>.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Arroz comprado por R$ 8,50/kg, vendido por R$ 12,90/kg.<br>
+          Lucro = R$ 4,40 | Margem = <strong>34,1%</strong>
+        </div>
+        <p>A margem líquida do supermercado, após todas as despesas, costuma ficar entre <strong>1% e 4%</strong>, o que exige alto volume de vendas para ser viável.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Restaurante e Alimentação</h3>
+        <p>O setor usa o conceito de <strong>food cost</strong>: o custo do ingrediente deve representar entre 25% e 35% do preço do prato. Um prato com food cost de R$ 12 deve ser vendido entre R$ 34 e R$ 48.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Prato cujo insumo custa R$ 14,00, vendido por R$ 42,00.<br>
+          Food cost = 33,3% | Margem bruta = <strong>66,7%</strong>
+        </div>
+        <p>Após mão de obra, aluguel e energia, a margem líquida típica de um restaurante fica entre <strong>5% e 15%</strong>.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Farmácia</h3>
+        <p>Medicamentos genéricos têm margem regulada pela CMED (Câmara de Regulação do Mercado de Medicamentos), em torno de <strong>20% a 28%</strong>. Produtos de perfumaria, suplementos e cosméticos permitem margens de <strong>40% a 60%</strong>.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Suplemento comprado por R$ 55,00, vendido por R$ 99,90.<br>
+          Lucro = R$ 44,90 | Margem = <strong>44,9%</strong>
+        </div>
+        <p>Convênios com planos de saúde e programas de fidelidade afetam a margem e devem ser considerados na precificação.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Loja de Roupas e Moda</h3>
+        <p>No vestuário, margens brutas de <strong>50% a 70%</strong> são comuns — especialmente em marcas próprias ou moda feminina. O alto giro de estação exige margens maiores para cobrir peças encalhadas.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Vestido comprado por R$ 65,00, vendido por R$ 179,00.<br>
+          Lucro = R$ 114,00 | Margem = <strong>63,7%</strong>
+        </div>
+        <p>Lojas com alto estoque parado devem calcular o custo do capital imobilizado ao definir preços.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>E-commerce Geral</h3>
+        <p>No e-commerce, além do custo do produto, entram no cálculo: embalagem (~R$ 3 a R$ 8), frete de saída (R$ 10 a R$ 35), plataforma (~3%), gateway de pagamento (~2,8%) e taxa de devolução (~2% a 5%).</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Produto por R$ 50, embalagem R$ 4, frete R$ 15. Total: R$ 69.<br>
+          Venda sugerida para 35% de margem: <strong>R$ 106,15</strong>
+        </div>
+        <p>Uma margem bruta de pelo menos 40% é recomendada para que a margem líquida no e-commerce seja positiva após todas as taxas.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Distribuidora e Atacado</h3>
+        <p>Distribuidoras trabalham com margens menores e volume maior. Margens brutas entre <strong>8% e 20%</strong> são típicas, mas o alto giro compensa a margem apertada.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Caixa de produto comprada por R$ 480,00, vendida por R$ 576,00.<br>
+          Lucro = R$ 96,00 | Margem = <strong>16,7%</strong>
+        </div>
+        <p>O prazo de pagamento dado ao varejista (30/60/90 dias) gera custo financeiro que deve ser embutido no preço.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Mercado Livre</h3>
+        <p>A comissão do Mercado Livre varia de <strong>11% a 16%</strong> por venda, conforme a categoria. Há também a tarifa de parcelamento (2,99% nas compras em 12x) e o custo logístico se usar o Mercado Envios.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Produto com custo R$ 40,00, comissão 13% sobre venda de R$ 89,90.<br>
+          Comissão = R$ 11,69 | Custo total = R$ 51,69 | Margem real = <strong>42,5%</strong>
+        </div>
+        <p>Precifique no Mercado Livre sempre incluindo a comissão como custo variável no cálculo da margem.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Shopee</h3>
+        <p>A Shopee cobra comissão de <strong>12% a 14%</strong> sobre o valor do pedido, mais taxas de processamento de pagamento. O frete grátis frequentemente é subsidiado pela plataforma, mas campanhas de desconto reduzem a margem do vendedor.</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Produto com custo R$ 28,00, vendido por R$ 59,90. Comissão 13% = R$ 7,79.<br>
+          Custo total = R$ 35,79 | Margem = <strong>40,2%</strong>
+        </div>
+        <p>Participe de campanhas de desconto apenas quando a margem original já estiver alta o suficiente para absorver a redução sem entrar em prejuízo.</p>
+      </div>
+
+      <div class="segment-card">
+        <h3>Amazon</h3>
+        <p>A Amazon cobra entre <strong>8% e 15%</strong> de comissão, mais taxa de fechamento para determinadas categorias. Se usar o FBA (Fulfillment by Amazon), some os custos de armazenagem e fulfillment (~R$ 12 a R$ 25 por unidade).</p>
+        <div class="segment-example">
+          <strong>Exemplo:</strong> Produto com custo R$ 60,00, vendido por R$ 130,00. Comissão 12% = R$ 15,60. FBA = R$ 14,00.<br>
+          Custo total = R$ 89,60 | Margem = <strong>31,1%</strong>
+        </div>
+        <p>Na Amazon, a estratégia Buy Box exige preços competitivos — calcule cuidadosamente o custo total com FBA antes de precificar.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: FAQ
+  ===================================================== -->
+  <section class="content-section faq-section" id="faq">
+    <h2>Perguntas Frequentes sobre Margem de Lucro</h2>
+    <p>Respostas diretas para as dúvidas mais comuns sobre margem, markup e precificação:</p>
+
+    <dl class="faq-list">
+
+      <div class="faq-item">
+        <dt class="faq-question">O que é margem de lucro?</dt>
+        <dd class="faq-answer">Margem de lucro é o percentual do preço de venda que representa o lucro obtido numa venda. Se um produto custa R$ 60 e é vendido por R$ 100, o lucro é R$ 40 e a margem é 40% (40 ÷ 100). É diferente do markup, que calcula o lucro sobre o custo.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual é a diferença entre margem de lucro e markup?</dt>
+        <dd class="faq-answer">Margem usa o preço de venda como base (Lucro ÷ Venda), enquanto markup usa o custo como base (Lucro ÷ Custo). Um markup de 40% equivale a uma margem de apenas 28,57%, porque as bases de cálculo são diferentes. Confundir os dois é um dos erros mais comuns na precificação.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como calcular a margem de lucro?</dt>
+        <dd class="faq-answer">Fórmula: <strong>Margem (%) = [(Preço de Venda − Custo) ÷ Preço de Venda] × 100</strong>. Exemplo: custo R$ 50, venda R$ 80. Lucro = R$ 30. Margem = (30 ÷ 80) × 100 = 37,5%.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">O que é markup?</dt>
+        <dd class="faq-answer">Markup é o percentual aplicado sobre o preço de custo para se chegar ao preço de venda. Fórmula: <strong>Markup (%) = [(Preço de Venda − Custo) ÷ Custo] × 100</strong>. Um produto que custa R$ 50 e vende por R$ 80 tem markup de 60%.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como calcular o markup de um produto?</dt>
+        <dd class="faq-answer">Markup (%) = [(Venda − Custo) ÷ Custo] × 100. Ou, a partir da margem desejada: <strong>Markup = Margem ÷ (1 − Margem)</strong>. Exemplo com margem de 30%: Markup = 0,30 ÷ 0,70 = 42,86%.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual é a fórmula do preço de venda a partir da margem?</dt>
+        <dd class="faq-answer"><strong>Preço de Venda = Custo ÷ (1 − Margem)</strong>. Exemplo: custo R$ 60, margem desejada 40%. Preço de Venda = 60 ÷ (1 − 0,40) = 60 ÷ 0,60 = R$ 100,00.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual margem de lucro é considerada boa?</dt>
+        <dd class="faq-answer">Depende do segmento. No varejo de alimentos, margens entre 20% e 40% são comuns. Em restaurantes, entre 30% e 60% (bruta). No e-commerce, entre 35% e 50%. Farmácias giram entre 20% e 35%. O mais importante é que a margem cubra todos os custos fixos e variáveis e ainda gere lucro líquido positivo.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">O que é lucro bruto?</dt>
+        <dd class="faq-answer">Lucro bruto é a diferença entre o preço de venda e o custo direto do produto (CMV — Custo das Mercadorias Vendidas). Ele não desconta despesas operacionais como aluguel, salários ou impostos sobre o faturamento.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">O que é lucro líquido?</dt>
+        <dd class="faq-answer">Lucro líquido é o que sobra após descontar todos os custos e despesas: CMV, despesas fixas (aluguel, salários), despesas variáveis (comissões, fretes, taxas de marketplace) e impostos. É o indicador mais completo da rentabilidade real do negócio.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual é a diferença entre custo e despesa?</dt>
+        <dd class="faq-answer">Custo é o gasto diretamente relacionado à produção ou compra do produto (matéria-prima, embalagem, frete de entrada). Despesa é o gasto necessário para operar o negócio, mas não ligado diretamente ao produto (aluguel, energia elétrica, salário administrativo). Ambos devem ser considerados na formação do preço.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como usar a Calculadora de Margem?</dt>
+        <dd class="faq-answer">A calculadora tem dois modos. No primeiro, você informa o preço de custo e o preço de venda para descobrir o lucro, a margem e o markup. No segundo, você informa o preço de custo e a margem desejada para calcular automaticamente o preço de venda ideal. Os resultados aparecem instantaneamente ao digitar.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">O que é margem de contribuição?</dt>
+        <dd class="faq-answer">Margem de contribuição é o valor que sobra do preço de venda após deduzir os custos e despesas variáveis. Ela indica quanto cada produto contribui para cobrir os custos fixos e gerar lucro. Fórmula: <strong>MC = Preço de Venda − Custos Variáveis</strong>.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como calcular o ponto de equilíbrio?</dt>
+        <dd class="faq-answer">Ponto de equilíbrio (PE) = Custos Fixos Totais ÷ Margem de Contribuição Unitária. Com R$ 5.000 de custos fixos e margem de contribuição de R$ 25 por produto, o PE é de 200 unidades/mês — abaixo disso, o negócio opera com prejuízo.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual a margem de lucro ideal para e-commerce?</dt>
+        <dd class="faq-answer">No e-commerce, a margem precisa absorver frete, embalagem, plataforma (~3% a 5%), gateway de pagamento (~2,8%) e devoluções. Uma margem bruta mínima de 35% a 45% é recomendada para que a margem líquida fique positiva após todas as despesas.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como precificar produtos no Mercado Livre?</dt>
+        <dd class="faq-answer">No Mercado Livre, a comissão varia de 11% a 16% dependendo da categoria. Some ainda 2,99% de tarifa por parcelamento em 12x. Para uma margem líquida de 15%, sua margem bruta deve ser de pelo menos 30% a 35%. Inclua todas as taxas como custo variável antes de calcular.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como calcular margem de lucro no Shopee e na Amazon?</dt>
+        <dd class="faq-answer">Shopee cobra comissão de 12% a 14% por venda. Amazon cobra entre 8% e 15% dependendo da categoria, mais taxa de logística se usar FBA. Inclua todas essas taxas como custo variável antes de calcular a margem. A margem bruta deve compensar também frete, embalagem e eventuais reembolsos.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual a margem de lucro típica de um restaurante?</dt>
+        <dd class="faq-answer">Restaurantes trabalham com markup de ingredientes entre 200% e 400% (margem bruta de 66% a 80% sobre o prato), mas a margem líquida após pagar mão de obra, aluguel, energia e impostos costuma ficar entre 5% e 15%. O food cost (custo do insumo sobre o preço do prato) deve ficar entre 25% e 35%.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Como definir margem de lucro para uma farmácia?</dt>
+        <dd class="faq-answer">Farmácias trabalham com margens distintas por categoria: medicamentos genéricos têm margem controlada (em torno de 20% a 28%), enquanto cosméticos e suplementos permitem margens de 40% a 60%. Convênios com planos de saúde e programas de desconto também afetam a precificação.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Um markup de 40% é igual a uma margem de 40%?</dt>
+        <dd class="faq-answer">Não. Um markup de 40% significa que você adicionou 40% sobre o custo. Se o custo é R$ 100, o preço de venda é R$ 140. A margem real é 40 ÷ 140 = <strong>28,57%</strong>, não 40%. Nunca confunda as duas métricas: markup de 40% ≠ margem de 40%.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">O que fazer quando a margem de lucro está muito baixa?</dt>
+        <dd class="faq-answer">Existem três caminhos: (1) aumentar o preço de venda, comunicando melhor o valor do produto; (2) reduzir custos, negociando com fornecedores ou otimizando processos; (3) reposicionar o produto para um público disposto a pagar mais. Cortar custos sem critério pode prejudicar a qualidade e perder clientes.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Qual é a diferença entre margem bruta e margem líquida?</dt>
+        <dd class="faq-answer">Margem bruta considera apenas o custo direto do produto (CMV). Margem líquida desconta também todas as despesas operacionais e impostos. Para decisões de precificação, use a margem bruta como base; para análise de rentabilidade do negócio, use a margem líquida.</dd>
+      </div>
+
+      <div class="faq-item">
+        <dt class="faq-question">Devo usar margem ou markup para precificar meus produtos?</dt>
+        <dd class="faq-answer">Prefira trabalhar com margem, pois ela representa diretamente o percentual do preço de venda que é lucro — mais intuitiva para metas financeiras. O markup é mais prático para aplicação rápida sobre o custo, mas exige atenção para não confundir com a margem equivalente. Use a tabela comparativa acima para converter entre os dois.</dd>
+      </div>
+
+    </dl>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: ARTIGOS RELACIONADOS
+  ===================================================== -->
+  <section class="content-section" id="artigos-relacionados">
+    <h2>Artigos Relacionados</h2>
+    <p>Aprofunde seu conhecimento sobre precificação e gestão financeira:</p>
+    <div class="articles-grid">
+      <a href="/formacao-de-preco/" class="article-card">
+        <div class="article-card-body">
+          <span class="article-tag">Guia</span>
+          <h3>Formação de Preço: o Guia Completo</h3>
+          <p>Aprenda a calcular o preço de venda considerando todos os custos, despesas e a margem de lucro desejada.</p>
+        </div>
+      </a>
+      <a href="/como-calcular-markup/" class="article-card">
+        <div class="article-card-body">
+          <span class="article-tag">Tutorial</span>
+          <h3>Como Calcular Markup Passo a Passo</h3>
+          <p>Entenda a diferença entre markup simples e markup divisor e quando usar cada um.</p>
+        </div>
+      </a>
+      <a href="/margem-bruta/" class="article-card">
+        <div class="article-card-body">
+          <span class="article-tag">Conceito</span>
+          <h3>O que é Margem Bruta e Como Calculá-la</h3>
+          <p>Descubra como analisar a eficiência produtiva do seu negócio com a margem bruta.</p>
+        </div>
+      </a>
+      <a href="/margem-liquida/" class="article-card">
+        <div class="article-card-body">
+          <span class="article-tag">Conceito</span>
+          <h3>Margem Líquida: o Indicador de Rentabilidade Real</h3>
+          <p>Saiba como calcular e interpretar a margem líquida para tomar decisões mais precisas.</p>
+        </div>
+      </a>
+      <a href="/como-definir-preco-de-venda/" class="article-card">
+        <div class="article-card-body">
+          <span class="article-tag">Estratégia</span>
+          <h3>Como Definir o Preço de Venda Corretamente</h3>
+          <p>Um método passo a passo para precificar produtos sem cometer os erros mais comuns.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SEÇÃO: OUTRAS CALCULADORAS
+  ===================================================== -->
+  <section class="content-section" id="outras-calculadoras">
+    <h2>Outras Calculadoras</h2>
+    <p>Ferramentas complementares para a gestão financeira do seu negócio:</p>
+    <div class="calc-grid">
+      <a href="/calculadora-markup/" class="calc-card">
+        <div class="calc-card-icon">%</div>
+        <div class="calc-card-body">
+          <h3>Calculadora de Markup</h3>
+          <p>Calcule o markup ideal para cada produto a partir do custo e da margem desejada.</p>
+        </div>
+      </a>
+      <a href="/calculadora-preco-venda/" class="calc-card">
+        <div class="calc-card-icon">R$</div>
+        <div class="calc-card-body">
+          <h3>Calculadora de Preço de Venda</h3>
+          <p>Descubra o preço de venda considerando todos os custos e a margem alvo.</p>
+        </div>
+      </a>
+      <a href="/calculadora-desconto/" class="calc-card">
+        <div class="calc-card-icon">↓</div>
+        <div class="calc-card-body">
+          <h3>Calculadora de Desconto</h3>
+          <p>Veja o impacto de um desconto na sua margem antes de oferecê-lo.</p>
+        </div>
+      </a>
+      <a href="/calculadora-lucro/" class="calc-card">
+        <div class="calc-card-icon">+</div>
+        <div class="calc-card-body">
+          <h3>Calculadora de Lucro</h3>
+          <p>Calcule lucro bruto, operacional e líquido de forma simples e rápida.</p>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -149,7 +909,14 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>Calculadora de Margem — ferramenta gratuita para cálculo de margem de lucro, markup e preço de venda.</p>
+    <nav class="footer-nav" aria-label="Links do rodapé">
+      <a href="/">Calculadora de Margem</a>
+      <a href="/calculadora-markup/">Calculadora de Markup</a>
+      <a href="/calculadora-desconto/">Calculadora de Desconto</a>
+      <a href="/calculadora-lucro/">Calculadora de Lucro</a>
+      <a href="/formacao-de-preco/">Formação de Preço</a>
+    </nav>
+    <p>© 2025 CalculaMargem — Ferramenta gratuita para cálculo de margem de lucro, markup e preço de venda.</p>
   </div>
 </footer>
 
