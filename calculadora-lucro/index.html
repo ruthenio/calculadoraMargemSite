@@ -4,29 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora de Lucro: Bruto, Operacional e Líquido — CalculaMargem</title>
-<meta name="description" content="Entenda a diferença entre lucro bruto, operacional e líquido. Aprenda a calcular cada um com fórmulas, exemplos e tabelas comparativas para analisar seu negócio.">
+<meta name="description" content="Calcule lucro bruto, operacional e líquido com a DRE simplificada interativa. Inclui ponto de equilíbrio, simulador de cenários e análise de margens. Ferramenta gratuita.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://calculamargem.com.br/calculadora-lucro/">
+
 <meta property="og:type" content="website">
-<meta property="og:title" content="Calculadora de Lucro — CalculaMargem">
-<meta property="og:description" content="Calcule lucro bruto, operacional e líquido. Fórmulas e exemplos completos.">
+<meta property="og:title" content="Calculadora de Lucro: Bruto, Operacional e Líquido — CalculaMargem">
+<meta property="og:description" content="DRE simplificada interativa + ponto de equilíbrio. Calcule os três tipos de lucro em tempo real.">
 <meta property="og:url" content="https://calculamargem.com.br/calculadora-lucro/">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="CalculaMargem">
+
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Lucro — CalculaMargem">
+<meta name="twitter:description" content="Calcule lucro bruto, operacional e líquido com DRE interativa e ponto de equilíbrio.">
+
 <link rel="stylesheet" href="../css/style.css">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" },
-    { "@type": "ListItem", "position": 2, "name": "Calculadora de Lucro", "item": "https://calculamargem.com.br/calculadora-lucro/" }
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculadora de Lucro", "item": "https://calculamargem.com.br/calculadora-lucro/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/calculadora-lucro/",
+      "name": "Calculadora de Lucro: Bruto, Operacional e Líquido",
+      "description": "Calcule os três tipos de lucro com DRE simplificada interativa e ponto de equilíbrio.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/#website" }
+    }
   ]
 }
 </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L3J38JGCBN');</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
 </head>
 <body>
 
@@ -34,9 +60,9 @@
 
 <header class="site-header">
   <div class="container">
-    <p style="font-size:1.3rem;font-weight:700;color:var(--color-primary-dark);margin:0 0 6px"><a href="/" style="color:inherit;text-decoration:none">CalculaMargem</a></p>
+    <p class="site-brand"><a href="/">CalculaMargem</a></p>
     <h1>Calculadora de Lucro</h1>
-    <p class="tagline">Calcule e entenda o lucro bruto, operacional e líquido do seu negócio</p>
+    <p class="tagline">Lucro bruto, operacional e líquido — DRE interativa e ponto de equilíbrio</p>
   </div>
 </header>
 
@@ -55,21 +81,269 @@
 <main class="container" id="main">
 
   <nav class="breadcrumb" aria-label="Localização">
-    <a href="/">Início</a> <span>›</span> <span>Calculadora de Lucro</span>
+    <a href="/">Início</a>
+    <span aria-hidden="true">›</span>
+    <span>Calculadora de Lucro</span>
   </nav>
 
-  <div class="coming-soon-banner">
-    A calculadora interativa está em desenvolvimento. Use o conteúdo abaixo para calcular os diferentes tipos de lucro manualmente, e acesse a <a href="/">Calculadora de Margem</a> para o lucro bruto unitário.
-  </div>
+  <section class="intro">
+    <p>Quatro ferramentas em uma: <strong>lucro por unidade</strong>, <strong>lucro do período</strong>, <strong>DRE simplificada</strong> com cascata visual de margens e <strong>ponto de equilíbrio</strong> com simulador de volumes.</p>
+  </section>
 
-  <section class="content-section">
-    <h2>Os Três Tipos de Lucro: Bruto, Operacional e Líquido</h2>
-    <p>Muitas pessoas usam a palavra "lucro" de forma genérica, mas na contabilidade existem três níveis distintos, cada um revelando um aspecto diferente da saúde financeira do negócio.</p>
+  <!-- ====================================================
+       CALCULADORAS 1 e 2 — lado a lado
+  ===================================================== -->
+  <section class="calculators" aria-label="Calculadoras rápidas de lucro">
+
+    <!-- CALC 1: Lucro por unidade -->
+    <article class="card" id="calc-lucro-unidade">
+      <h2>Lucro por unidade</h2>
+      <p class="card-desc">Informe o custo e o preço de venda de um produto para calcular o lucro, a margem e o markup unitários.</p>
+
+      <div class="field">
+        <label for="u-custo">Custo do produto (R$)</label>
+        <input type="number" id="u-custo" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 45,00">
+      </div>
+      <div class="field">
+        <label for="u-pv">Preço de venda (R$)</label>
+        <input type="number" id="u-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 79,90">
+      </div>
+      <div class="field">
+        <label for="u-qtd">Quantidade vendida (opcional)</label>
+        <input type="number" id="u-qtd" inputmode="numeric" min="1" step="1" placeholder="Ex: 150">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Lucro bruto unitário</span>
+          <span class="result-value" id="u-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Margem de lucro</span>
+          <span class="result-value" id="u-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Markup</span>
+          <span class="result-value" id="u-markup">—</span>
+        </div>
+        <div class="result" id="u-total-box" style="display:none">
+          <span class="result-label">Lucro total (qtd × unitário)</span>
+          <span class="result-value" id="u-total">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CALC 2: Lucro do período -->
+    <article class="card" id="calc-lucro-periodo">
+      <h2>Lucro bruto do período</h2>
+      <p class="card-desc">Informe o faturamento total e o custo das mercadorias vendidas para calcular o lucro bruto do mês ou período.</p>
+
+      <div class="field">
+        <label for="p-receita">Receita bruta de vendas (R$)</label>
+        <input type="number" id="p-receita" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 80.000,00">
+      </div>
+      <div class="field">
+        <label for="p-cmv">Custo das mercadorias vendidas — CMV (R$)</label>
+        <input type="number" id="p-cmv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 48.000,00">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Lucro bruto</span>
+          <span class="result-value" id="p-lucro-bruto">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Margem bruta</span>
+          <span class="result-value" id="p-margem-bruta">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">CMV sobre receita</span>
+          <span class="result-value" id="p-cmv-pct">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       DRE SIMPLIFICADA
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-dre">
+    <h2>DRE Simplificada — Resultado do Período</h2>
+    <p>Preencha os campos abaixo para gerar a <strong>Demonstração do Resultado</strong> completa com lucro bruto, operacional e líquido em tempo real.</p>
+
+    <div class="divisor-grid dre-grid">
+
+      <!-- INPUTS -->
+      <div class="divisor-inputs">
+
+        <fieldset class="field-group">
+          <legend>1. Faturamento</legend>
+          <div class="field field--inline">
+            <label for="d-receita-bruta">Receita bruta de vendas</label>
+            <input type="number" id="d-receita-bruta" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-devolucoes">Devoluções e descontos</label>
+            <input type="number" id="d-devolucoes" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-imp-vendas">Impostos sobre vendas (%)</label>
+            <input type="number" id="d-imp-vendas" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>2. Custo das mercadorias (CMV)</legend>
+          <div class="field field--inline">
+            <label for="d-cmv">CMV (custo dos produtos vendidos)</label>
+            <input type="number" id="d-cmv" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>3. Despesas operacionais</legend>
+          <div class="field field--inline">
+            <label for="d-salarios">Salários e encargos</label>
+            <input type="number" id="d-salarios" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-aluguel">Aluguel / pró-labore</label>
+            <input type="number" id="d-aluguel" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-energia">Energia, internet e serviços</label>
+            <input type="number" id="d-energia" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-marketing">Marketing e publicidade</label>
+            <input type="number" id="d-marketing" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-outras-desp">Outras despesas operacionais</label>
+            <input type="number" id="d-outras-desp" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>4. Resultado financeiro</legend>
+          <div class="field field--inline">
+            <label for="d-juros">Juros e despesas financeiras</label>
+            <input type="number" id="d-juros" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-receita-fin">Receitas financeiras (rendimentos)</label>
+            <input type="number" id="d-receita-fin" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>5. Impostos sobre o lucro</legend>
+          <div class="field field--inline">
+            <label for="d-ir">IR + CSLL (%)</label>
+            <input type="number" id="d-ir" inputmode="decimal" min="0" max="40" step="0.5" placeholder="Ex: 15">
+          </div>
+        </fieldset>
+
+      </div>
+
+      <!-- RESULTADO: DRE -->
+      <div class="divisor-results">
+        <div class="dre-panel" id="dre-panel" aria-live="polite">
+          <div class="divisor-placeholder">
+            <p>Preencha a receita bruta para gerar a DRE.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       PONTO DE EQUILÍBRIO
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-pe">
+    <h2>Calculadora de Ponto de Equilíbrio</h2>
+    <p>Descubra quantas unidades (ou quanto de faturamento) seu negócio precisa atingir para cobrir todos os custos fixos e começar a lucrar.</p>
+
+    <div class="divisor-grid">
+
+      <div class="divisor-inputs">
+        <div class="field">
+          <label for="pe-fixos">Custos fixos mensais totais (R$)
+            <span class="field-hint">aluguel + salários + energia + internet + outros fixos</span>
+          </label>
+          <input type="number" id="pe-fixos" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 8.000,00">
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Margem de contribuição por unidade</legend>
+          <div class="field field--inline">
+            <label for="pe-pv">Preço de venda unitário (R$)</label>
+            <input type="number" id="pe-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 89,90">
+          </div>
+          <div class="field field--inline">
+            <label for="pe-cv">Custo variável unitário (R$)
+            </label>
+            <input type="number" id="pe-cv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 52,00">
+          </div>
+          <div class="dre-linha dre-linha--sub" style="margin:4px 0 0;padding:8px 0">
+            <span style="font-size:0.82rem;color:var(--color-text-muted)">MC unitária calculada:</span>
+            <strong id="pe-mc-unit" style="font-size:0.88rem;color:var(--color-primary-dark)">—</strong>
+          </div>
+        </fieldset>
+
+        <div class="field" style="margin-top:4px">
+          <label for="pe-mc-pct">Ou informe a margem de contribuição (%)
+            <span class="field-hint">se não souber o custo variável unitário</span>
+          </label>
+          <input type="number" id="pe-mc-pct" inputmode="decimal" min="0" max="100" step="0.5" placeholder="Ex: 35">
+        </div>
+      </div>
+
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="pe-panel">
+          <div class="divisor-placeholder">
+            <p>Preencha os custos fixos e a margem de contribuição para calcular o ponto de equilíbrio.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Simulador de volumes -->
+    <div id="pe-sim-wrap" style="display:none;margin-top:24px">
+      <h3>Simulador de Resultado por Volume</h3>
+      <p style="font-size:0.92rem;color:var(--color-text-muted);margin-bottom:12px" id="pe-sim-desc"></p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Volume vendido</th>
+              <th>Faturamento</th>
+              <th>Custos variáveis</th>
+              <th>Margem de contribuição</th>
+              <th>Resultado líquido</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="pe-sim-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       CONTEÚDO EDITORIAL
+  ===================================================== -->
+  <section class="content-section" id="tres-tipos-lucro">
+    <h2>Os Três Tipos de Lucro: o que cada um revela</h2>
+    <p>A palavra "lucro" é usada de forma genérica no dia a dia, mas a contabilidade distingue três níveis com finalidades distintas. Conhecer cada um é essencial para tomar decisões corretas sobre o negócio.</p>
 
     <div class="formulas">
       <div class="formula-box">
         <h3>Lucro Bruto</h3>
-        <code>Receita − CMV</code>
+        <code>Receita Líquida − CMV</code>
       </div>
       <div class="formula-box">
         <h3>Lucro Operacional</h3>
@@ -77,63 +351,69 @@
       </div>
       <div class="formula-box">
         <h3>Lucro Líquido</h3>
-        <code>Lucro Operacional − IR/CSLL</code>
+        <code>Lucro Op. ± Res. Financeiro − IR</code>
+      </div>
+    </div>
+
+    <h3>Lucro Bruto: eficiência de compra e precificação</h3>
+    <p>O lucro bruto mede quanto sobra da receita após pagar apenas os produtos vendidos. Um lucro bruto alto indica boa precificação e/ou bom controle de custos de compra. É o ponto de partida: se o lucro bruto não for suficiente, nenhuma redução de despesas operacionais vai salvar o resultado.</p>
+
+    <h3>Lucro Operacional: eficiência da operação</h3>
+    <p>O lucro operacional desconta as despesas fixas da operação. Ele responde à pergunta: "A atividade principal da empresa é lucrativa, independentemente de como ela está financiada?" Um lucro operacional positivo indica um modelo de negócio saudável — mesmo que haja dívidas que pressionem o resultado financeiro.</p>
+
+    <h3>Lucro Líquido: o que vai para o bolso</h3>
+    <p>O lucro líquido é o resultado final após todos os descontos — inclusive os impostos sobre o lucro. É o número que alimenta o patrimônio dos sócios e a capacidade de reinvestimento do negócio. Uma empresa pode ter lucro bruto alto e lucro líquido baixo — ou até negativo — por conta de despesas descontroladas ou dívidas elevadas.</p>
+
+    <div class="example-box">
+      <h3>Exemplo: do faturamento ao lucro líquido</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Demonstração do Resultado</th><th>Valor</th><th>% da Receita</th></tr></thead>
+          <tbody>
+            <tr><td>Receita Bruta de Vendas</td><td>R$ 100.000</td><td>—</td></tr>
+            <tr><td>(−) Impostos sobre vendas (7%)</td><td>R$ (7.000)</td><td>—</td></tr>
+            <tr><td><strong>= Receita Líquida</strong></td><td><strong>R$ 93.000</strong></td><td><strong>100%</strong></td></tr>
+            <tr><td>(−) CMV</td><td>R$ (51.150)</td><td>−55%</td></tr>
+            <tr style="background:var(--color-highlight-bg)"><td><strong>= Lucro Bruto</strong></td><td><strong>R$ 41.850</strong></td><td><strong>45%</strong></td></tr>
+            <tr><td>(−) Despesas operacionais</td><td>R$ (28.000)</td><td>−30,1%</td></tr>
+            <tr style="background:#ede9fe"><td><strong>= Lucro Operacional</strong></td><td><strong>R$ 13.850</strong></td><td><strong>14,9%</strong></td></tr>
+            <tr><td>(−) Despesas financeiras</td><td>R$ (1.200)</td><td>−1,3%</td></tr>
+            <tr><td>(−) IR + CSLL (15%)</td><td>R$ (1.898)</td><td>−2%</td></tr>
+            <tr style="background:var(--color-example-bg)"><td><strong>= Lucro Líquido</strong></td><td><strong>R$ 10.752</strong></td><td><strong>11,6%</strong></td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <section class="content-section">
-    <h2>Lucro Bruto: a Primeira Camada</h2>
-    <p>O lucro bruto é o resultado da subtração do Custo das Mercadorias Vendidas (CMV) da receita total. Ele mostra a eficiência das compras e da precificação, sem considerar os custos para operar o negócio.</p>
+  <section class="content-section" id="ponto-equilibrio-conceito">
+    <h2>O que é Ponto de Equilíbrio e por que Monitorá-lo</h2>
+    <p>O ponto de equilíbrio (PE) é o volume de vendas no qual a receita total iguala todos os custos — sem lucro nem prejuízo. Abaixo do PE, o negócio opera no vermelho. Acima, começa a gerar lucro.</p>
 
     <div class="formula-highlight">
-      <strong>Lucro Bruto = Receita de Vendas − Custo das Mercadorias Vendidas (CMV)</strong>
+      <strong>PE (unidades) = Custos Fixos ÷ Margem de Contribuição Unitária</strong><br>
+      <strong>PE (faturamento) = Custos Fixos ÷ Margem de Contribuição%</strong>
     </div>
 
     <div class="example-box">
       <h3>Exemplo</h3>
-      <p>Uma loja vendeu R$ 80.000 em produtos que custaram R$ 48.000.<br>
-      Lucro Bruto = R$ 80.000 − R$ 48.000 = <strong>R$ 32.000</strong><br>
-      Margem Bruta = R$ 32.000 ÷ R$ 80.000 = <strong>40%</strong></p>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <h2>Lucro Operacional: a Segunda Camada</h2>
-    <p>O lucro operacional desconta as despesas necessárias para operar o negócio: salários, aluguel, energia, marketing, manutenção, depreciação. É o lucro gerado pela atividade principal da empresa.</p>
-
-    <div class="formula-highlight">
-      <strong>Lucro Operacional = Lucro Bruto − Despesas Operacionais</strong>
-    </div>
-
-    <div class="example-box">
-      <h3>Continuando o exemplo</h3>
-      <p>Lucro Bruto = R$ 32.000 | Despesas operacionais = R$ 22.000<br>
-      Lucro Operacional = R$ 32.000 − R$ 22.000 = <strong>R$ 10.000</strong><br>
-      Margem Operacional = R$ 10.000 ÷ R$ 80.000 = <strong>12,5%</strong></p>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <h2>Lucro Líquido: a Realidade Final</h2>
-    <p>O lucro líquido é o que sobra após deduzir também os resultados financeiros (juros pagos ou recebidos) e os impostos sobre o lucro (Imposto de Renda e CSLL). É o número que vai para o patrimônio dos sócios.</p>
-
-    <div class="formula-highlight">
-      <strong>Lucro Líquido = Lucro Operacional ± Resultado Financeiro − IR/CSLL</strong>
-    </div>
-
-    <div class="example-box">
-      <h3>Finalizando o exemplo</h3>
-      <p>Lucro Operacional = R$ 10.000 | Resultado financeiro = −R$ 800 | IR/CSLL = R$ 2.200<br>
-      Lucro Líquido = R$ 10.000 − R$ 800 − R$ 2.200 = <strong>R$ 7.000</strong><br>
-      Margem Líquida = R$ 7.000 ÷ R$ 80.000 = <strong>8,75%</strong></p>
+      <p>Loja com custos fixos de R$ 6.000/mês. Produto vendido por R$ 80, custo variável de R$ 48.</p>
+      <ul>
+        <li>Margem de contribuição unitária = R$ 80 − R$ 48 = <strong>R$ 32</strong></li>
+        <li>MC% = R$ 32 ÷ R$ 80 = <strong>40%</strong></li>
+        <li>PE em unidades = R$ 6.000 ÷ R$ 32 = <strong>188 unidades/mês</strong></li>
+        <li>PE em faturamento = R$ 6.000 ÷ 0,40 = <strong>R$ 15.000/mês</strong></li>
+      </ul>
+      <p>A partir da 189ª unidade vendida no mês, cada venda gera R$ 32 de lucro líquido para o negócio.</p>
     </div>
 
     <div class="tip-box">
-      <strong>Resumo do exemplo:</strong> A loja faturou R$ 80.000, mas o lucro real para os sócios foi de R$ 7.000 — 8,75% do faturamento. Cada R$ 100 em vendas gerou R$ 8,75 de lucro real.
+      <strong>Dica:</strong> Use o ponto de equilíbrio como meta mínima de vendas mensais. Se você estiver vendendo consistentemente abaixo do PE, o negócio acumula perdas. Se estiver bem acima, há espaço para crescer a estrutura ou distribuir lucros.
     </div>
 
-    <p>Para calcular a margem bruta de cada produto e ter uma base sólida de análise, use a <a href="/">Calculadora de Margem</a>.</p>
+    <div class="alert-box">
+      <strong>Margem de contribuição ≠ margem de lucro:</strong> A margem de contribuição desconta apenas os custos <em>variáveis</em> — não os fixos. Ela indica quanto cada venda "contribui" para pagar os fixos. Só após cobrir todos os fixos é que as vendas geram lucro líquido.
+    </div>
   </section>
 
 </main>
@@ -143,12 +423,346 @@
     <nav class="footer-nav" aria-label="Links do rodapé">
       <a href="/">Calculadora de Margem</a>
       <a href="/calculadora-lucro/">Calculadora de Lucro</a>
+      <a href="/calculadora-preco-venda/">Preço de Venda</a>
       <a href="/margem-bruta/">Margem Bruta</a>
       <a href="/margem-liquida/">Margem Líquida</a>
     </nav>
     <p>© 2025 CalculaMargem — Ferramenta gratuita para cálculo de margem de lucro, markup e preço de venda.</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("pt-BR", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(String(el ? el.value : "").replace(",", "."));
+    return isNaN(v) ? null : v;
+  }
+
+  function pct(el) {
+    var v = num(el);
+    return v === null ? null : v / 100;
+  }
+
+  // -------------------------------------------------------
+  // Calc 1 — Lucro por unidade
+  // -------------------------------------------------------
+  var uCusto   = document.getElementById("u-custo");
+  var uPv      = document.getElementById("u-pv");
+  var uQtd     = document.getElementById("u-qtd");
+  var uLucro   = document.getElementById("u-lucro");
+  var uMargem  = document.getElementById("u-margem");
+  var uMarkup  = document.getElementById("u-markup");
+  var uTotal   = document.getElementById("u-total");
+  var uTotalBox= document.getElementById("u-total-box");
+
+  function calcUnidade() {
+    var c  = num(uCusto);
+    var pv = num(uPv);
+    var q  = num(uQtd);
+
+    if (c === null || pv === null || c < 0 || pv <= 0) {
+      uLucro.textContent = uMargem.textContent = uMarkup.textContent = "—";
+      uTotalBox.style.display = "none";
+      return;
+    }
+
+    var lucro  = pv - c;
+    var margem = lucro / pv;
+    var markup = c > 0 ? lucro / c : null;
+
+    uLucro.textContent  = fmt(lucro);
+    uMargem.textContent = fmtPct(margem);
+    uMarkup.textContent = markup !== null ? fmtPct(markup) : "—";
+
+    if (q !== null && q > 0) {
+      uTotalBox.style.display = "flex";
+      uTotal.textContent = fmt(lucro * q);
+    } else {
+      uTotalBox.style.display = "none";
+    }
+  }
+
+  [uCusto, uPv, uQtd].forEach(function (el) { el.addEventListener("input", calcUnidade); });
+
+  // -------------------------------------------------------
+  // Calc 2 — Lucro do período
+  // -------------------------------------------------------
+  var pReceita     = document.getElementById("p-receita");
+  var pCmv         = document.getElementById("p-cmv");
+  var pLucroBruto  = document.getElementById("p-lucro-bruto");
+  var pMargemBruta = document.getElementById("p-margem-bruta");
+  var pCmvPct      = document.getElementById("p-cmv-pct");
+
+  function calcPeriodo() {
+    var r = num(pReceita);
+    var c = num(pCmv);
+
+    if (r === null || r <= 0) {
+      pLucroBruto.textContent = pMargemBruta.textContent = pCmvPct.textContent = "—";
+      return;
+    }
+
+    var cmv   = c !== null && c >= 0 ? c : 0;
+    var lucro = r - cmv;
+
+    pLucroBruto.textContent  = fmt(lucro);
+    pMargemBruta.textContent = fmtPct(lucro / r);
+    pCmvPct.textContent      = fmtPct(cmv / r);
+  }
+
+  [pReceita, pCmv].forEach(function (el) { el.addEventListener("input", calcPeriodo); });
+
+  // -------------------------------------------------------
+  // DRE Simplificada
+  // -------------------------------------------------------
+  var dReceita    = document.getElementById("d-receita-bruta");
+  var dDev        = document.getElementById("d-devolucoes");
+  var dImpVendas  = document.getElementById("d-imp-vendas");
+  var dCmv        = document.getElementById("d-cmv");
+  var dSalarios   = document.getElementById("d-salarios");
+  var dAluguel    = document.getElementById("d-aluguel");
+  var dEnergia    = document.getElementById("d-energia");
+  var dMarketing  = document.getElementById("d-marketing");
+  var dOutrasDesp = document.getElementById("d-outras-desp");
+  var dJuros      = document.getElementById("d-juros");
+  var dRecFin     = document.getElementById("d-receita-fin");
+  var dIr         = document.getElementById("d-ir");
+  var drePanel    = document.getElementById("dre-panel");
+
+  function sinal(v) { return v < 0 ? "dre-neg" : (v > 0 ? "dre-pos" : ""); }
+
+  function linhaSimples(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha ' + (classe || "") + '">' +
+      '<span class="dre-desc">' + label + '</span>' +
+      '<span class="dre-val ' + sinal(valor) + '">' + fmt(valor) + '</span>' +
+      '<span class="dre-pct">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function linhaResultado(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha dre-linha--resultado ' + (classe || "") + '">' +
+      '<span class="dre-desc"><strong>' + label + '</strong></span>' +
+      '<span class="dre-val dre-val--resultado ' + sinal(valor) + '"><strong>' + fmt(valor) + '</strong></span>' +
+      '<span class="dre-pct dre-pct--resultado">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function calcDRE() {
+    var rb  = num(dReceita);
+    if (rb === null || rb <= 0) {
+      drePanel.innerHTML = '<div class="divisor-placeholder"><p>Preencha a receita bruta para gerar a DRE.</p></div>';
+      return;
+    }
+
+    var dev     = num(dDev)       || 0;
+    var impV    = pct(dImpVendas) || 0;
+    var cmv     = num(dCmv)       || 0;
+    var sal     = num(dSalarios)  || 0;
+    var alug    = num(dAluguel)   || 0;
+    var en      = num(dEnergia)   || 0;
+    var mkt     = num(dMarketing) || 0;
+    var outrD   = num(dOutrasDesp)|| 0;
+    var juros   = num(dJuros)     || 0;
+    var recFin  = num(dRecFin)    || 0;
+    var irPct   = pct(dIr);
+
+    var impostoVendas   = rb * impV;
+    var recLiq          = rb - dev - impostoVendas;
+    var lucroBruto      = recLiq - cmv;
+    var totalDesp       = sal + alug + en + mkt + outrD;
+    var lucroOp         = lucroBruto - totalDesp;
+    var resFin          = recFin - juros;
+    var lucroAntesIR    = lucroOp + resFin;
+    var ir              = irPct !== null && lucroAntesIR > 0 ? lucroAntesIR * irPct : 0;
+    var lucroLiq        = lucroAntesIR - ir;
+
+    var html = '<div class="dre-output">';
+    html += '<div class="dre-header">DRE — Demonstração do Resultado</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("Receita bruta de vendas", rb, recLiq, "dre-receita");
+    if (dev > 0)           html += linhaSimples("(−) Devoluções e descontos", -dev, recLiq, "dre-linha--sub");
+    if (impostoVendas > 0) html += linhaSimples("(−) Impostos sobre vendas (" + fmtPct(impV) + ")", -impostoVendas, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Receita líquida", recLiq, recLiq, "dre-linha--bruto");
+    html += '</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("(−) CMV — custo das mercadorias", -cmv, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Lucro Bruto", lucroBruto, recLiq, lucroBruto >= 0 ? "dre-linha--bruto" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    if (totalDesp > 0) {
+      html += '<div class="dre-section">';
+      if (sal)   html += linhaSimples("(−) Salários e encargos", -sal, recLiq, "dre-linha--sub");
+      if (alug)  html += linhaSimples("(−) Aluguel / pró-labore", -alug, recLiq, "dre-linha--sub");
+      if (en)    html += linhaSimples("(−) Energia, internet e serviços", -en, recLiq, "dre-linha--sub");
+      if (mkt)   html += linhaSimples("(−) Marketing e publicidade", -mkt, recLiq, "dre-linha--sub");
+      if (outrD) html += linhaSimples("(−) Outras despesas operacionais", -outrD, recLiq, "dre-linha--sub");
+      html += linhaResultado("= Lucro Operacional", lucroOp, recLiq, lucroOp >= 0 ? "dre-linha--op" : "dre-linha--prejuizo");
+      html += '</div>';
+    }
+
+    if (resFin !== 0 || ir > 0) {
+      html += '<div class="dre-section">';
+      if (recFin > 0) html += linhaSimples("(+) Receitas financeiras", recFin, recLiq, "dre-linha--sub");
+      if (juros > 0)  html += linhaSimples("(−) Juros e despesas financeiras", -juros, recLiq, "dre-linha--sub");
+      if (ir > 0)     html += linhaSimples("(−) IR + CSLL (" + fmtPct(irPct) + ")", -ir, recLiq, "dre-linha--sub");
+      html += '</div>';
+    }
+
+    html += '<div class="dre-section">';
+    html += linhaResultado("= Lucro Líquido", lucroLiq, recLiq, lucroLiq >= 0 ? "dre-linha--liq" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    // Barra de composição
+    var pctCmvBar  = recLiq > 0 ? Math.min(cmv / recLiq, 1) : 0;
+    var pctDespBar = recLiq > 0 ? Math.min(totalDesp / recLiq, 1 - pctCmvBar) : 0;
+    var pctIrBar   = recLiq > 0 ? Math.min(ir / recLiq, 1 - pctCmvBar - pctDespBar) : 0;
+    var pctLiqBar  = Math.max(1 - pctCmvBar - pctDespBar - pctIrBar, 0);
+
+    html += '<div class="dre-bar-section">' +
+      '<div class="dre-bar-label">Composição da receita líquida</div>' +
+      '<div class="pv-bar">' +
+        '<div class="pv-bar-cost"   style="width:' + (pctCmvBar * 100).toFixed(1) + '%" title="CMV"></div>' +
+        '<div class="pv-bar-taxes"  style="width:' + (pctDespBar * 100).toFixed(1) + '%" title="Despesas"></div>' +
+        '<div class="dre-bar-ir"    style="width:' + (pctIrBar * 100).toFixed(1) + '%" title="IR/CSLL"></div>' +
+        '<div class="pv-bar-profit" style="width:' + (pctLiqBar * 100).toFixed(1) + '%" title="Lucro Líquido"></div>' +
+      '</div>' +
+      '<div class="pv-bar-legend">' +
+        '<span class="pv-legend-cost">CMV ' + fmtPct(pctCmvBar) + '</span>' +
+        '<span class="pv-legend-taxes">Despesas ' + fmtPct(pctDespBar) + '</span>' +
+        (pctIrBar > 0 ? '<span class="pv-legend-ir">IR ' + fmtPct(pctIrBar) + '</span>' : '') +
+        '<span class="pv-legend-profit">Lucro Líq. ' + fmtPct(pctLiqBar) + '</span>' +
+      '</div>' +
+    '</div>';
+
+    html += '</div>';
+    drePanel.innerHTML = html;
+  }
+
+  var dreInputs = [dReceita, dDev, dImpVendas, dCmv, dSalarios, dAluguel, dEnergia, dMarketing, dOutrasDesp, dJuros, dRecFin, dIr];
+  dreInputs.forEach(function (el) { el.addEventListener("input", calcDRE); });
+
+  // -------------------------------------------------------
+  // Ponto de Equilíbrio
+  // -------------------------------------------------------
+  var peFixos    = document.getElementById("pe-fixos");
+  var pePv       = document.getElementById("pe-pv");
+  var peCv       = document.getElementById("pe-cv");
+  var peMcPct    = document.getElementById("pe-mc-pct");
+  var peMcUnit   = document.getElementById("pe-mc-unit");
+  var pePanel    = document.getElementById("pe-panel");
+  var peSimWrap  = document.getElementById("pe-sim-wrap");
+  var peSimBody  = document.getElementById("pe-sim-body");
+  var peSimDesc  = document.getElementById("pe-sim-desc");
+
+  function calcPE() {
+    var fixos = num(peFixos);
+    var pvU   = num(pePv);
+    var cvU   = num(peCv);
+    var mcPct = pct(peMcPct);
+
+    // Calcula MC unitária se PV e CV estiverem preenchidos
+    var mcUnit = null;
+    var mcFrac = null;
+
+    if (pvU !== null && cvU !== null && pvU > 0) {
+      mcUnit = pvU - cvU;
+      mcFrac = mcUnit / pvU;
+      peMcUnit.textContent = fmt(mcUnit) + " (" + fmtPct(mcFrac) + ")";
+    } else {
+      peMcUnit.textContent = "—";
+    }
+
+    // Usa MC% digitado diretamente se não houver PV/CV
+    if (mcFrac === null && mcPct !== null) {
+      mcFrac = mcPct;
+    }
+
+    if (fixos === null || fixos <= 0 || mcFrac === null || mcFrac <= 0) {
+      pePanel.innerHTML = '<div class="divisor-placeholder"><p>Preencha os custos fixos e a margem de contribuição para calcular.</p></div>';
+      peSimWrap.style.display = "none";
+      return;
+    }
+
+    var peFat   = fixos / mcFrac;
+    var peUnid  = mcUnit !== null && mcUnit > 0 ? fixos / mcUnit : null;
+
+    pePanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Ponto de equilíbrio (faturamento)</div>' +
+          '<div class="divisor-main-value">' + fmt(peFat) + '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          (peUnid !== null
+            ? '<div class="divisor-row divisor-row--highlight"><span>PE em unidades</span><strong>' + Math.ceil(peUnid).toLocaleString("pt-BR") + ' unid.</strong></div>'
+            : '') +
+          '<div class="divisor-row"><span>Margem de contribuição</span><strong>' + fmtPct(mcFrac) + '</strong></div>' +
+          '<div class="divisor-row"><span>Custos fixos mensais</span><strong>' + fmt(fixos) + '</strong></div>' +
+          (mcUnit !== null ? '<div class="divisor-row"><span>MC por unidade</span><strong>' + fmt(mcUnit) + '</strong></div>' : '') +
+          (pvU !== null ? '<div class="divisor-row"><span>Preço de venda unitário</span><strong>' + fmt(pvU) + '</strong></div>' : '') +
+        '</div>' +
+      '</div>';
+
+    // Simulador de volumes
+    peSimWrap.style.display = "block";
+    peSimDesc.textContent = peUnid !== null
+      ? "PE = " + Math.ceil(peUnid).toLocaleString("pt-BR") + " unidades | abaixo disso há prejuízo, acima há lucro."
+      : "PE = " + fmt(peFat) + " de faturamento | a partir desse valor o negócio começa a lucrar.";
+
+    var multipliers = [0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.50, 3.00];
+    peSimBody.innerHTML = "";
+
+    multipliers.forEach(function (mult) {
+      var unid    = peUnid !== null ? Math.round(peUnid * mult) : null;
+      var fat     = pvU !== null && unid !== null ? pvU * unid : peFat * mult;
+      var custoV  = pvU !== null && cvU !== null && unid !== null ? cvU * unid : fat * (1 - mcFrac);
+      var mc      = fat * mcFrac;
+      var result  = mc - fixos;
+      var isPE    = Math.abs(mult - 1.00) < 0.001;
+
+      var tr = document.createElement("tr");
+      if (isPE) { tr.style.fontWeight = "600"; tr.style.background = "var(--color-highlight-bg)"; }
+
+      var statusTxt, statusCls;
+      if (result < 0)      { statusTxt = "Prejuízo"; statusCls = "sim-status sim-status--ruim"; }
+      else if (isPE)       { statusTxt = "Equilíbrio"; statusCls = "sim-status sim-status--atencao"; }
+      else                 { statusTxt = "Lucro"; statusCls = "sim-status sim-status--ok"; }
+
+      tr.innerHTML =
+        "<td>" + (unid !== null ? unid.toLocaleString("pt-BR") + " unid." : fmt(fat)) + (isPE ? " (PE)" : "") + "</td>" +
+        "<td>" + fmt(fat) + "</td>" +
+        "<td>" + fmt(custoV) + "</td>" +
+        "<td>" + fmt(mc) + "</td>" +
+        "<td " + (result < 0 ? "style='color:#c2410c'" : "style='color:var(--color-primary-dark)'") + ">" +
+          (result >= 0 ? "+" : "") + fmt(result) +
+        "</td>" +
+        "<td><span class='" + statusCls + "'>" + statusTxt + "</span></td>";
+
+      peSimBody.appendChild(tr);
+    });
+  }
+
+  [peFixos, pePv, peCv, peMcPct].forEach(function (el) { el.addEventListener("input", calcPE); });
+
+})();
+</script>
 
 </body>
 </html>

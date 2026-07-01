@@ -3,30 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de Desconto: Impacto na Margem de Lucro — CalculaMargem</title>
-<meta name="description" content="Veja como um desconto afeta sua margem de lucro antes de oferecê-lo. Fórmulas, tabelas e exemplos para calcular o impacto real de descontos na rentabilidade.">
+<title>Calculadora de Desconto: Impacto Real na Margem de Lucro — CalculaMargem</title>
+<meta name="description" content="Calcule o impacto de um desconto na sua margem de lucro antes de oferecê-lo. Impacto na margem, desconto máximo seguro e simulador de descontos. Ferramenta gratuita.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://calculamargem.com.br/calculadora-desconto/">
+
 <meta property="og:type" content="website">
-<meta property="og:title" content="Calculadora de Desconto — CalculaMargem">
-<meta property="og:description" content="Veja como um desconto afeta sua margem antes de oferecê-lo.">
+<meta property="og:title" content="Calculadora de Desconto: Impacto na Margem — CalculaMargem">
+<meta property="og:description" content="Veja o impacto real de um desconto na sua margem antes de oferecê-lo. Desconto máximo seguro e simulador incluídos.">
 <meta property="og:url" content="https://calculamargem.com.br/calculadora-desconto/">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="CalculaMargem">
+
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Desconto: Impacto na Margem — CalculaMargem">
+<meta name="twitter:description" content="Calcule o impacto real de um desconto na sua margem de lucro. Ferramenta gratuita.">
+
 <link rel="stylesheet" href="../css/style.css">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" },
-    { "@type": "ListItem", "position": 2, "name": "Calculadora de Desconto", "item": "https://calculamargem.com.br/calculadora-desconto/" }
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://calculamargem.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculadora de Desconto", "item": "https://calculamargem.com.br/calculadora-desconto/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/calculadora-desconto/",
+      "name": "Calculadora de Desconto: Impacto na Margem de Lucro",
+      "description": "Calcule o impacto de um desconto na margem de lucro e descubra o desconto máximo que você pode oferecer sem entrar em prejuízo.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/#website" }
+    }
   ]
 }
 </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L3J38JGCBN');</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
 </head>
 <body>
 
@@ -34,9 +60,9 @@
 
 <header class="site-header">
   <div class="container">
-    <p style="font-size:1.3rem;font-weight:700;color:var(--color-primary-dark);margin:0 0 6px"><a href="/" style="color:inherit;text-decoration:none">CalculaMargem</a></p>
+    <p class="site-brand"><a href="/">CalculaMargem</a></p>
     <h1>Calculadora de Desconto</h1>
-    <p class="tagline">Saiba exatamente o impacto de um desconto na sua margem antes de oferecê-lo</p>
+    <p class="tagline">Veja o impacto real na sua margem antes de oferecer qualquer desconto</p>
   </div>
 </header>
 
@@ -55,88 +81,288 @@
 <main class="container" id="main">
 
   <nav class="breadcrumb" aria-label="Localização">
-    <a href="/">Início</a> <span>›</span> <span>Calculadora de Desconto</span>
+    <a href="/">Início</a>
+    <span aria-hidden="true">›</span>
+    <span>Calculadora de Desconto</span>
   </nav>
 
-  <div class="coming-soon-banner">
-    A calculadora interativa de desconto está em desenvolvimento. Use as tabelas e fórmulas abaixo para calcular o impacto do desconto na sua margem agora mesmo.
+  <section class="intro">
+    <p>Um desconto de 10% no preço pode reduzir o lucro em 33%, 50% ou até 100% — dependendo da sua margem atual. Use as calculadoras abaixo para saber exatamente o impacto <strong>antes</strong> de oferecer qualquer desconto.</p>
+  </section>
+
+  <!-- ====================================================
+       CALCULADORAS 1 e 2 — lado a lado
+  ===================================================== -->
+  <section class="calculators" aria-label="Calculadoras de desconto">
+
+    <!-- CALC 1: Desconto simples -->
+    <article class="card" id="calc-desconto-simples">
+      <h2>Calcular preço com desconto</h2>
+      <p class="card-desc">Informe o preço original e o percentual de desconto para ver o novo preço e a economia.</p>
+
+      <div class="field">
+        <label for="s-preco">Preço original (R$)</label>
+        <input type="number" id="s-preco" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 150,00">
+      </div>
+      <div class="field">
+        <label for="s-desc">Desconto (%)</label>
+        <input type="number" id="s-desc" inputmode="decimal" min="0" max="100" step="0.5" placeholder="Ex: 15">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Preço com desconto</span>
+          <span class="result-value" id="s-novo-preco">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Economia do cliente (R$)</span>
+          <span class="result-value" id="s-economia">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Fator multiplicador</span>
+          <span class="result-value" id="s-fator">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CALC 2: Impacto na margem -->
+    <article class="card" id="calc-impacto-margem">
+      <h2>Impacto do desconto na margem</h2>
+      <p class="card-desc">Informe custo, preço de venda e desconto para ver o efeito real na sua rentabilidade.</p>
+
+      <div class="field">
+        <label for="i-custo">Custo do produto (R$)</label>
+        <input type="number" id="i-custo" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 60,00">
+      </div>
+      <div class="field">
+        <label for="i-pv">Preço de venda atual (R$)</label>
+        <input type="number" id="i-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 100,00">
+      </div>
+      <div class="field">
+        <label for="i-desc">Desconto a oferecer (%)</label>
+        <input type="number" id="i-desc" inputmode="decimal" min="0" max="100" step="0.5" placeholder="Ex: 10">
+      </div>
+
+      <div class="results" id="i-results">
+        <div class="result" id="i-status-box">
+          <span class="result-label">Status</span>
+          <span class="result-value" id="i-status">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Nova margem</span>
+          <span class="result-value" id="i-nova-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Novo lucro</span>
+          <span class="result-value" id="i-novo-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Redução no lucro</span>
+          <span class="result-value" id="i-reducao">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       PAINEL COMPARATIVO (ativado pela calc 2)
+  ===================================================== -->
+  <div id="comparativo-wrap" style="display:none" aria-live="polite">
+    <div class="content-section comparativo-section">
+      <h2 style="margin-top:0">Antes × Depois do Desconto</h2>
+      <div class="comparativo-grid">
+
+        <div class="comparativo-col comparativo-antes">
+          <div class="comparativo-label">Sem desconto</div>
+          <div class="comparativo-pv"   id="c-pv-antes">—</div>
+          <div class="comparativo-rows">
+            <div class="comparativo-row"><span>Margem</span><strong id="c-margem-antes">—</strong></div>
+            <div class="comparativo-row"><span>Lucro</span><strong id="c-lucro-antes">—</strong></div>
+          </div>
+        </div>
+
+        <div class="comparativo-seta" aria-hidden="true">→</div>
+
+        <div class="comparativo-col comparativo-depois" id="comparativo-depois-col">
+          <div class="comparativo-label">Com <span id="c-desc-label">—</span> de desconto</div>
+          <div class="comparativo-pv"   id="c-pv-depois">—</div>
+          <div class="comparativo-rows">
+            <div class="comparativo-row"><span>Margem</span><strong id="c-margem-depois">—</strong></div>
+            <div class="comparativo-row"><span>Lucro</span><strong id="c-lucro-depois">—</strong></div>
+            <div class="comparativo-row comparativo-row--delta"><span>Redução do lucro</span><strong id="c-delta">—</strong></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="c-alerta" class="alert-box" style="margin-top:16px;display:none"></div>
+
+      <div class="desconto-bar-wrap">
+        <div class="desconto-bar-label">Composição do preço com desconto</div>
+        <div class="pv-bar" id="c-barra">
+          <div class="pv-bar-cost"   id="c-barra-custo"  style="width:0%"></div>
+          <div class="pv-bar-profit" id="c-barra-lucro"  style="width:0%"></div>
+          <div class="pv-bar-taxes"  id="c-barra-perda"  style="width:0%"></div>
+        </div>
+        <div class="pv-bar-legend">
+          <span class="pv-legend-cost">Custo</span>
+          <span class="pv-legend-profit">Lucro restante</span>
+          <span class="pv-legend-taxes">Lucro perdido</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <section class="content-section">
-    <h2>Por que Calcular o Impacto do Desconto Antes de Oferecer?</h2>
-    <p>Um desconto de 10% no preço de venda pode parecer pequeno, mas seu impacto na margem é muito maior do que parece. Em um produto com margem de 30%, um desconto de 10% reduz o lucro em <strong>33%</strong>. Em um produto com margem de 20%, o mesmo desconto de 10% elimina <strong>50%</strong> do lucro.</p>
+  <!-- ====================================================
+       CALCULADORA 3 — Desconto Máximo Seguro
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-maximo">
+    <h2>Calculadora de Desconto Máximo Seguro</h2>
+    <p>Defina custo, preço de venda e a <strong>margem mínima aceitável</strong> para saber até onde você pode descontar sem comprometer sua rentabilidade.</p>
 
-    <div class="alert-box">
-      <strong>Atenção:</strong> Nunca ofereça descontos sem calcular antes a nova margem. Um desconto bem-intencionado pode transformar uma venda lucrativa em prejuízo.
+    <div class="divisor-grid">
+
+      <div class="divisor-inputs">
+        <div class="field">
+          <label for="mx-custo">Custo do produto (R$)</label>
+          <input type="number" id="mx-custo" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 60,00">
+        </div>
+        <div class="field">
+          <label for="mx-pv">Preço de venda atual (R$)</label>
+          <input type="number" id="mx-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 100,00">
+        </div>
+        <div class="field">
+          <label for="mx-min">Margem mínima aceitável (%)
+            <span class="field-hint">o menor lucro percentual que você aceita ter após o desconto</span>
+          </label>
+          <input type="number" id="mx-min" inputmode="decimal" min="0" max="99" step="0.5" placeholder="Ex: 15">
+        </div>
+      </div>
+
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="maximo-panel">
+          <div class="divisor-placeholder">
+            <p>Preencha custo, preço de venda e a margem mínima desejada.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="content-section">
-    <h2>Como Calcular a Nova Margem Após o Desconto</h2>
+  <!-- ====================================================
+       SIMULADOR DE DESCONTOS
+  ===================================================== -->
+  <section class="content-section" id="simulador">
+    <h2>Simulador: Impacto de Cada Desconto</h2>
+    <p>Preencha a <strong>Calculadora de Desconto Máximo</strong> acima para ver o impacto de diferentes percentuais de desconto na sua margem.</p>
+
+    <div id="sim-aviso" class="tip-box">
+      Preencha custo e preço de venda na calculadora acima para ativar o simulador.
+    </div>
+
+    <div id="sim-wrap" style="display:none">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Desconto</th>
+              <th>Novo preço</th>
+              <th>Novo lucro</th>
+              <th>Nova margem</th>
+              <th>Redução do lucro</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="sim-body"></tbody>
+        </table>
+      </div>
+      <p class="table-note" id="sim-note"></p>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       CONTEÚDO EDITORIAL
+  ===================================================== -->
+  <section class="content-section" id="por-que-calcular">
+    <h2>Por que o Desconto Destrói Mais Lucro do que Parece?</h2>
+    <p>A lógica parece simples: desconto de 10% = redução de 10% no lucro. Mas não é assim que funciona. O desconto incide sobre o <em>preço de venda</em>, enquanto o lucro representa apenas <em>uma parte</em> desse preço. Quando você desconta 10%, perde uma fatia do lucro, não 10% dele.</p>
 
     <div class="formula-highlight">
-      <strong>Novo Preço = Preço Original × (1 − Desconto%)<br>
-      Nova Margem = (Novo Preço − Custo) ÷ Novo Preço × 100</strong>
+      <strong>Redução do lucro (%) = Desconto% ÷ Margem original</strong>
     </div>
 
     <div class="example-box">
-      <h3>Exemplo</h3>
-      <p>Produto com custo R$ 60,00, preço de venda R$ 100,00 (margem 40%).<br>
-      Desconto de 15%: Novo preço = R$ 100 × (1 − 0,15) = R$ 85,00.<br>
-      Nova margem = (R$ 85,00 − R$ 60,00) ÷ R$ 85,00 × 100 = <strong>29,4%</strong></p>
-      <p>Um desconto de 15% reduziu a margem de 40% para 29,4% — uma queda de <strong>10,6 pontos percentuais</strong> e uma redução de lucro de <strong>26,5%</strong>.</p>
+      <h3>Exemplo com margem de 20%</h3>
+      <p>Produto com custo R$ 80, vendido por R$ 100 (margem de 20%, lucro = R$ 20).</p>
+      <p>Desconto de 10%: novo preço = R$ 90. Novo lucro = R$ 90 − R$ 80 = R$ 10.</p>
+      <p>Redução do lucro: R$ 10 perdidos de R$ 20 = <strong>50% do lucro eliminado</strong> por um desconto de apenas 10%.</p>
+      <p>Pela fórmula: 10% ÷ 20% = <strong>50%</strong> ✓</p>
     </div>
-  </section>
 
-  <section class="content-section">
-    <h2>Tabela: Impacto do Desconto na Margem de Lucro</h2>
-    <p>Margem original de cada coluna. Desconto na linha. Veja a nova margem resultante:</p>
-
+    <h3>A regra dos descontos por nível de margem</h3>
     <div class="table-wrapper">
       <table>
         <thead>
           <tr>
-            <th>Desconto</th>
-            <th>Margem original 20%</th>
-            <th>Margem original 30%</th>
-            <th>Margem original 40%</th>
-            <th>Margem original 50%</th>
+            <th>Margem atual</th>
+            <th>Desconto 5%</th>
+            <th>Desconto 10%</th>
+            <th>Desconto 15%</th>
+            <th>Desconto 20%</th>
           </tr>
         </thead>
-        <tbody>
-          <tr><td>5%</td><td>15,8%</td><td>26,3%</td><td>36,8%</td><td>47,4%</td></tr>
-          <tr><td>10%</td><td>11,1%</td><td>22,2%</td><td>33,3%</td><td>44,4%</td></tr>
-          <tr><td>15%</td><td>5,9%</td><td>17,6%</td><td>29,4%</td><td>41,2%</td></tr>
-          <tr><td>20%</td><td>0%</td><td>12,5%</td><td>25,0%</td><td>37,5%</td></tr>
-          <tr><td>25%</td><td>−6,7%</td><td>6,7%</td><td>20,0%</td><td>33,3%</td></tr>
-        </tbody>
+        <tbody id="tabela-impacto-body"></tbody>
       </table>
+    </div>
+    <p class="table-note">Valores mostram a redução percentual no lucro. Em vermelho: desconto gera prejuízo.</p>
+  </section>
+
+  <section class="content-section" id="quando-descontar">
+    <h2>Quando Vale a Pena Dar Desconto?</h2>
+    <p>Um desconto é financeiramente justificável quando ele provoca um aumento de volume suficiente para compensar a queda na margem. A equação é:</p>
+
+    <div class="formula-highlight">
+      <strong>Volume extra necessário = Desconto% ÷ (Margem% − Desconto%)</strong>
+    </div>
+
+    <div class="example-box">
+      <h3>Exemplo: vale dar 10% de desconto com margem de 30%?</h3>
+      <p>Volume extra = 10% ÷ (30% − 10%) = 10% ÷ 20% = <strong>50% mais unidades</strong>.</p>
+      <p>Ou seja: com margem de 30%, um desconto de 10% só se paga se você vender pelo menos 50% a mais. Se vender menos do que isso, a promoção gerou prejuízo líquido.</p>
     </div>
 
     <div class="tip-box">
-      <strong>Leitura da tabela:</strong> Um produto com margem de 20% não suporta desconto de 20% — a nova margem seria zero (sem prejuízo, mas também sem lucro). Com desconto de 25%, já entra em prejuízo.
+      <strong>Dica:</strong> Antes de oferecer um desconto, pergunte: "Esse desconto vai fazer eu vender X% a mais?" Se a resposta for "sim" com segurança, o desconto faz sentido. Se for "talvez", prefira oferecer bônus, frete grátis ou brinde — que custam menos e percebem valor maior para o cliente.
+    </div>
+
+    <div class="alert-box">
+      <strong>Cuidado com descontos recorrentes:</strong> Treinar o cliente a esperar sempre uma promoção destrói a percepção de valor do produto. Uma vez que o cliente aprende que pode comprar mais barato "esperando a oferta", o preço cheio perde credibilidade — e sua margem nunca se recupera.
     </div>
   </section>
 
-  <section class="content-section">
-    <h2>Desconto Máximo Possível por Nível de Margem</h2>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr><th>Margem Atual</th><th>Desconto Máximo Sem Prejuízo</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>15%</td><td>15%</td></tr>
-          <tr><td>20%</td><td>20%</td></tr>
-          <tr><td>25%</td><td>25%</td></tr>
-          <tr><td>30%</td><td>30%</td></tr>
-          <tr><td>40%</td><td>40%</td></tr>
-          <tr><td>50%</td><td>50%</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <section class="content-section" id="alternativas-desconto">
+    <h2>Alternativas ao Desconto que Preservam a Margem</h2>
 
-    <p>Para calcular sua margem atual e saber qual desconto máximo você pode oferecer, use a <a href="/">Calculadora de Margem</a>.</p>
+    <div class="error-grid">
+      <div class="error-item" style="border-color:var(--color-border)">
+        <h3 style="color:var(--color-primary-dark)">Brinde ou item adicional</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Um brinde com custo de R$ 8 parece mais valioso para o cliente do que um desconto de R$ 10 no preço. Você preserva o preço de referência do produto principal.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border)">
+        <h3 style="color:var(--color-primary-dark)">Frete grátis</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Frete grátis converte mais do que desconto equivalente no preço. Você absorve o custo real do frete, mas não destrói o preço de referência do produto.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border)">
+        <h3 style="color:var(--color-primary-dark)">Desconto em kit / combo</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Desconto de 10% em um kit de 3 unidades aumenta o ticket médio e mantém o preço unitário intacto. A margem cai, mas o lucro total por transação aumenta.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border)">
+        <h3 style="color:var(--color-primary-dark)">Cashback / pontos de fidelidade</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">O cliente percebe o benefício, mas o custo real para você é menor — e ele só usa o benefício em uma compra futura, gerando retenção sem sacrificar a margem presente.</p>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -145,13 +371,313 @@
   <div class="container">
     <nav class="footer-nav" aria-label="Links do rodapé">
       <a href="/">Calculadora de Margem</a>
-      <a href="/calculadora-desconto/">Calculadora de Desconto</a>
       <a href="/calculadora-markup/">Calculadora de Markup</a>
+      <a href="/calculadora-preco-venda/">Preço de Venda</a>
+      <a href="/calculadora-desconto/">Calculadora de Desconto</a>
       <a href="/formacao-de-preco/">Formação de Preço</a>
     </nav>
     <p>© 2025 CalculaMargem — Ferramenta gratuita para cálculo de margem de lucro, markup e preço de venda.</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  }
+
+  function fmtPct(v, dec) {
+    return (v * 100).toLocaleString("pt-BR", {
+      minimumFractionDigits: dec !== undefined ? dec : 2,
+      maximumFractionDigits: dec !== undefined ? dec : 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(String(el ? el.value : "").replace(",", "."));
+    return isNaN(v) ? null : v;
+  }
+
+  // -------------------------------------------------------
+  // Calc 1 — Desconto simples
+  // -------------------------------------------------------
+  var sPreco    = document.getElementById("s-preco");
+  var sDesc     = document.getElementById("s-desc");
+  var sNovoPreco= document.getElementById("s-novo-preco");
+  var sEconomia = document.getElementById("s-economia");
+  var sFator    = document.getElementById("s-fator");
+
+  function calcSimples() {
+    var p = num(sPreco);
+    var d = num(sDesc);
+
+    if (p === null || d === null || p <= 0 || d < 0 || d > 100) {
+      sNovoPreco.textContent = sEconomia.textContent = sFator.textContent = "—";
+      return;
+    }
+
+    var df        = d / 100;
+    var novoPreco = p * (1 - df);
+    var economia  = p - novoPreco;
+
+    sNovoPreco.textContent = fmt(novoPreco);
+    sEconomia.textContent  = fmt(economia);
+    sFator.textContent     = "×" + (1 - df).toLocaleString("pt-BR", {minimumFractionDigits:2, maximumFractionDigits:4});
+  }
+
+  sPreco.addEventListener("input", calcSimples);
+  sDesc.addEventListener("input", calcSimples);
+
+  // -------------------------------------------------------
+  // Calc 2 — Impacto na margem + comparativo
+  // -------------------------------------------------------
+  var iCusto      = document.getElementById("i-custo");
+  var iPv         = document.getElementById("i-pv");
+  var iDesc       = document.getElementById("i-desc");
+  var iStatusBox  = document.getElementById("i-status-box");
+  var iStatus     = document.getElementById("i-status");
+  var iNovaMargem = document.getElementById("i-nova-margem");
+  var iNovoLucro  = document.getElementById("i-novo-lucro");
+  var iReducao    = document.getElementById("i-reducao");
+
+  var compWrap      = document.getElementById("comparativo-wrap");
+  var cPvAntes      = document.getElementById("c-pv-antes");
+  var cMargemAntes  = document.getElementById("c-margem-antes");
+  var cLucroAntes   = document.getElementById("c-lucro-antes");
+  var cDescLabel    = document.getElementById("c-desc-label");
+  var cPvDepois     = document.getElementById("c-pv-depois");
+  var cMargemDepois = document.getElementById("c-margem-depois");
+  var cLucroDepois  = document.getElementById("c-lucro-depois");
+  var cDelta        = document.getElementById("c-delta");
+  var cAlerta       = document.getElementById("c-alerta");
+  var cDepoisCol    = document.getElementById("comparativo-depois-col");
+  var cBarraCusto   = document.getElementById("c-barra-custo");
+  var cBarraLucro   = document.getElementById("c-barra-lucro");
+  var cBarraPerda   = document.getElementById("c-barra-perda");
+
+  function calcImpacto() {
+    var c  = num(iCusto);
+    var pv = num(iPv);
+    var d  = num(iDesc);
+
+    if (c === null || pv === null || c < 0 || pv <= 0) {
+      iStatus.textContent = iNovaMargem.textContent = iNovoLucro.textContent = iReducao.textContent = "—";
+      iStatusBox.className = "result";
+      compWrap.style.display = "none";
+      return;
+    }
+
+    var margemOrig = (pv - c) / pv;
+    var lucroOrig  = pv - c;
+
+    if (d === null || d < 0) {
+      iStatus.textContent  = "—";
+      iNovaMargem.textContent = "—";
+      iNovoLucro.textContent  = "—";
+      iReducao.textContent    = "—";
+      iStatusBox.className    = "result";
+      compWrap.style.display  = "none";
+      return;
+    }
+
+    var df         = d / 100;
+    var novoPv     = pv * (1 - df);
+    var novoLucro  = novoPv - c;
+    var novaMargem = novoLucro / novoPv;
+    var reducao    = (lucroOrig > 0) ? (lucroOrig - novoLucro) / lucroOrig : 0;
+
+    iNovaMargem.textContent = fmtPct(novaMargem);
+    iNovoLucro.textContent  = fmt(novoLucro);
+    iReducao.textContent    = fmtPct(reducao);
+
+    if (novoLucro < 0) {
+      iStatus.textContent  = "✗ Prejuízo";
+      iStatusBox.className = "result result--warn";
+    } else if (novoLucro === 0) {
+      iStatus.textContent  = "Zero de lucro";
+      iStatusBox.className = "result result--warn";
+    } else {
+      iStatus.textContent  = "✓ Ainda lucrativo";
+      iStatusBox.className = "result result--ok";
+    }
+
+    // Comparativo
+    compWrap.style.display = "block";
+    cPvAntes.textContent      = fmt(pv);
+    cMargemAntes.textContent  = fmtPct(margemOrig);
+    cLucroAntes.textContent   = fmt(lucroOrig);
+    cDescLabel.textContent    = d.toLocaleString("pt-BR") + "%";
+    cPvDepois.textContent     = fmt(novoPv);
+    cMargemDepois.textContent = fmtPct(novaMargem);
+    cLucroDepois.textContent  = fmt(novoLucro);
+    cDelta.textContent        = "−" + fmtPct(reducao) + " do lucro";
+
+    if (novoLucro < 0) {
+      cDepoisCol.className = "comparativo-col comparativo-depois comparativo-depois--prejuizo";
+      cAlerta.style.display = "block";
+      cAlerta.innerHTML = "<strong>Prejuízo de " + fmt(Math.abs(novoLucro)) + " por unidade.</strong> Com esse desconto você paga para vender: cada venda gera uma perda real. O custo do produto não é coberto pelo preço praticado.";
+    } else {
+      cDepoisCol.className = "comparativo-col comparativo-depois";
+      cAlerta.style.display = "none";
+    }
+
+    // Barra de composição
+    var pctCusto  = c / novoPv;
+    var pctLucro  = novoLucro > 0 ? novoLucro / novoPv : 0;
+    var pctPerda  = 1 - pctCusto - (pctLucro > 0 ? pctLucro : 0);
+    if (novoLucro < 0) { pctPerda = 1 - pctCusto; }
+
+    cBarraCusto.style.width  = (Math.min(pctCusto, 1) * 100).toFixed(1) + "%";
+    cBarraLucro.style.width  = (Math.max(pctLucro, 0) * 100).toFixed(1) + "%";
+    cBarraPerda.style.width  = (Math.max(pctPerda, 0) * 100).toFixed(1) + "%";
+  }
+
+  [iCusto, iPv, iDesc].forEach(function (el) { el.addEventListener("input", calcImpacto); });
+
+  // -------------------------------------------------------
+  // Calc 3 — Desconto máximo seguro + simulador
+  // -------------------------------------------------------
+  var mxCusto  = document.getElementById("mx-custo");
+  var mxPv     = document.getElementById("mx-pv");
+  var mxMin    = document.getElementById("mx-min");
+  var mxPanel  = document.getElementById("maximo-panel");
+  var simAviso = document.getElementById("sim-aviso");
+  var simWrap  = document.getElementById("sim-wrap");
+  var simBody  = document.getElementById("sim-body");
+  var simNote  = document.getElementById("sim-note");
+
+  function calcMaximo() {
+    var c   = num(mxCusto);
+    var pv  = num(mxPv);
+    var min = num(mxMin);
+
+    if (c === null || pv === null || c < 0 || pv <= 0) {
+      mxPanel.innerHTML = '<div class="divisor-placeholder"><p>Preencha custo, preço de venda e margem mínima.</p></div>';
+      simAviso.style.display = "block";
+      simWrap.style.display  = "none";
+      return;
+    }
+
+    var margemAtual   = (pv - c) / pv;
+    var lucroAtual    = pv - c;
+
+    // Desconto máximo sem prejuízo: novo preço = custo → novo preço = pv*(1-d) = c → d = 1 - c/pv
+    var descMaxSemPrejuizo = 1 - c / pv;  // = margemAtual
+
+    // Desconto máximo mantendo margem mínima
+    var descMaxMinMargem = null;
+    if (min !== null && min >= 0 && min < 100) {
+      var minF = min / 100;
+      // (pv*(1-d) - c) / (pv*(1-d)) = minF
+      // pv*(1-d)*(1-minF) = c
+      // 1-d = c / (pv*(1-minF))
+      var novoPrecoMin = c / (1 - minF);
+      descMaxMinMargem = 1 - novoPrecoMin / pv;
+    }
+
+    var hasMin = descMaxMinMargem !== null && descMaxMinMargem > 0;
+
+    mxPanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Desconto máximo sem prejuízo</div>' +
+          '<div class="divisor-main-value">' + fmtPct(descMaxSemPrejuizo) + '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          '<div class="divisor-row"><span>Margem atual</span><strong>' + fmtPct(margemAtual) + '</strong></div>' +
+          '<div class="divisor-row"><span>Lucro atual por unidade</span><strong>' + fmt(lucroAtual) + '</strong></div>' +
+          (hasMin
+            ? '<div class="divisor-row divisor-row--highlight"><span>Desconto máximo mantendo ' + fmtPct(min/100) + ' de margem</span><strong>' + fmtPct(descMaxMinMargem) + '</strong></div>' +
+              '<div class="divisor-row"><span>Preço mínimo para manter margem</span><strong>' + fmt(c / (1 - min / 100)) + '</strong></div>'
+            : '<div class="divisor-row" style="color:var(--color-text-muted);font-size:0.88rem;padding:12px 18px">Informe a margem mínima para ver o desconto máximo seguro.</div>'
+          ) +
+          '<div class="divisor-row"><span>Preço de venda atual</span><strong>' + fmt(pv) + '</strong></div>' +
+          '<div class="divisor-row"><span>Custo do produto</span><strong>' + fmt(c) + '</strong></div>' +
+        '</div>' +
+      '</div>';
+
+    // Simulador
+    simAviso.style.display = "none";
+    simWrap.style.display  = "block";
+    simNote.textContent    = "Custo: " + fmt(c) + " | Preço atual: " + fmt(pv) + " | Margem atual: " + fmtPct(margemAtual) + (min !== null ? " | Margem mínima: " + fmtPct(min/100) : "");
+
+    var descontos = [0.03, 0.05, 0.08, 0.10, 0.12, 0.15, 0.18, 0.20, 0.25, 0.30, 0.35, 0.40, 0.50];
+    simBody.innerHTML = "";
+
+    descontos.forEach(function (d) {
+      var novoPv     = pv * (1 - d);
+      var novoLucro  = novoPv - c;
+      var novaMargem = novoLucro / novoPv;
+      var reducao    = lucroAtual > 0 ? (lucroAtual - novoLucro) / lucroAtual : 0;
+
+      var tr = document.createElement("tr");
+      var statusText, statusClass;
+
+      if (novoLucro < 0) {
+        statusText  = "Prejuízo";
+        statusClass = "sim-status sim-status--ruim";
+      } else if (min !== null && novaMargem < min / 100 - 0.0001) {
+        statusText  = "Abaixo do mínimo";
+        statusClass = "sim-status sim-status--atencao";
+      } else {
+        statusText  = "OK";
+        statusClass = "sim-status sim-status--ok";
+      }
+
+      tr.innerHTML =
+        "<td>" + fmtPct(d, 0) + "</td>" +
+        "<td>" + fmt(novoPv) + "</td>" +
+        "<td>" + (novoLucro >= 0 ? fmt(novoLucro) : "<span style='color:#c2410c'>" + fmt(novoLucro) + "</span>") + "</td>" +
+        "<td>" + (novoLucro >= 0 ? fmtPct(novaMargem) : "<span style='color:#c2410c'>" + fmtPct(novaMargem) + "</span>") + "</td>" +
+        "<td>" + fmtPct(reducao) + "</td>" +
+        "<td><span class='" + statusClass + "'>" + statusText + "</span></td>";
+
+      if (d === 0 || Math.abs(d - descMaxSemPrejuizo) < 0.001) {
+        tr.style.fontWeight = "600";
+      }
+
+      simBody.appendChild(tr);
+    });
+  }
+
+  [mxCusto, mxPv, mxMin].forEach(function (el) { el.addEventListener("input", calcMaximo); });
+
+  // -------------------------------------------------------
+  // Tabela estática de impacto por margem
+  // -------------------------------------------------------
+  var margens   = [0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.50];
+  var descontos = [0.05, 0.10, 0.15, 0.20];
+  var tbody     = document.getElementById("tabela-impacto-body");
+
+  margens.forEach(function (mg) {
+    var tr = document.createElement("tr");
+    var tdMg = document.createElement("td");
+    tdMg.textContent = fmtPct(mg, 0);
+    tr.appendChild(tdMg);
+
+    descontos.forEach(function (d) {
+      var td      = document.createElement("td");
+      var reducao = d / mg;
+
+      if (reducao >= 1) {
+        td.textContent = "Prejuízo";
+        td.style.color = "#c2410c";
+        td.style.fontWeight = "700";
+      } else {
+        td.textContent = "−" + fmtPct(reducao, 0) + " do lucro";
+        if (reducao > 0.5) { td.style.color = "#c2410c"; }
+        else if (reducao > 0.3) { td.style.color = "#ea580c"; }
+      }
+      tr.appendChild(td);
+    });
+
+    tbody.appendChild(tr);
+  });
+
+})();
+</script>
 
 </body>
 </html>

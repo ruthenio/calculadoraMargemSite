@@ -994,6 +994,285 @@ td:last-child, th:last-child {
 }
 
 /* ===========================
+   COMPARATIVO ANTES × DEPOIS
+=========================== */
+.comparativo-section {
+  margin-bottom: 24px;
+}
+
+.comparativo-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0 16px;
+}
+
+@media (max-width: 600px) {
+  .comparativo-grid {
+    grid-template-columns: 1fr;
+  }
+  .comparativo-seta {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+}
+
+.comparativo-col {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.comparativo-label {
+  padding: 10px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.comparativo-pv {
+  padding: 16px 16px 8px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.comparativo-antes .comparativo-pv {
+  color: var(--color-text-muted);
+}
+
+.comparativo-depois .comparativo-pv {
+  color: var(--color-primary-dark);
+}
+
+.comparativo-depois--prejuizo .comparativo-pv {
+  color: #c2410c;
+}
+
+.comparativo-rows {
+  padding: 0 0 8px;
+}
+
+.comparativo-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  border-top: 1px solid var(--color-border);
+  gap: 8px;
+}
+
+.comparativo-row span {
+  color: var(--color-text-muted);
+}
+
+.comparativo-row strong {
+  color: var(--color-text);
+}
+
+.comparativo-row--delta {
+  background: var(--color-alert-bg);
+}
+
+.comparativo-row--delta strong {
+  color: #c2410c;
+}
+
+.comparativo-seta {
+  font-size: 1.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Barra desconto */
+.desconto-bar-wrap {
+  margin-top: 16px;
+}
+
+.desconto-bar-label {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+/* ===========================
+   BADGES DE STATUS (simulador)
+=========================== */
+.sim-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.sim-status--ok {
+  background: var(--color-highlight-bg);
+  color: var(--color-primary-dark);
+}
+
+.sim-status--atencao {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.sim-status--ruim {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* ===========================
+   DRE — Demonstração do Resultado
+=========================== */
+.dre-grid .divisor-results {
+  min-width: 0;
+}
+
+.dre-panel {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  position: sticky;
+  top: 56px;
+}
+
+.dre-output {
+  display: flex;
+  flex-direction: column;
+}
+
+.dre-header {
+  background: #1e293b;
+  color: #f1f5f9;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+}
+
+.dre-section {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.dre-section:last-of-type {
+  border-bottom: none;
+}
+
+.dre-linha {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.85rem;
+}
+
+.dre-linha--sub {
+  background: #f8fafc;
+  color: var(--color-text-muted);
+}
+
+.dre-linha--resultado {
+  border-bottom: none;
+  padding: 11px 16px;
+  background: #f1f5f9;
+}
+
+.dre-linha--bruto {
+  border-left: 4px solid #3b82f6;
+}
+
+.dre-linha--op {
+  border-left: 4px solid #8b5cf6;
+}
+
+.dre-linha--liq {
+  border-left: 4px solid #22c55e;
+  background: #f0fdf4;
+}
+
+.dre-linha--prejuizo {
+  border-left: 4px solid #ef4444;
+  background: #fef2f2;
+}
+
+.dre-receita {
+  font-weight: 600;
+}
+
+.dre-desc {
+  flex: 1;
+  min-width: 0;
+}
+
+.dre-val {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  min-width: 110px;
+  text-align: right;
+}
+
+.dre-val--resultado {
+  font-size: 0.97rem;
+}
+
+.dre-pct {
+  white-space: nowrap;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  min-width: 52px;
+  text-align: right;
+}
+
+.dre-pct--resultado {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.dre-pos { color: var(--color-primary-dark); }
+.dre-neg { color: #b91c1c; }
+
+.dre-bar-section {
+  padding: 14px 16px 12px;
+  background: #f8fafc;
+}
+
+.dre-bar-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dre-bar-ir { background: #a78bfa; }
+
+.pv-legend-ir {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.pv-legend-ir::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #a78bfa;
+}
+
+/* ===========================
    RESPONSIVIDADE
 =========================== */
 @media (max-width: 720px) {
