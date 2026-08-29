@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Online Markup Calculator — CalculaMargem</title>
+<meta name="description" content="Calculate the markup of any product in seconds: simple markup, selling price from markup, and divisor markup with expenses and taxes. Free tool with a complete guide.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calculamargem.com.br/en/calculadora-markup/">
+
+<link rel="alternate" hreflang="pt-BR" href="https://calculamargem.com.br/calculadora-markup/">
+<link rel="alternate" hreflang="en" href="https://calculamargem.com.br/en/calculadora-markup/">
+<link rel="alternate" hreflang="es" href="https://calculamargem.com.br/es/calculadora-markup/">
+<link rel="alternate" hreflang="fr" href="https://calculamargem.com.br/fr/calculadora-markup/">
+<link rel="alternate" hreflang="de" href="https://calculamargem.com.br/de/calculadora-markup/">
+<link rel="alternate" hreflang="x-default" href="https://calculamargem.com.br/calculadora-markup/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Online Markup Calculator — CalculaMargem">
+<meta property="og:description" content="Calculate simple markup, selling price and divisor markup. Free tool with examples and a complete guide.">
+<meta property="og:url" content="https://calculamargem.com.br/en/calculadora-markup/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CalculaMargem">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Online Markup Calculator — CalculaMargem">
+<meta name="twitter:description" content="Calculate simple markup, selling price and divisor markup for free.">
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculamargem.com.br/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Markup Calculator", "item": "https://calculamargem.com.br/en/calculadora-markup/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/en/calculadora-markup/",
+      "name": "Free Online Markup Calculator",
+      "description": "Calculate simple markup, selling price from markup, and divisor markup. Free tool with a complete guide.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/en/#website" }
+    }
+  ]
+}
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <p class="site-brand"><a href="/en/">CalculaMargem</a></p>
+    <h1>Markup Calculator</h1>
+    <p class="tagline">Simple markup, selling price and divisor markup — all in one tool</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/en/">Home</a></li>
+      <li><a href="/en/calculadora-markup/" aria-current="page">Markup Calc.</a></li>
+      <li><a href="/en/calculadora-preco-venda/">Selling Price</a></li>
+      <li><a href="/en/formacao-de-preco/">Pricing Strategy</a></li>
+      <li><a href="/en/como-calcular-markup/">How to Calculate</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Language">
+      <a href="/calculadora-markup/">PT</a>
+      <a href="/en/calculadora-markup/" aria-current="true">EN</a>
+      <a href="/es/calculadora-markup/">ES</a>
+      <a href="/fr/calculadora-markup/">FR</a>
+      <a href="/de/calculadora-markup/">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container" id="main">
+
+  <nav class="breadcrumb" aria-label="Location">
+    <a href="/en/">Home</a>
+    <span aria-hidden="true">›</span>
+    <span>Markup Calculator</span>
+  </nav>
+
+  <section class="intro">
+    <p>Three calculators on one page: find a product's markup, calculate the selling price from a markup, or use the <strong>divisor markup</strong> to price your products while accounting for all your expenses and taxes.</p>
+  </section>
+
+  <!-- ====================================================
+       CALCULATORS 1 and 2 — side by side
+  ===================================================== -->
+  <section class="calculators" aria-label="Markup calculators">
+
+    <article class="card" id="calc-markup-simples">
+      <h2>Find the markup</h2>
+      <p class="card-desc">Enter the cost and selling price to calculate the markup, equivalent margin and profit.</p>
+
+      <div class="field">
+        <label for="m1-custo">Cost price ($)</label>
+        <input type="number" id="m1-custo" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 50.00">
+      </div>
+      <div class="field">
+        <label for="m1-venda">Selling price ($)</label>
+        <input type="number" id="m1-venda" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 80.00">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Markup</span>
+          <span class="result-value" id="m1-markup">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Equivalent margin</span>
+          <span class="result-value" id="m1-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Profit</span>
+          <span class="result-value" id="m1-lucro">—</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="calc-pv-markup">
+      <h2>Selling price from markup</h2>
+      <p class="card-desc">Enter the cost and desired markup to calculate the selling price and real margin.</p>
+
+      <div class="field">
+        <label for="m2-custo">Cost price ($)</label>
+        <input type="number" id="m2-custo" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 50.00">
+      </div>
+      <div class="field">
+        <label for="m2-markup">Desired markup (%)</label>
+        <input type="number" id="m2-markup" inputmode="decimal" min="0" step="0.1" placeholder="e.g. 60">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Selling price</span>
+          <span class="result-value" id="m2-venda">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Profit</span>
+          <span class="result-value" id="m2-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Equivalent margin</span>
+          <span class="result-value" id="m2-margem">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       CALCULATOR 3 — Divisor Markup (full width)
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-divisor">
+    <h2>Divisor Markup Calculator</h2>
+    <p>Price your product while accounting for <strong>all your variable expenses, taxes and desired net margin</strong> at once. Ideal for e-commerce and marketplaces.</p>
+
+    <div class="divisor-grid">
+
+      <div class="divisor-inputs">
+        <div class="field">
+          <label for="d-custo">Total product cost ($)
+            <span class="field-hint">include product + packaging + inbound freight</span>
+          </label>
+          <input type="number" id="d-custo" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 52.00">
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Variable expenses (% of selling price)</legend>
+
+          <div class="field field--inline">
+            <label for="d-comissao">Marketplace / platform commission (%)</label>
+            <input type="number" id="d-comissao" inputmode="decimal" min="0" max="50" step="0.1" placeholder="e.g. 13">
+          </div>
+          <div class="field field--inline">
+            <label for="d-gateway">Payment gateway (%)</label>
+            <input type="number" id="d-gateway" inputmode="decimal" min="0" max="20" step="0.1" placeholder="e.g. 3">
+          </div>
+          <div class="field field--inline">
+            <label for="d-frete">Subsidized outbound shipping (%)</label>
+            <input type="number" id="d-frete" inputmode="decimal" min="0" max="30" step="0.1" placeholder="e.g. 0">
+          </div>
+          <div class="field field--inline">
+            <label for="d-imposto">Sales taxes (%)</label>
+            <input type="number" id="d-imposto" inputmode="decimal" min="0" max="30" step="0.1" placeholder="e.g. 6">
+          </div>
+          <div class="field field--inline">
+            <label for="d-outros">Other variable expenses (%)</label>
+            <input type="number" id="d-outros" inputmode="decimal" min="0" max="20" step="0.1" placeholder="e.g. 0">
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="d-margem">Desired net margin (%)
+            <span class="field-hint">profit percentage on the final selling price</span>
+          </label>
+          <input type="number" id="d-margem" inputmode="decimal" min="0" max="90" step="0.5" placeholder="e.g. 20">
+        </div>
+
+        <div class="marketplace-presets">
+          <span class="presets-label">Fill in with rates from:</span>
+          <button type="button" class="preset-btn" data-comissao="13" data-gateway="2.99" data-frete="0" data-imposto="0" data-outros="0">eBay</button>
+          <button type="button" class="preset-btn" data-comissao="13" data-gateway="2.5" data-frete="0" data-imposto="0" data-outros="0">Etsy</button>
+          <button type="button" class="preset-btn" data-comissao="12" data-gateway="2.5" data-frete="0" data-imposto="0" data-outros="0">Amazon</button>
+          <button type="button" class="preset-btn" data-comissao="5" data-gateway="2.8" data-frete="0" data-imposto="0" data-outros="0">Own store</button>
+          <button type="button" class="preset-btn preset-btn--clear">Clear</button>
+        </div>
+      </div>
+
+      <div class="divisor-results" id="divisor-results" aria-live="polite">
+        <div class="divisor-result-panel" id="divisor-result-panel">
+          <div class="divisor-placeholder">
+            <p>Fill in the fields on the left to calculate.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       EXPLAINER SECTION
+  ===================================================== -->
+  <section class="content-section" id="o-que-e-markup">
+    <h2>What is Markup?</h2>
+    <p>Markup is the percentage added on top of a product's <strong>cost price</strong> to arrive at the selling price. It's widely used in retail, manufacturing and wholesale as a fast pricing method.</p>
+
+    <p>The fundamental difference between markup and profit margin is the calculation base:</p>
+    <ul>
+      <li><strong>Margin:</strong> calculates profit relative to the <em>selling price</em> (larger base)</li>
+      <li><strong>Markup:</strong> calculates profit relative to the <em>cost price</em> (smaller base)</li>
+    </ul>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Simple Markup</h3>
+        <code>Markup (%) = [(Selling Price − Cost) ÷ Cost] × 100</code>
+      </div>
+      <div class="formula-box">
+        <h3>Selling Price</h3>
+        <code>SP = Cost × (1 + Markup)</code>
+      </div>
+      <div class="formula-box">
+        <h3>Equivalent Margin</h3>
+        <code>Margin = Markup ÷ (1 + Markup)</code>
+      </div>
+    </div>
+
+    <div class="alert-box">
+      <strong>Classic mistake:</strong> A 50% markup does not equal a 50% margin. With a $100 cost and a 50% markup, the selling price is $150 and the real margin is only <strong>33.33%</strong> — not 50%.
+    </div>
+  </section>
+
+  <section class="content-section" id="markup-divisor-explicacao">
+    <h2>What is Divisor Markup and Why Use It?</h2>
+    <p>Divisor markup is the most complete method for pricing. It accounts for all variable expenses and your desired margin at the same time, ensuring the selling price covers everything and still generates the planned profit.</p>
+
+    <div class="formula-highlight">
+      <strong>Divisor = 1 − (Variable Expenses% + Taxes% + Margin%)</strong><br>
+      <strong>Selling Price = Cost ÷ Divisor</strong>
+    </div>
+
+    <div class="example-box">
+      <h3>Why isn't simple markup enough on marketplaces?</h3>
+      <p>Imagine a product with a $50 cost. You apply a 60% markup and arrive at an $80 selling price. Looks great. But on eBay:</p>
+      <ul>
+        <li>Commission 13% = $10.40</li>
+        <li>Gateway 3% = $2.40</li>
+        <li>Tax 6% = $4.80</li>
+        <li>Total fees = $17.60</li>
+        <li>Real cost = $50 + $17.60 = $67.60</li>
+        <li>Real profit = $80 − $67.60 = <strong>$12.40 (15.5% margin)</strong></li>
+      </ul>
+      <p>With divisor markup, you set your desired margin (e.g., 20%) and the system automatically calculates the correct price: $50 ÷ (1 − 0.13 − 0.03 − 0.06 − 0.20) = $50 ÷ 0.58 = <strong>$86.21</strong>.</p>
+    </div>
+
+    <div class="tip-box">
+      <strong>Tip:</strong> Use the preset buttons in the calculator above to automatically fill in the fee rates of the main marketplaces.
+    </div>
+  </section>
+
+  <section class="content-section table-section" id="tabela-markup-margem">
+    <h2>Table: Markup × Equivalent Margin</h2>
+    <p>For any markup applied, see the resulting real profit margin:</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Markup applied</th><th>Price (cost $100)</th><th>Real margin</th></tr>
+        </thead>
+        <tbody id="tabela-markup-body"></tbody>
+      </table>
+    </div>
+    <p class="table-note">Markup will always be higher than the equivalent margin — because it's calculated over a smaller base (the cost).</p>
+  </section>
+
+  <section class="content-section" id="quando-usar">
+    <h2>When to Use Markup and When to Use Margin</h2>
+
+    <div class="error-grid">
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:var(--color-primary-dark);">Use Markup when...</h3>
+        <ul style="font-size:0.92rem;color:var(--color-text);margin:0;padding-left:18px;">
+          <li>You need to apply a fixed multiplier across a product line</li>
+          <li>Your industry uses markup as a market standard (manufacturing, wholesale)</li>
+          <li>You need speed pricing many SKUs</li>
+          <li>You want to use divisor markup to absorb all fees at once</li>
+        </ul>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:var(--color-primary-dark);">Use Margin when...</h3>
+        <ul style="font-size:0.92rem;color:var(--color-text);margin:0;padding-left:18px;">
+          <li>You want to know exactly how much of your revenue is profit</li>
+          <li>You work with profitability targets on revenue</li>
+          <li>You're analyzing business viability and making projections</li>
+          <li>You're comparing profitability across products or categories</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:16px">To calculate profit margin directly, visit the <a href="/en/">Margin Calculator</a>.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="/en/">Home</a>
+      <a href="/en/calculadora-markup/">Markup Calculator</a>
+      <a href="/en/calculadora-preco-venda/">Selling Price</a>
+      <a href="/en/calculadora-desconto/">Discount Calculator</a>
+      <a href="/en/calculadora-lucro/">Profit Calculator</a>
+      <a href="/en/sobre/">About</a>
+      <a href="/en/contato/">Contact</a>
+      <a href="/en/politica-de-privacidade/">Privacy</a>
+    </nav>
+    <p>© 2025 CalculaMargem — Free tool to calculate profit margin, markup and selling price.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("en-US", { style: "currency", currency: "USD" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(el.value);
+    return isNaN(v) ? null : v;
+  }
+
+  // -------------------------------------------------------
+  // Calculator 1 — Find the markup
+  // -------------------------------------------------------
+  var m1custo  = document.getElementById("m1-custo");
+  var m1venda  = document.getElementById("m1-venda");
+  var m1markup = document.getElementById("m1-markup");
+  var m1margem = document.getElementById("m1-margem");
+  var m1lucro  = document.getElementById("m1-lucro");
+
+  function calcMarkup() {
+    var c = num(m1custo);
+    var v = num(m1venda);
+
+    if (c === null || v === null || c <= 0 || v < 0) {
+      m1markup.textContent = "—";
+      m1margem.textContent = "—";
+      m1lucro.textContent  = "—";
+      return;
+    }
+
+    var lucro = v - c;
+    m1lucro.textContent  = fmt(lucro);
+    m1markup.textContent = c > 0 ? fmtPct(lucro / c) : "—";
+    m1margem.textContent = v > 0 ? fmtPct(lucro / v) : "—";
+  }
+
+  m1custo.addEventListener("input", calcMarkup);
+  m1venda.addEventListener("input", calcMarkup);
+
+  // -------------------------------------------------------
+  // Calculator 2 — Selling price from markup
+  // -------------------------------------------------------
+  var m2custo  = document.getElementById("m2-custo");
+  var m2markup = document.getElementById("m2-markup");
+  var m2venda  = document.getElementById("m2-venda");
+  var m2lucro  = document.getElementById("m2-lucro");
+  var m2margem = document.getElementById("m2-margem");
+
+  function calcPVMarkup() {
+    var c = num(m2custo);
+    var mk = num(m2markup);
+
+    if (c === null || mk === null || c <= 0 || mk < 0) {
+      m2venda.textContent  = "—";
+      m2lucro.textContent  = "—";
+      m2margem.textContent = "—";
+      return;
+    }
+
+    var mkFrac = mk / 100;
+    var venda  = c * (1 + mkFrac);
+    var lucro  = venda - c;
+    var margem = lucro / venda;
+
+    m2venda.textContent  = fmt(venda);
+    m2lucro.textContent  = fmt(lucro);
+    m2margem.textContent = fmtPct(margem);
+  }
+
+  m2custo.addEventListener("input", calcPVMarkup);
+  m2markup.addEventListener("input", calcPVMarkup);
+
+  // -------------------------------------------------------
+  // Calculator 3 — Divisor Markup
+  // -------------------------------------------------------
+  var dCusto    = document.getElementById("d-custo");
+  var dComissao = document.getElementById("d-comissao");
+  var dGateway  = document.getElementById("d-gateway");
+  var dFrete    = document.getElementById("d-frete");
+  var dImposto  = document.getElementById("d-imposto");
+  var dOutros   = document.getElementById("d-outros");
+  var dMargem   = document.getElementById("d-margem");
+  var panel     = document.getElementById("divisor-result-panel");
+
+  function calcDivisor() {
+    var custo     = num(dCusto);
+    var comissao  = num(dComissao) || 0;
+    var gateway   = num(dGateway)  || 0;
+    var frete     = num(dFrete)    || 0;
+    var imposto   = num(dImposto)  || 0;
+    var outros    = num(dOutros)   || 0;
+    var margemPct = num(dMargem);
+
+    if (custo === null || custo <= 0 || margemPct === null) {
+      panel.innerHTML = '<div class="divisor-placeholder"><p>Fill in at least the cost and the desired margin.</p></div>';
+      return;
+    }
+
+    var totalDespesas = (comissao + gateway + frete + imposto + outros) / 100;
+    var margemFrac    = margemPct / 100;
+    var divisor       = 1 - totalDespesas - margemFrac;
+
+    if (divisor <= 0) {
+      panel.innerHTML = '<div class="divisor-error">The sum of expenses + margin exceeds 100%. Reduce the percentages.</div>';
+      return;
+    }
+
+    var venda       = custo / divisor;
+    var lucro       = venda * margemFrac;
+    var totalTaxas  = venda * totalDespesas;
+    var markupSimp  = (venda - custo) / custo;
+
+    panel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Selling price</div>' +
+          '<div class="divisor-main-value">' + fmt(venda) + '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          '<div class="divisor-row">' +
+            '<span>Calculated divisor</span>' +
+            '<strong>' + divisor.toLocaleString("en-US", { minimumFractionDigits: 4, maximumFractionDigits: 4 }) + '</strong>' +
+          '</div>' +
+          '<div class="divisor-row divisor-row--highlight">' +
+            '<span>Net profit (' + margemPct.toLocaleString("en-US") + '%)</span>' +
+            '<strong>' + fmt(lucro) + '</strong>' +
+          '</div>' +
+          '<div class="divisor-row">' +
+            '<span>Total variable expenses (' + (totalDespesas * 100).toLocaleString("en-US", {maximumFractionDigits:2}) + '%)</span>' +
+            '<strong>' + fmt(totalTaxas) + '</strong>' +
+          '</div>' +
+          '<div class="divisor-row">' +
+            '<span>Product cost</span>' +
+            '<strong>' + fmt(custo) + '</strong>' +
+          '</div>' +
+          '<div class="divisor-row">' +
+            '<span>Equivalent simple markup</span>' +
+            '<strong>' + fmtPct(markupSimp) + '</strong>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  [dCusto, dComissao, dGateway, dFrete, dImposto, dOutros, dMargem].forEach(function (el) {
+    el.addEventListener("input", calcDivisor);
+  });
+
+  // Marketplace presets
+  document.querySelectorAll(".preset-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (btn.classList.contains("preset-btn--clear")) {
+        dComissao.value = "";
+        dGateway.value  = "";
+        dFrete.value    = "";
+        dImposto.value  = "";
+        dOutros.value   = "";
+      } else {
+        dComissao.value = btn.dataset.comissao;
+        dGateway.value  = btn.dataset.gateway;
+        dFrete.value    = btn.dataset.frete;
+        dImposto.value  = btn.dataset.imposto;
+        dOutros.value   = btn.dataset.outros;
+      }
+      calcDivisor();
+    });
+  });
+
+  // -------------------------------------------------------
+  // Markup × margin table
+  // -------------------------------------------------------
+  var markups = [0.05, 0.10, 0.15, 0.20, 0.30, 0.40, 0.50, 0.60, 0.75, 1.00, 1.25, 1.50, 2.00, 2.50, 3.00];
+  var tbody   = document.getElementById("tabela-markup-body");
+
+  markups.forEach(function (mk) {
+    var pv     = 100 * (1 + mk);
+    var margem = mk / (1 + mk);
+    var tr     = document.createElement("tr");
+
+    var tdMk  = document.createElement("td");
+    tdMk.textContent = fmtPct(mk);
+
+    var tdPV  = document.createElement("td");
+    tdPV.textContent = fmt(pv);
+
+    var tdMg  = document.createElement("td");
+    tdMg.textContent = fmtPct(margem);
+
+    tr.appendChild(tdMk);
+    tr.appendChild(tdPV);
+    tr.appendChild(tdMg);
+    tbody.appendChild(tr);
+  });
+
+})();
+</script>
+
+</body>
+</html>
+</content>

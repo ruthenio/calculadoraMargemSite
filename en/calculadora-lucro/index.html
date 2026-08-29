@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profit Calculator: Gross, Operating and Net — CalculaMargem</title>
+<meta name="description" content="Calculate gross, operating and net profit with an interactive simplified income statement. Includes break-even point, scenario simulator and margin analysis. Free tool.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calculamargem.com.br/en/calculadora-lucro/">
+
+<link rel="alternate" hreflang="pt-BR" href="https://calculamargem.com.br/calculadora-lucro/">
+<link rel="alternate" hreflang="en" href="https://calculamargem.com.br/en/calculadora-lucro/">
+<link rel="alternate" hreflang="es" href="https://calculamargem.com.br/es/calculadora-lucro/">
+<link rel="alternate" hreflang="fr" href="https://calculamargem.com.br/fr/calculadora-lucro/">
+<link rel="alternate" hreflang="de" href="https://calculamargem.com.br/de/calculadora-lucro/">
+<link rel="alternate" hreflang="x-default" href="https://calculamargem.com.br/calculadora-lucro/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Profit Calculator: Gross, Operating and Net — CalculaMargem">
+<meta property="og:description" content="Interactive simplified income statement + break-even point. Calculate all three profit types in real time.">
+<meta property="og:url" content="https://calculamargem.com.br/en/calculadora-lucro/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CalculaMargem">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Profit Calculator — CalculaMargem">
+<meta name="twitter:description" content="Calculate gross, operating and net profit with an interactive income statement and break-even point.">
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculamargem.com.br/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Profit Calculator", "item": "https://calculamargem.com.br/en/calculadora-lucro/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/en/calculadora-lucro/",
+      "name": "Profit Calculator: Gross, Operating and Net",
+      "description": "Calculate all three types of profit with an interactive simplified income statement and break-even point.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/en/#website" }
+    }
+  ]
+}
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <p class="site-brand"><a href="/en/">CalculaMargem</a></p>
+    <h1>Profit Calculator</h1>
+    <p class="tagline">Gross, operating and net profit — interactive income statement and break-even point</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/en/">Home</a></li>
+      <li><a href="/en/calculadora-markup/">Markup Calc.</a></li>
+      <li><a href="/en/calculadora-preco-venda/">Selling Price</a></li>
+      <li><a href="/en/formacao-de-preco/">Pricing Strategy</a></li>
+      <li><a href="/en/como-calcular-markup/">How to Calculate</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Language">
+      <a href="/calculadora-lucro/">PT</a>
+      <a href="/en/calculadora-lucro/" aria-current="true">EN</a>
+      <a href="/es/calculadora-lucro/">ES</a>
+      <a href="/fr/calculadora-lucro/">FR</a>
+      <a href="/de/calculadora-lucro/">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container" id="main">
+
+  <nav class="breadcrumb" aria-label="Location">
+    <a href="/en/">Home</a>
+    <span aria-hidden="true">›</span>
+    <span>Profit Calculator</span>
+  </nav>
+
+  <section class="intro">
+    <p>Four tools in one: <strong>profit per unit</strong>, <strong>profit for a period</strong>, a <strong>simplified income statement</strong> with a visual margin cascade, and a <strong>break-even point</strong> with a volume simulator.</p>
+  </section>
+
+  <!-- ====================================================
+       CALCULATORS 1 and 2 — side by side
+  ===================================================== -->
+  <section class="calculators" aria-label="Quick profit calculators">
+
+    <!-- CALC 1: Profit per unit -->
+    <article class="card" id="calc-lucro-unidade">
+      <h2>Profit per unit</h2>
+      <p class="card-desc">Enter a product's cost and selling price to calculate profit, margin and markup per unit.</p>
+
+      <div class="field">
+        <label for="u-custo">Product cost ($)</label>
+        <input type="number" id="u-custo" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 45.00">
+      </div>
+      <div class="field">
+        <label for="u-pv">Selling price ($)</label>
+        <input type="number" id="u-pv" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 79.90">
+      </div>
+      <div class="field">
+        <label for="u-qtd">Quantity sold (optional)</label>
+        <input type="number" id="u-qtd" inputmode="numeric" min="1" step="1" placeholder="e.g. 150">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Gross profit per unit</span>
+          <span class="result-value" id="u-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Profit margin</span>
+          <span class="result-value" id="u-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Markup</span>
+          <span class="result-value" id="u-markup">—</span>
+        </div>
+        <div class="result" id="u-total-box" style="display:none">
+          <span class="result-label">Total profit (qty × unit)</span>
+          <span class="result-value" id="u-total">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CALC 2: Profit for a period -->
+    <article class="card" id="calc-lucro-periodo">
+      <h2>Gross profit for a period</h2>
+      <p class="card-desc">Enter total revenue and cost of goods sold to calculate gross profit for the month or period.</p>
+
+      <div class="field">
+        <label for="p-receita">Gross sales revenue ($)</label>
+        <input type="number" id="p-receita" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 80,000.00">
+      </div>
+      <div class="field">
+        <label for="p-cmv">Cost of goods sold — COGS ($)</label>
+        <input type="number" id="p-cmv" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 48,000.00">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Gross profit</span>
+          <span class="result-value" id="p-lucro-bruto">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Gross margin</span>
+          <span class="result-value" id="p-margem-bruta">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">COGS over revenue</span>
+          <span class="result-value" id="p-cmv-pct">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       SIMPLIFIED INCOME STATEMENT
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-dre">
+    <h2>Simplified Income Statement — Period Result</h2>
+    <p>Fill in the fields below to generate the complete <strong>income statement</strong> with gross, operating and net profit in real time.</p>
+
+    <div class="divisor-grid dre-grid">
+
+      <!-- INPUTS -->
+      <div class="divisor-inputs">
+
+        <fieldset class="field-group">
+          <legend>1. Revenue</legend>
+          <div class="field field--inline">
+            <label for="d-receita-bruta">Gross sales revenue</label>
+            <input type="number" id="d-receita-bruta" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-devolucoes">Returns and allowances</label>
+            <input type="number" id="d-devolucoes" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-imp-vendas">Sales taxes (%)</label>
+            <input type="number" id="d-imp-vendas" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>2. Cost of goods sold (COGS)</legend>
+          <div class="field field--inline">
+            <label for="d-cmv">COGS (cost of products sold)</label>
+            <input type="number" id="d-cmv" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>3. Operating expenses</legend>
+          <div class="field field--inline">
+            <label for="d-salarios">Salaries and payroll taxes</label>
+            <input type="number" id="d-salarios" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-aluguel">Rent / owner's draw</label>
+            <input type="number" id="d-aluguel" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-energia">Utilities, internet and services</label>
+            <input type="number" id="d-energia" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-marketing">Marketing and advertising</label>
+            <input type="number" id="d-marketing" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-outras-desp">Other operating expenses</label>
+            <input type="number" id="d-outras-desp" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>4. Financial result</legend>
+          <div class="field field--inline">
+            <label for="d-juros">Interest and financial expenses</label>
+            <input type="number" id="d-juros" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-receita-fin">Financial income (interest earned)</label>
+            <input type="number" id="d-receita-fin" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>5. Taxes on profit</legend>
+          <div class="field field--inline">
+            <label for="d-ir">Income tax (%)</label>
+            <input type="number" id="d-ir" inputmode="decimal" min="0" max="40" step="0.5" placeholder="e.g. 15">
+          </div>
+        </fieldset>
+
+      </div>
+
+      <!-- RESULT: Income statement -->
+      <div class="divisor-results">
+        <div class="dre-panel" id="dre-panel" aria-live="polite">
+          <div class="divisor-placeholder">
+            <p>Fill in gross revenue to generate the income statement.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       BREAK-EVEN POINT
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-pe">
+    <h2>Break-Even Point Calculator</h2>
+    <p>Find out how many units (or how much revenue) your business needs to cover all fixed costs and start turning a profit.</p>
+
+    <div class="divisor-grid">
+
+      <div class="divisor-inputs">
+        <div class="field">
+          <label for="pe-fixos">Total monthly fixed costs ($)
+            <span class="field-hint">rent + salaries + utilities + internet + other fixed costs</span>
+          </label>
+          <input type="number" id="pe-fixos" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 8,000.00">
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Contribution margin per unit</legend>
+          <div class="field field--inline">
+            <label for="pe-pv">Unit selling price ($)</label>
+            <input type="number" id="pe-pv" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 89.90">
+          </div>
+          <div class="field field--inline">
+            <label for="pe-cv">Unit variable cost ($)
+            </label>
+            <input type="number" id="pe-cv" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 52.00">
+          </div>
+          <div class="dre-linha dre-linha--sub" style="margin:4px 0 0;padding:8px 0">
+            <span style="font-size:0.82rem;color:var(--color-text-muted)">Calculated unit CM:</span>
+            <strong id="pe-mc-unit" style="font-size:0.88rem;color:var(--color-primary-dark)">—</strong>
+          </div>
+        </fieldset>
+
+        <div class="field" style="margin-top:4px">
+          <label for="pe-mc-pct">Or enter the contribution margin (%)
+            <span class="field-hint">if you don't know the unit variable cost</span>
+          </label>
+          <input type="number" id="pe-mc-pct" inputmode="decimal" min="0" max="100" step="0.5" placeholder="e.g. 35">
+        </div>
+      </div>
+
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="pe-panel">
+          <div class="divisor-placeholder">
+            <p>Fill in fixed costs and contribution margin to calculate the break-even point.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Volume simulator -->
+    <div id="pe-sim-wrap" style="display:none;margin-top:24px">
+      <h3>Result-by-Volume Simulator</h3>
+      <p style="font-size:0.92rem;color:var(--color-text-muted);margin-bottom:12px" id="pe-sim-desc"></p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Volume sold</th>
+              <th>Revenue</th>
+              <th>Variable costs</th>
+              <th>Contribution margin</th>
+              <th>Net result</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="pe-sim-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       EDITORIAL CONTENT
+  ===================================================== -->
+  <section class="content-section" id="tres-tipos-lucro">
+    <h2>The Three Types of Profit: What Each One Reveals</h2>
+    <p>The word "profit" is used generically in everyday language, but accounting distinguishes three levels, each with a different purpose. Knowing each one is essential for making sound business decisions.</p>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Gross Profit</h3>
+        <code>Net Revenue − COGS</code>
+      </div>
+      <div class="formula-box">
+        <h3>Operating Profit</h3>
+        <code>Gross Profit − Op. Expenses</code>
+      </div>
+      <div class="formula-box">
+        <h3>Net Profit</h3>
+        <code>Op. Profit ± Financial Result − Tax</code>
+      </div>
+    </div>
+
+    <h3>Gross Profit: purchasing and pricing efficiency</h3>
+    <p>Gross profit measures how much of revenue is left after paying only for the products sold. A high gross profit indicates good pricing and/or good control over purchasing costs. It's the starting point: if gross profit isn't enough, no amount of cutting operating expenses will save the result.</p>
+
+    <h3>Operating Profit: efficiency of the operation</h3>
+    <p>Operating profit deducts the fixed costs of running the business. It answers the question: "Is the company's core activity profitable, regardless of how it's financed?" A positive operating profit indicates a healthy business model — even if debt is weighing on the financial result.</p>
+
+    <h3>Net Profit: what actually goes in your pocket</h3>
+    <p>Net profit is the final result after every deduction — including taxes on profit. It's the number that feeds owners' equity and the business's ability to reinvest. A company can have high gross profit and low — or even negative — net profit due to uncontrolled expenses or heavy debt.</p>
+
+    <div class="example-box">
+      <h3>Example: from revenue to net profit</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Income Statement</th><th>Value</th><th>% of Revenue</th></tr></thead>
+          <tbody>
+            <tr><td>Gross Sales Revenue</td><td>$100,000</td><td>—</td></tr>
+            <tr><td>(−) Sales taxes (7%)</td><td>$(7,000)</td><td>—</td></tr>
+            <tr><td><strong>= Net Revenue</strong></td><td><strong>$93,000</strong></td><td><strong>100%</strong></td></tr>
+            <tr><td>(−) COGS</td><td>$(51,150)</td><td>−55%</td></tr>
+            <tr style="background:var(--color-highlight-bg)"><td><strong>= Gross Profit</strong></td><td><strong>$41,850</strong></td><td><strong>45%</strong></td></tr>
+            <tr><td>(−) Operating expenses</td><td>$(28,000)</td><td>−30.1%</td></tr>
+            <tr style="background:#ede9fe"><td><strong>= Operating Profit</strong></td><td><strong>$13,850</strong></td><td><strong>14.9%</strong></td></tr>
+            <tr><td>(−) Financial expenses</td><td>$(1,200)</td><td>−1.3%</td></tr>
+            <tr><td>(−) Income tax (15%)</td><td>$(1,898)</td><td>−2%</td></tr>
+            <tr style="background:var(--color-example-bg)"><td><strong>= Net Profit</strong></td><td><strong>$10,752</strong></td><td><strong>11.6%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="ponto-equilibrio-conceito">
+    <h2>What is the Break-Even Point and Why Track It</h2>
+    <p>The break-even point (BEP) is the sales volume at which total revenue equals all costs — no profit, no loss. Below the BEP, the business runs in the red. Above it, it starts generating profit.</p>
+
+    <div class="formula-highlight">
+      <strong>BEP (units) = Fixed Costs ÷ Unit Contribution Margin</strong><br>
+      <strong>BEP (revenue) = Fixed Costs ÷ Contribution Margin%</strong>
+    </div>
+
+    <div class="example-box">
+      <h3>Example</h3>
+      <p>Store with $6,000/month in fixed costs. Product sold for $80, with a $48 variable cost.</p>
+      <ul>
+        <li>Unit contribution margin = $80 − $48 = <strong>$32</strong></li>
+        <li>CM% = $32 ÷ $80 = <strong>40%</strong></li>
+        <li>BEP in units = $6,000 ÷ $32 = <strong>188 units/month</strong></li>
+        <li>BEP in revenue = $6,000 ÷ 0.40 = <strong>$15,000/month</strong></li>
+      </ul>
+      <p>Starting with the 189th unit sold in the month, every sale generates $32 of net profit for the business.</p>
+    </div>
+
+    <div class="tip-box">
+      <strong>Tip:</strong> Use the break-even point as your minimum monthly sales target. If you're consistently selling below the BEP, the business accumulates losses. If you're well above it, there's room to grow your structure or distribute profits.
+    </div>
+
+    <div class="alert-box">
+      <strong>Contribution margin ≠ profit margin:</strong> Contribution margin deducts only <em>variable</em> costs — not fixed ones. It shows how much each sale "contributes" toward covering fixed costs. Only after covering all fixed costs do sales generate net profit.
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="/en/">Home</a>
+      <a href="/en/calculadora-markup/">Markup Calculator</a>
+      <a href="/en/calculadora-preco-venda/">Selling Price</a>
+      <a href="/en/calculadora-desconto/">Discount Calculator</a>
+      <a href="/en/calculadora-lucro/">Profit Calculator</a>
+      <a href="/en/sobre/">About</a>
+      <a href="/en/contato/">Contact</a>
+      <a href="/en/politica-de-privacidade/">Privacy</a>
+    </nav>
+    <p>© 2025 CalculaMargem — Free tool to calculate profit margin, markup and selling price.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("en-US", { style: "currency", currency: "USD" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("en-US", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(el ? el.value : "");
+    return isNaN(v) ? null : v;
+  }
+
+  function pct(el) {
+    var v = num(el);
+    return v === null ? null : v / 100;
+  }
+
+  // -------------------------------------------------------
+  // Calc 1 — Profit per unit
+  // -------------------------------------------------------
+  var uCusto   = document.getElementById("u-custo");
+  var uPv      = document.getElementById("u-pv");
+  var uQtd     = document.getElementById("u-qtd");
+  var uLucro   = document.getElementById("u-lucro");
+  var uMargem  = document.getElementById("u-margem");
+  var uMarkup  = document.getElementById("u-markup");
+  var uTotal   = document.getElementById("u-total");
+  var uTotalBox= document.getElementById("u-total-box");
+
+  function calcUnidade() {
+    var c  = num(uCusto);
+    var pv = num(uPv);
+    var q  = num(uQtd);
+
+    if (c === null || pv === null || c < 0 || pv <= 0) {
+      uLucro.textContent = uMargem.textContent = uMarkup.textContent = "—";
+      uTotalBox.style.display = "none";
+      return;
+    }
+
+    var lucro  = pv - c;
+    var margem = lucro / pv;
+    var markup = c > 0 ? lucro / c : null;
+
+    uLucro.textContent  = fmt(lucro);
+    uMargem.textContent = fmtPct(margem);
+    uMarkup.textContent = markup !== null ? fmtPct(markup) : "—";
+
+    if (q !== null && q > 0) {
+      uTotalBox.style.display = "flex";
+      uTotal.textContent = fmt(lucro * q);
+    } else {
+      uTotalBox.style.display = "none";
+    }
+  }
+
+  [uCusto, uPv, uQtd].forEach(function (el) { el.addEventListener("input", calcUnidade); });
+
+  // -------------------------------------------------------
+  // Calc 2 — Profit for a period
+  // -------------------------------------------------------
+  var pReceita     = document.getElementById("p-receita");
+  var pCmv         = document.getElementById("p-cmv");
+  var pLucroBruto  = document.getElementById("p-lucro-bruto");
+  var pMargemBruta = document.getElementById("p-margem-bruta");
+  var pCmvPct      = document.getElementById("p-cmv-pct");
+
+  function calcPeriodo() {
+    var r = num(pReceita);
+    var c = num(pCmv);
+
+    if (r === null || r <= 0) {
+      pLucroBruto.textContent = pMargemBruta.textContent = pCmvPct.textContent = "—";
+      return;
+    }
+
+    var cmv   = c !== null && c >= 0 ? c : 0;
+    var lucro = r - cmv;
+
+    pLucroBruto.textContent  = fmt(lucro);
+    pMargemBruta.textContent = fmtPct(lucro / r);
+    pCmvPct.textContent      = fmtPct(cmv / r);
+  }
+
+  [pReceita, pCmv].forEach(function (el) { el.addEventListener("input", calcPeriodo); });
+
+  // -------------------------------------------------------
+  // Simplified Income Statement
+  // -------------------------------------------------------
+  var dReceita    = document.getElementById("d-receita-bruta");
+  var dDev        = document.getElementById("d-devolucoes");
+  var dImpVendas  = document.getElementById("d-imp-vendas");
+  var dCmv        = document.getElementById("d-cmv");
+  var dSalarios   = document.getElementById("d-salarios");
+  var dAluguel    = document.getElementById("d-aluguel");
+  var dEnergia    = document.getElementById("d-energia");
+  var dMarketing  = document.getElementById("d-marketing");
+  var dOutrasDesp = document.getElementById("d-outras-desp");
+  var dJuros      = document.getElementById("d-juros");
+  var dRecFin     = document.getElementById("d-receita-fin");
+  var dIr         = document.getElementById("d-ir");
+  var drePanel    = document.getElementById("dre-panel");
+
+  function sinal(v) { return v < 0 ? "dre-neg" : (v > 0 ? "dre-pos" : ""); }
+
+  function linhaSimples(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha ' + (classe || "") + '">' +
+      '<span class="dre-desc">' + label + '</span>' +
+      '<span class="dre-val ' + sinal(valor) + '">' + fmt(valor) + '</span>' +
+      '<span class="dre-pct">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function linhaResultado(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha dre-linha--resultado ' + (classe || "") + '">' +
+      '<span class="dre-desc"><strong>' + label + '</strong></span>' +
+      '<span class="dre-val dre-val--resultado ' + sinal(valor) + '"><strong>' + fmt(valor) + '</strong></span>' +
+      '<span class="dre-pct dre-pct--resultado">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function calcDRE() {
+    var rb  = num(dReceita);
+    if (rb === null || rb <= 0) {
+      drePanel.innerHTML = '<div class="divisor-placeholder"><p>Fill in gross revenue to generate the income statement.</p></div>';
+      return;
+    }
+
+    var dev     = num(dDev)       || 0;
+    var impV    = pct(dImpVendas) || 0;
+    var cmv     = num(dCmv)       || 0;
+    var sal     = num(dSalarios)  || 0;
+    var alug    = num(dAluguel)   || 0;
+    var en      = num(dEnergia)   || 0;
+    var mkt     = num(dMarketing) || 0;
+    var outrD   = num(dOutrasDesp)|| 0;
+    var juros   = num(dJuros)     || 0;
+    var recFin  = num(dRecFin)    || 0;
+    var irPct   = pct(dIr);
+
+    var impostoVendas   = rb * impV;
+    var recLiq          = rb - dev - impostoVendas;
+    var lucroBruto      = recLiq - cmv;
+    var totalDesp       = sal + alug + en + mkt + outrD;
+    var lucroOp         = lucroBruto - totalDesp;
+    var resFin          = recFin - juros;
+    var lucroAntesIR    = lucroOp + resFin;
+    var ir              = irPct !== null && lucroAntesIR > 0 ? lucroAntesIR * irPct : 0;
+    var lucroLiq        = lucroAntesIR - ir;
+
+    var html = '<div class="dre-output">';
+    html += '<div class="dre-header">Income Statement — Period Result</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("Gross sales revenue", rb, recLiq, "dre-receita");
+    if (dev > 0)           html += linhaSimples("(−) Returns and allowances", -dev, recLiq, "dre-linha--sub");
+    if (impostoVendas > 0) html += linhaSimples("(−) Sales taxes (" + fmtPct(impV) + ")", -impostoVendas, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Net revenue", recLiq, recLiq, "dre-linha--bruto");
+    html += '</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("(−) COGS — cost of goods sold", -cmv, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Gross Profit", lucroBruto, recLiq, lucroBruto >= 0 ? "dre-linha--bruto" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    if (totalDesp > 0) {
+      html += '<div class="dre-section">';
+      if (sal)   html += linhaSimples("(−) Salaries and payroll taxes", -sal, recLiq, "dre-linha--sub");
+      if (alug)  html += linhaSimples("(−) Rent / owner's draw", -alug, recLiq, "dre-linha--sub");
+      if (en)    html += linhaSimples("(−) Utilities, internet and services", -en, recLiq, "dre-linha--sub");
+      if (mkt)   html += linhaSimples("(−) Marketing and advertising", -mkt, recLiq, "dre-linha--sub");
+      if (outrD) html += linhaSimples("(−) Other operating expenses", -outrD, recLiq, "dre-linha--sub");
+      html += linhaResultado("= Operating Profit", lucroOp, recLiq, lucroOp >= 0 ? "dre-linha--op" : "dre-linha--prejuizo");
+      html += '</div>';
+    }
+
+    if (resFin !== 0 || ir > 0) {
+      html += '<div class="dre-section">';
+      if (recFin > 0) html += linhaSimples("(+) Financial income", recFin, recLiq, "dre-linha--sub");
+      if (juros > 0)  html += linhaSimples("(−) Interest and financial expenses", -juros, recLiq, "dre-linha--sub");
+      if (ir > 0)     html += linhaSimples("(−) Income tax (" + fmtPct(irPct) + ")", -ir, recLiq, "dre-linha--sub");
+      html += '</div>';
+    }
+
+    html += '<div class="dre-section">';
+    html += linhaResultado("= Net Profit", lucroLiq, recLiq, lucroLiq >= 0 ? "dre-linha--liq" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    // Composition bar
+    var pctCmvBar  = recLiq > 0 ? Math.min(cmv / recLiq, 1) : 0;
+    var pctDespBar = recLiq > 0 ? Math.min(totalDesp / recLiq, 1 - pctCmvBar) : 0;
+    var pctIrBar   = recLiq > 0 ? Math.min(ir / recLiq, 1 - pctCmvBar - pctDespBar) : 0;
+    var pctLiqBar  = Math.max(1 - pctCmvBar - pctDespBar - pctIrBar, 0);
+
+    html += '<div class="dre-bar-section">' +
+      '<div class="dre-bar-label">Net revenue breakdown</div>' +
+      '<div class="pv-bar">' +
+        '<div class="pv-bar-cost"   style="width:' + (pctCmvBar * 100).toFixed(1) + '%" title="COGS"></div>' +
+        '<div class="pv-bar-taxes"  style="width:' + (pctDespBar * 100).toFixed(1) + '%" title="Expenses"></div>' +
+        '<div class="dre-bar-ir"    style="width:' + (pctIrBar * 100).toFixed(1) + '%" title="Tax"></div>' +
+        '<div class="pv-bar-profit" style="width:' + (pctLiqBar * 100).toFixed(1) + '%" title="Net Profit"></div>' +
+      '</div>' +
+      '<div class="pv-bar-legend">' +
+        '<span class="pv-legend-cost">COGS ' + fmtPct(pctCmvBar) + '</span>' +
+        '<span class="pv-legend-taxes">Expenses ' + fmtPct(pctDespBar) + '</span>' +
+        (pctIrBar > 0 ? '<span class="pv-legend-ir">Tax ' + fmtPct(pctIrBar) + '</span>' : '') +
+        '<span class="pv-legend-profit">Net Profit ' + fmtPct(pctLiqBar) + '</span>' +
+      '</div>' +
+    '</div>';
+
+    html += '</div>';
+    drePanel.innerHTML = html;
+  }
+
+  var dreInputs = [dReceita, dDev, dImpVendas, dCmv, dSalarios, dAluguel, dEnergia, dMarketing, dOutrasDesp, dJuros, dRecFin, dIr];
+  dreInputs.forEach(function (el) { el.addEventListener("input", calcDRE); });
+
+  // -------------------------------------------------------
+  // Break-Even Point
+  // -------------------------------------------------------
+  var peFixos    = document.getElementById("pe-fixos");
+  var pePv       = document.getElementById("pe-pv");
+  var peCv       = document.getElementById("pe-cv");
+  var peMcPct    = document.getElementById("pe-mc-pct");
+  var peMcUnit   = document.getElementById("pe-mc-unit");
+  var pePanel    = document.getElementById("pe-panel");
+  var peSimWrap  = document.getElementById("pe-sim-wrap");
+  var peSimBody  = document.getElementById("pe-sim-body");
+  var peSimDesc  = document.getElementById("pe-sim-desc");
+
+  function calcPE() {
+    var fixos = num(peFixos);
+    var pvU   = num(pePv);
+    var cvU   = num(peCv);
+    var mcPct = pct(peMcPct);
+
+    // Compute unit CM if PV and CV are filled in
+    var mcUnit = null;
+    var mcFrac = null;
+
+    if (pvU !== null && cvU !== null && pvU > 0) {
+      mcUnit = pvU - cvU;
+      mcFrac = mcUnit / pvU;
+      peMcUnit.textContent = fmt(mcUnit) + " (" + fmtPct(mcFrac) + ")";
+    } else {
+      peMcUnit.textContent = "—";
+    }
+
+    // Use typed CM% directly if PV/CV aren't given
+    if (mcFrac === null && mcPct !== null) {
+      mcFrac = mcPct;
+    }
+
+    if (fixos === null || fixos <= 0 || mcFrac === null || mcFrac <= 0) {
+      pePanel.innerHTML = '<div class="divisor-placeholder"><p>Fill in fixed costs and contribution margin to calculate.</p></div>';
+      peSimWrap.style.display = "none";
+      return;
+    }
+
+    var peFat   = fixos / mcFrac;
+    var peUnid  = mcUnit !== null && mcUnit > 0 ? fixos / mcUnit : null;
+
+    pePanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Break-even point (revenue)</div>' +
+          '<div class="divisor-main-value">' + fmt(peFat) + '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          (peUnid !== null
+            ? '<div class="divisor-row divisor-row--highlight"><span>BEP in units</span><strong>' + Math.ceil(peUnid).toLocaleString("en-US") + ' units</strong></div>'
+            : '') +
+          '<div class="divisor-row"><span>Contribution margin</span><strong>' + fmtPct(mcFrac) + '</strong></div>' +
+          '<div class="divisor-row"><span>Monthly fixed costs</span><strong>' + fmt(fixos) + '</strong></div>' +
+          (mcUnit !== null ? '<div class="divisor-row"><span>CM per unit</span><strong>' + fmt(mcUnit) + '</strong></div>' : '') +
+          (pvU !== null ? '<div class="divisor-row"><span>Unit selling price</span><strong>' + fmt(pvU) + '</strong></div>' : '') +
+        '</div>' +
+      '</div>';
+
+    // Volume simulator
+    peSimWrap.style.display = "block";
+    peSimDesc.textContent = peUnid !== null
+      ? "BEP = " + Math.ceil(peUnid).toLocaleString("en-US") + " units | below that there's a loss, above it there's profit."
+      : "BEP = " + fmt(peFat) + " in revenue | past that value the business starts turning a profit.";
+
+    var multipliers = [0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.50, 3.00];
+    peSimBody.innerHTML = "";
+
+    multipliers.forEach(function (mult) {
+      var unid    = peUnid !== null ? Math.round(peUnid * mult) : null;
+      var fat     = pvU !== null && unid !== null ? pvU * unid : peFat * mult;
+      var custoV  = pvU !== null && cvU !== null && unid !== null ? cvU * unid : fat * (1 - mcFrac);
+      var mc      = fat * mcFrac;
+      var result  = mc - fixos;
+      var isPE    = Math.abs(mult - 1.00) < 0.001;
+
+      var tr = document.createElement("tr");
+      if (isPE) { tr.style.fontWeight = "600"; tr.style.background = "var(--color-highlight-bg)"; }
+
+      var statusTxt, statusCls;
+      if (result < 0)      { statusTxt = "Loss"; statusCls = "sim-status sim-status--ruim"; }
+      else if (isPE)       { statusTxt = "Break-even"; statusCls = "sim-status sim-status--atencao"; }
+      else                 { statusTxt = "Profit"; statusCls = "sim-status sim-status--ok"; }
+
+      tr.innerHTML =
+        "<td>" + (unid !== null ? unid.toLocaleString("en-US") + " units" : fmt(fat)) + (isPE ? " (BEP)" : "") + "</td>" +
+        "<td>" + fmt(fat) + "</td>" +
+        "<td>" + fmt(custoV) + "</td>" +
+        "<td>" + fmt(mc) + "</td>" +
+        "<td " + (result < 0 ? "style='color:#c2410c'" : "style='color:var(--color-primary-dark)'") + ">" +
+          (result >= 0 ? "+" : "") + fmt(result) +
+        "</td>" +
+        "<td><span class='" + statusCls + "'>" + statusTxt + "</span></td>";
+
+      peSimBody.appendChild(tr);
+    });
+  }
+
+  [peFixos, pePv, peCv, peMcPct].forEach(function (el) { el.addEventListener("input", calcPE); });
+
+})();
+</script>
+
+</body>
+</html>
+</content>

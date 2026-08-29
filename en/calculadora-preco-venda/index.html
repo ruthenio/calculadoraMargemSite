@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Online Selling Price Calculator — CalculaMargem</title>
+<meta name="description" content="Calculate the ideal selling price in seconds: quick calculation, margin check, and a full calculator with costs, expenses, taxes, marketplace fees and a scenario simulator.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calculamargem.com.br/en/calculadora-preco-venda/">
+
+<link rel="alternate" hreflang="pt-BR" href="https://calculamargem.com.br/calculadora-preco-venda/">
+<link rel="alternate" hreflang="en" href="https://calculamargem.com.br/en/calculadora-preco-venda/">
+<link rel="alternate" hreflang="es" href="https://calculamargem.com.br/es/calculadora-preco-venda/">
+<link rel="alternate" hreflang="fr" href="https://calculamargem.com.br/fr/calculadora-preco-venda/">
+<link rel="alternate" hreflang="de" href="https://calculamargem.com.br/de/calculadora-preco-venda/">
+<link rel="alternate" hreflang="x-default" href="https://calculamargem.com.br/calculadora-preco-venda/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Online Selling Price Calculator — CalculaMargem">
+<meta property="og:description" content="Calculate your selling price accounting for all costs, expenses, taxes and your target margin. Includes a scenario simulator and marketplace presets.">
+<meta property="og:url" content="https://calculamargem.com.br/en/calculadora-preco-venda/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CalculaMargem">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Online Selling Price Calculator — CalculaMargem">
+<meta name="twitter:description" content="Calculate your selling price with costs, expenses, taxes and a scenario simulator. Free tool.">
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculamargem.com.br/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Selling Price Calculator", "item": "https://calculamargem.com.br/en/calculadora-preco-venda/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/en/calculadora-preco-venda/",
+      "name": "Free Online Selling Price Calculator",
+      "description": "Calculate the ideal selling price accounting for all costs, expenses, taxes and your target profit margin.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/en/#website" }
+    }
+  ]
+}
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <p class="site-brand"><a href="/en/">CalculaMargem</a></p>
+    <h1>Selling Price Calculator</h1>
+    <p class="tagline">From cost to ideal price — fast, complete, and with a scenario simulator</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/en/">Home</a></li>
+      <li><a href="/en/calculadora-markup/">Markup Calc.</a></li>
+      <li><a href="/en/calculadora-preco-venda/" aria-current="page">Selling Price</a></li>
+      <li><a href="/en/formacao-de-preco/">Pricing Strategy</a></li>
+      <li><a href="/en/como-calcular-markup/">How to Calculate</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Language">
+      <a href="/calculadora-preco-venda/">PT</a>
+      <a href="/en/calculadora-preco-venda/" aria-current="true">EN</a>
+      <a href="/es/calculadora-preco-venda/">ES</a>
+      <a href="/fr/calculadora-preco-venda/">FR</a>
+      <a href="/de/calculadora-preco-venda/">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container" id="main">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/en/">Home</a>
+    <span aria-hidden="true">›</span>
+    <span>Selling Price Calculator</span>
+  </nav>
+
+  <section class="intro">
+    <p>Three modes on one page: a <strong>quick</strong> calculation from cost and margin, a <strong>check</strong> on whether a price you're already charging is enough, and the <strong>full</strong> calculator with all costs, expenses, taxes and a price simulator for multiple margins.</p>
+  </section>
+
+  <!-- ====================================================
+       CALCULATORS 1 and 2 — side by side
+  ===================================================== -->
+  <section class="calculators" aria-label="Quick selling price calculators">
+
+    <article class="card" id="calc-pv-rapido">
+      <h2>Calculate selling price</h2>
+      <p class="card-desc">Enter your cost and target margin to get the selling price in seconds.</p>
+
+      <div class="field">
+        <label for="r-custo">Cost price ($)</label>
+        <input type="number" id="r-custo" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 60.00">
+      </div>
+      <div class="field">
+        <label for="r-margem">Target margin (%)</label>
+        <input type="number" id="r-margem" inputmode="decimal" min="0" max="99.9" step="0.5" placeholder="e.g. 35">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Selling price</span>
+          <span class="result-value" id="r-pv">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Profit</span>
+          <span class="result-value" id="r-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Equivalent markup</span>
+          <span class="result-value" id="r-markup">—</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="calc-pv-verificar">
+      <h2>Check if the price is enough</h2>
+      <p class="card-desc">Enter your cost and the price you currently charge to see your real margin and whether it's at your target level.</p>
+
+      <div class="field">
+        <label for="v-custo">Cost price ($)</label>
+        <input type="number" id="v-custo" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 60.00">
+      </div>
+      <div class="field">
+        <label for="v-pv">Current selling price ($)</label>
+        <input type="number" id="v-pv" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 95.00">
+      </div>
+      <div class="field">
+        <label for="v-meta">Target margin (%)</label>
+        <input type="number" id="v-meta" inputmode="decimal" min="0" max="99" step="0.5" placeholder="e.g. 30">
+      </div>
+
+      <div class="results">
+        <div class="result" id="v-status-box">
+          <span class="result-label">Status</span>
+          <span class="result-value" id="v-status">—</span>
+        </div>
+        <div class="result result--highlight">
+          <span class="result-label">Current margin</span>
+          <span class="result-value" id="v-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Current profit</span>
+          <span class="result-value" id="v-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Price to hit target</span>
+          <span class="result-value" id="v-pv-meta">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       FULL CALCULATOR
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-completa">
+    <h2>Full Selling Price Calculator</h2>
+    <p>Enter <strong>all your product costs</strong> and the <strong>variable expenses of the sale</strong> to calculate the minimum price needed to hit your real profit margin.</p>
+
+    <div class="divisor-grid">
+
+      <!-- INPUTS -->
+      <div class="divisor-inputs">
+
+        <fieldset class="field-group">
+          <legend>Direct product costs ($)</legend>
+          <div class="field field--inline">
+            <label for="c-produto">Product / merchandise cost</label>
+            <input type="number" id="c-produto" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-embalagem">Packaging (box, tape, paper)</label>
+            <input type="number" id="c-embalagem" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-frete-entrada">Inbound freight / shipping</label>
+            <input type="number" id="c-frete-entrada" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-fixo">Allocated fixed costs</label>
+            <input type="number" id="c-fixo" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="field field--inline">
+            <label for="c-outros-custo">Other direct costs</label>
+            <input type="number" id="c-outros-custo" inputmode="decimal" min="0" step="0.01" placeholder="0.00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>Variable sale expenses (% of selling price)</legend>
+          <div class="field field--inline">
+            <label for="c-comissao">Marketplace / platform commission</label>
+            <input type="number" id="c-comissao" inputmode="decimal" min="0" max="50" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-gateway">Payment gateway / card fee</label>
+            <input type="number" id="c-gateway" inputmode="decimal" min="0" max="20" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-frete-saida">Subsidized outbound shipping</label>
+            <input type="number" id="c-frete-saida" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-imposto">Sales tax</label>
+            <input type="number" id="c-imposto" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+          <div class="field field--inline">
+            <label for="c-outros-desp">Other variable expenses</label>
+            <input type="number" id="c-outros-desp" inputmode="decimal" min="0" max="20" step="0.1" placeholder="0">
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="c-margem">Target net margin (%)
+            <span class="field-hint">percentage of real profit over the final selling price</span>
+          </label>
+          <input type="number" id="c-margem" inputmode="decimal" min="0" max="90" step="0.5" placeholder="e.g. 25">
+        </div>
+
+        <div class="marketplace-presets">
+          <span class="presets-label">Fees for:</span>
+          <button type="button" class="preset-btn" data-comissao="13" data-gateway="2.99" data-frete="0" data-imposto="0" data-outros="0">eBay</button>
+          <button type="button" class="preset-btn" data-comissao="13" data-gateway="2.5" data-frete="0" data-imposto="0" data-outros="0">Etsy</button>
+          <button type="button" class="preset-btn" data-comissao="12" data-gateway="2.5" data-frete="0" data-imposto="0" data-outros="0">Amazon</button>
+          <button type="button" class="preset-btn" data-comissao="0" data-gateway="2.8" data-frete="0" data-imposto="0" data-outros="0">Own store</button>
+          <button type="button" class="preset-btn preset-btn--clear">Clear fees</button>
+        </div>
+
+      </div>
+
+      <!-- RESULT -->
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="completa-panel">
+          <div class="divisor-placeholder">
+            <p>Fill in the product cost and target margin to calculate.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SCENARIO SIMULATOR
+  ===================================================== -->
+  <section class="content-section" id="simulador">
+    <h2>Price Simulator by Margin</h2>
+    <p>See how much to charge to hit different margin targets, using the costs and expenses from the calculator above.</p>
+
+    <div id="sim-aviso" class="tip-box" style="margin-bottom:16px">
+      Fill in the fields in the <strong>Full Calculator</strong> above to activate the simulator.
+    </div>
+
+    <div id="sim-tabela-wrap" style="display:none">
+      <div class="table-wrapper">
+        <table id="sim-tabela">
+          <thead>
+            <tr>
+              <th>Target margin</th>
+              <th>Selling price</th>
+              <th>Profit ($)</th>
+              <th>Equiv. markup</th>
+            </tr>
+          </thead>
+          <tbody id="sim-body"></tbody>
+        </table>
+      </div>
+      <p class="table-note" id="sim-note"></p>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       EDITORIAL CONTENT
+  ===================================================== -->
+  <section class="content-section" id="como-calcular">
+    <h2>How to Calculate Your Selling Price Correctly</h2>
+    <p>The most common pricing mistake is setting the selling price based only on the competition, without knowing whether it covers all your costs and still generates a profit. The correct method has four components:</p>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Simple formula</h3>
+        <code>SP = Cost ÷ (1 − Margin)</code>
+      </div>
+      <div class="formula-box">
+        <h3>With variable expenses</h3>
+        <code>SP = COGS ÷ (1 − Exp% − Margin%)</code>
+      </div>
+      <div class="formula-box">
+        <h3>Verification</h3>
+        <code>Margin = (SP − COGS − Exp) ÷ SP</code>
+      </div>
+    </div>
+
+    <h3>The four components of your selling price</h3>
+    <ol class="steps-list">
+      <li>
+        <strong>COGS — Cost of Goods Sold</strong><br>
+        Product + packaging + inbound freight + allocated fixed costs. Everything you spend <em>before</em> selling.
+      </li>
+      <li>
+        <strong>Variable sale expenses</strong><br>
+        Marketplace commission, card/gateway fee, shipping subsidized for the customer, taxes on revenue.
+      </li>
+      <li>
+        <strong>Target net profit margin</strong><br>
+        The percentage of the selling price that will represent real profit — after paying everything above.
+      </li>
+      <li>
+        <strong>Market validation</strong><br>
+        Compare the calculated price with the competition. If it's much higher, review your costs or reposition the product.
+      </li>
+    </ol>
+
+    <div class="alert-box">
+      <strong>Watch out:</strong> Applying a 30% margin to a cost that doesn't include packaging, shipping or allocated fixed costs results in a much lower real profit — or even a loss. Always add up <em>all</em> costs before calculating your price.
+    </div>
+  </section>
+
+  <section class="content-section" id="exemplos-marketplace">
+    <h2>Examples by Sales Channel</h2>
+    <p>For the same product with a cost of <strong>$45.00</strong> (product + packaging + inbound freight) and a target margin of <strong>25%</strong>:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Sales channel</th>
+            <th>Variable fees</th>
+            <th>Divisor</th>
+            <th>Suggested price</th>
+            <th>Profit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>eBay</td>
+            <td>13% + 3% = 16%</td>
+            <td>1 − 0.16 − 0.25 = <strong>0.59</strong></td>
+            <td><strong>$76.27</strong></td>
+            <td>$19.07</td>
+          </tr>
+          <tr>
+            <td>Etsy</td>
+            <td>13% + 2.5% = 15.5%</td>
+            <td>1 − 0.155 − 0.25 = <strong>0.595</strong></td>
+            <td><strong>$75.63</strong></td>
+            <td>$18.91</td>
+          </tr>
+          <tr>
+            <td>Amazon</td>
+            <td>12% + 2.5% = 14.5%</td>
+            <td>1 − 0.145 − 0.25 = <strong>0.605</strong></td>
+            <td><strong>$74.38</strong></td>
+            <td>$18.60</td>
+          </tr>
+          <tr>
+            <td>Own store (e-comm.)</td>
+            <td>2.8% gateway</td>
+            <td>1 − 0.028 − 0.25 = <strong>0.722</strong></td>
+            <td><strong>$62.33</strong></td>
+            <td>$15.58</td>
+          </tr>
+          <tr>
+            <td>Physical store</td>
+            <td>0%</td>
+            <td>1 − 0 − 0.25 = <strong>0.75</strong></td>
+            <td><strong>$60.00</strong></td>
+            <td>$15.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <strong>Practical takeaway:</strong> For the same product and the same 25% margin, you need to charge $76.27 on eBay but only $60.00 in a physical store. If you charge the same price across every channel, your marketplace margin drops to zero — or turns into a loss.
+    </div>
+  </section>
+
+  <section class="content-section" id="erros-precificacao">
+    <h2>Mistakes That Quietly Destroy Your Margin</h2>
+
+    <div class="error-grid">
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Not including allocated fixed costs</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Rent, salaries and utilities exist even when there are no sales. If they aren't included in the price, your gross margin won't cover the month's bills.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Ignoring the return rate</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">In e-commerce, return rates of 3% to 8% are common. Each return absorbs the product cost plus shipping (both ways). Add 2% to 5% as a variable expense.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Forgetting sales tax</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">Tax rates vary by state and revenue tier, and can range from roughly 4% to 19% depending on your local tax authority. If you move into a higher bracket, a price that used to cover your costs can start generating a loss.</p>
+      </div>
+      <div class="error-item" style="border-color:var(--color-border);">
+        <h3 style="color:#c2410c">Using markup and calling it margin</h3>
+        <p style="color:var(--color-text);font-size:0.92rem">A 40% markup on cost results in a 28.6% margin, not 40%. Anyone using this shortcut may be working with a margin 30% smaller than they think.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="/en/">Home</a>
+      <a href="/en/calculadora-markup/">Markup Calculator</a>
+      <a href="/en/calculadora-preco-venda/">Selling Price</a>
+      <a href="/en/calculadora-desconto/">Discount Calculator</a>
+      <a href="/en/calculadora-lucro/">Profit Calculator</a>
+      <a href="/en/sobre/">About</a>
+      <a href="/en/contato/">Contact</a>
+      <a href="/en/politica-de-privacidade/">Privacy</a>
+    </nav>
+    <p>© 2025 CalculaMargem — Free tool to calculate profit margin, markup and selling price.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("en-US", { style: "currency", currency: "USD" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(el ? el.value : "");
+    return isNaN(v) ? null : v;
+  }
+
+  function pct(el) {
+    var v = num(el);
+    return v === null ? 0 : v / 100;
+  }
+
+  // -------------------------------------------------------
+  // Calc 1 — Quick: cost + margin → SP
+  // -------------------------------------------------------
+  var rCusto  = document.getElementById("r-custo");
+  var rMargem = document.getElementById("r-margem");
+  var rPv     = document.getElementById("r-pv");
+  var rLucro  = document.getElementById("r-lucro");
+  var rMarkup = document.getElementById("r-markup");
+
+  function calcRapido() {
+    var c = num(rCusto);
+    var m = num(rMargem);
+
+    if (c === null || m === null || c <= 0 || m < 0 || m >= 100) {
+      rPv.textContent = rLucro.textContent = rMarkup.textContent = "—";
+      return;
+    }
+
+    var mf    = m / 100;
+    var pv    = c / (1 - mf);
+    var lucro = pv - c;
+
+    rPv.textContent     = fmt(pv);
+    rLucro.textContent  = fmt(lucro);
+    rMarkup.textContent = fmtPct(lucro / c);
+  }
+
+  rCusto.addEventListener("input", calcRapido);
+  rMargem.addEventListener("input", calcRapido);
+
+  // -------------------------------------------------------
+  // Calc 2 — Check: cost + SP + target → status
+  // -------------------------------------------------------
+  var vCusto   = document.getElementById("v-custo");
+  var vPv      = document.getElementById("v-pv");
+  var vMeta    = document.getElementById("v-meta");
+  var vStatus  = document.getElementById("v-status");
+  var vStatusBox = document.getElementById("v-status-box");
+  var vMargem  = document.getElementById("v-margem");
+  var vLucro   = document.getElementById("v-lucro");
+  var vPvMeta  = document.getElementById("v-pv-meta");
+
+  function calcVerificar() {
+    var c  = num(vCusto);
+    var pv = num(vPv);
+    var mt = num(vMeta);
+
+    if (c === null || pv === null || c <= 0 || pv <= 0) {
+      vStatus.textContent = vMargem.textContent = vLucro.textContent = vPvMeta.textContent = "—";
+      vStatusBox.className = "result";
+      return;
+    }
+
+    var lucro  = pv - c;
+    var margem = lucro / pv;
+
+    vMargem.textContent = fmtPct(margem);
+    vLucro.textContent  = fmt(lucro);
+
+    if (mt !== null && mt > 0) {
+      var pvNecessario = c / (1 - mt / 100);
+      vPvMeta.textContent = fmt(pvNecessario);
+
+      if (margem >= mt / 100 - 0.0001) {
+        vStatus.textContent  = "✓ Target reached";
+        vStatusBox.className = "result result--ok";
+      } else {
+        vStatus.textContent  = "✗ Below target";
+        vStatusBox.className = "result result--warn";
+      }
+    } else {
+      vPvMeta.textContent = "—";
+      vStatus.textContent = lucro >= 0 ? "Profitable" : "Loss";
+      vStatusBox.className = lucro >= 0 ? "result result--ok" : "result result--warn";
+    }
+  }
+
+  [vCusto, vPv, vMeta].forEach(function (el) { el.addEventListener("input", calcVerificar); });
+
+  // -------------------------------------------------------
+  // Calc 3 — Full + Simulator
+  // -------------------------------------------------------
+  var cProduto     = document.getElementById("c-produto");
+  var cEmbalagem   = document.getElementById("c-embalagem");
+  var cFreteEntrada= document.getElementById("c-frete-entrada");
+  var cFixo        = document.getElementById("c-fixo");
+  var cOutrosCusto = document.getElementById("c-outros-custo");
+  var cComissao    = document.getElementById("c-comissao");
+  var cGateway     = document.getElementById("c-gateway");
+  var cFreteSaida  = document.getElementById("c-frete-saida");
+  var cImposto     = document.getElementById("c-imposto");
+  var cOutrosDesp  = document.getElementById("c-outros-desp");
+  var cMargem      = document.getElementById("c-margem");
+  var completaPanel= document.getElementById("completa-panel");
+
+  var simAviso    = document.getElementById("sim-aviso");
+  var simWrap     = document.getElementById("sim-tabela-wrap");
+  var simBody     = document.getElementById("sim-body");
+  var simNote     = document.getElementById("sim-note");
+
+  function calcCompleta() {
+    var produto     = num(cProduto)      || 0;
+    var embalagem   = num(cEmbalagem)    || 0;
+    var freteEnt    = num(cFreteEntrada) || 0;
+    var fixo        = num(cFixo)         || 0;
+    var outrosCusto = num(cOutrosCusto)  || 0;
+
+    var cmv = produto + embalagem + freteEnt + fixo + outrosCusto;
+
+    var comissao    = pct(cComissao);
+    var gateway     = pct(cGateway);
+    var freteSaida  = pct(cFreteSaida);
+    var imposto     = pct(cImposto);
+    var outrosDesp  = pct(cOutrosDesp);
+    var totalDesp   = comissao + gateway + freteSaida + imposto + outrosDesp;
+
+    var margemPct   = num(cMargem);
+    var margemFrac  = margemPct !== null ? margemPct / 100 : null;
+
+    // Needs at least COGS > 0 and a margin
+    if (cmv <= 0 || margemFrac === null) {
+      completaPanel.innerHTML = '<div class="divisor-placeholder"><p>Fill in the product cost and target margin to calculate.</p></div>';
+      simAviso.style.display  = "block";
+      simWrap.style.display   = "none";
+      return;
+    }
+
+    var divisor = 1 - totalDesp - margemFrac;
+
+    if (divisor <= 0) {
+      completaPanel.innerHTML = '<div class="divisor-error">The sum of expenses (' + fmtPct(totalDesp) + ') + margin (' + fmtPct(margemFrac) + ') exceeds 100%. Reduce the values.</div>';
+      simAviso.style.display = "block";
+      simWrap.style.display  = "none";
+      return;
+    }
+
+    var pv       = cmv / divisor;
+    var lucro    = pv * margemFrac;
+    var totalTax = pv * totalDesp;
+    var mkSimp   = (pv - cmv) / cmv;
+
+    // Percentages for the bar
+    var pctCmv  = cmv / pv;
+    var pctTax  = totalDesp;
+    var pctLuc  = margemFrac;
+
+    completaPanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Suggested selling price</div>' +
+          '<div class="divisor-main-value">' + fmt(pv) + '</div>' +
+        '</div>' +
+        '<div class="pv-bar-wrap">' +
+          '<div class="pv-bar">' +
+            '<div class="pv-bar-cost"  style="width:' + (pctCmv * 100).toFixed(1) + '%" title="Cost: ' + fmtPct(pctCmv) + '"></div>' +
+            '<div class="pv-bar-taxes" style="width:' + (pctTax * 100).toFixed(1) + '%" title="Fees: ' + fmtPct(pctTax) + '"></div>' +
+            '<div class="pv-bar-profit"style="width:' + (pctLuc * 100).toFixed(1) + '%" title="Profit: ' + fmtPct(pctLuc) + '"></div>' +
+          '</div>' +
+          '<div class="pv-bar-legend">' +
+            '<span class="pv-legend-cost">Cost ' + fmtPct(pctCmv) + '</span>' +
+            '<span class="pv-legend-taxes">Fees ' + fmtPct(pctTax) + '</span>' +
+            '<span class="pv-legend-profit">Profit ' + fmtPct(pctLuc) + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          '<div class="divisor-row"><span>Total COGS</span><strong>' + fmt(cmv) + '</strong></div>' +
+          '<div class="divisor-row"><span>Variable expenses (' + fmtPct(totalDesp) + ')</span><strong>' + fmt(totalTax) + '</strong></div>' +
+          '<div class="divisor-row divisor-row--highlight"><span>Net profit (' + fmtPct(margemFrac) + ')</span><strong>' + fmt(lucro) + '</strong></div>' +
+          '<div class="divisor-row"><span>Divisor</span><strong>' + divisor.toLocaleString("en-US", {minimumFractionDigits:4,maximumFractionDigits:4}) + '</strong></div>' +
+          '<div class="divisor-row"><span>Equivalent markup</span><strong>' + fmtPct(mkSimp) + '</strong></div>' +
+        '</div>' +
+      '</div>';
+
+    // Update simulator
+    simAviso.style.display = "none";
+    simWrap.style.display  = "block";
+    simNote.textContent    = "COGS: " + fmt(cmv) + " | Variable expenses: " + fmtPct(totalDesp) + " | Base divisor: 1 − " + fmtPct(totalDesp) + " − margin";
+
+    var margens = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50];
+    simBody.innerHTML = "";
+
+    margens.forEach(function (mg) {
+      var div = 1 - totalDesp - mg;
+      var tr  = document.createElement("tr");
+
+      if (div <= 0) {
+        tr.innerHTML =
+          "<td>" + fmtPct(mg) + "</td>" +
+          "<td colspan='3' style='color:#c2410c;font-size:0.85rem'>Expenses + margin > 100% — not feasible</td>";
+      } else {
+        var pvSim    = cmv / div;
+        var lucroSim = pvSim * mg;
+        var mkSim    = (pvSim - cmv) / cmv;
+
+        tr.innerHTML =
+          "<td>" + fmtPct(mg) + "</td>" +
+          "<td>" + fmt(pvSim) + "</td>" +
+          "<td>" + fmt(lucroSim) + "</td>" +
+          "<td>" + fmtPct(mkSim) + "</td>";
+
+        if (Math.abs(mg - margemFrac) < 0.001) {
+          tr.style.background    = "var(--color-highlight-bg)";
+          tr.style.fontWeight    = "600";
+        }
+      }
+      simBody.appendChild(tr);
+    });
+  }
+
+  var completaInputs = [
+    cProduto, cEmbalagem, cFreteEntrada, cFixo, cOutrosCusto,
+    cComissao, cGateway, cFreteSaida, cImposto, cOutrosDesp, cMargem
+  ];
+  completaInputs.forEach(function (el) { el.addEventListener("input", calcCompleta); });
+
+  // Marketplace presets
+  document.querySelectorAll(".preset-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (btn.classList.contains("preset-btn--clear")) {
+        cComissao.value = cGateway.value = cFreteSaida.value = cImposto.value = cOutrosDesp.value = "";
+      } else {
+        cComissao.value   = btn.dataset.comissao;
+        cGateway.value    = btn.dataset.gateway;
+        cFreteSaida.value = btn.dataset.frete;
+        cImposto.value    = btn.dataset.imposto;
+        cOutrosDesp.value = btn.dataset.outros;
+      }
+      calcCompleta();
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>

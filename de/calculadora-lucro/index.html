@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gewinn-Rechner: Brutto-, Betriebs- und Nettogewinn — CalculaMargem</title>
+<meta name="description" content="Berechnen Sie Brutto-, Betriebs- und Nettogewinn mit der interaktiven vereinfachten Gewinn- und Verlustrechnung. Inklusive Gewinnschwelle, Szenario-Simulator und Margenanalyse. Kostenloses Tool.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calculamargem.com.br/de/calculadora-lucro/">
+
+<link rel="alternate" hreflang="pt-BR" href="https://calculamargem.com.br/calculadora-lucro/">
+<link rel="alternate" hreflang="en" href="https://calculamargem.com.br/en/calculadora-lucro/">
+<link rel="alternate" hreflang="es" href="https://calculamargem.com.br/es/calculadora-lucro/">
+<link rel="alternate" hreflang="fr" href="https://calculamargem.com.br/fr/calculadora-lucro/">
+<link rel="alternate" hreflang="de" href="https://calculamargem.com.br/de/calculadora-lucro/">
+<link rel="alternate" hreflang="x-default" href="https://calculamargem.com.br/calculadora-lucro/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gewinn-Rechner: Brutto-, Betriebs- und Nettogewinn — CalculaMargem">
+<meta property="og:description" content="Interaktive vereinfachte GuV + Gewinnschwelle. Berechnen Sie die drei Gewinnarten in Echtzeit.">
+<meta property="og:url" content="https://calculamargem.com.br/de/calculadora-lucro/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="CalculaMargem">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gewinn-Rechner — CalculaMargem">
+<meta name="twitter:description" content="Berechnen Sie Brutto-, Betriebs- und Nettogewinn mit interaktiver GuV und Gewinnschwelle.">
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://calculamargem.com.br/de/" },
+        { "@type": "ListItem", "position": 2, "name": "Gewinn-Rechner", "item": "https://calculamargem.com.br/de/calculadora-lucro/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/de/calculadora-lucro/",
+      "name": "Gewinn-Rechner: Brutto-, Betriebs- und Nettogewinn",
+      "description": "Berechnen Sie die drei Gewinnarten mit interaktiver vereinfachter GuV und Gewinnschwelle.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/de/#website" }
+    }
+  ]
+}
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+<header class="site-header">
+  <div class="container">
+    <p class="site-brand"><a href="/de/">CalculaMargem</a></p>
+    <h1>Gewinn-Rechner</h1>
+    <p class="tagline">Brutto-, Betriebs- und Nettogewinn — interaktive GuV und Gewinnschwelle</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Hauptnavigation">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/de/">Startseite</a></li>
+      <li><a href="/de/calculadora-markup/">Aufschlag-Rechner</a></li>
+      <li><a href="/de/calculadora-preco-venda/">Verkaufspreis</a></li>
+      <li><a href="/de/formacao-de-preco/">Preisbildung</a></li>
+      <li><a href="/de/como-calcular-markup/">Anleitung</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Sprache">
+      <a href="/calculadora-lucro/">PT</a>
+      <a href="/en/calculadora-lucro/">EN</a>
+      <a href="/es/calculadora-lucro/">ES</a>
+      <a href="/fr/calculadora-lucro/">FR</a>
+      <a href="/de/calculadora-lucro/" aria-current="true">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container" id="main">
+
+  <nav class="breadcrumb" aria-label="Standort">
+    <a href="/de/">Startseite</a>
+    <span aria-hidden="true">›</span>
+    <span>Gewinn-Rechner</span>
+  </nav>
+
+  <section class="intro">
+    <p>Vier Tools in einem: <strong>Gewinn pro Einheit</strong>, <strong>Periodengewinn</strong>, <strong>vereinfachte GuV</strong> mit visueller Margenkaskade und <strong>Gewinnschwelle</strong> mit Volumensimulator.</p>
+  </section>
+
+  <!-- ====================================================
+       RECHNER 1 und 2 — nebeneinander
+  ===================================================== -->
+  <section class="calculators" aria-label="Schnelle Gewinn-Rechner">
+
+    <!-- RECHNER 1: Gewinn pro Einheit -->
+    <article class="card" id="calc-lucro-unidade">
+      <h2>Gewinn pro Einheit</h2>
+      <p class="card-desc">Geben Sie Kosten und Verkaufspreis eines Produkts ein, um Gewinn, Marge und Aufschlag pro Einheit zu berechnen.</p>
+
+      <div class="field">
+        <label for="u-custo">Produktkosten (€)</label>
+        <input type="number" id="u-custo" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 45,00">
+      </div>
+      <div class="field">
+        <label for="u-pv">Verkaufspreis (€)</label>
+        <input type="number" id="u-pv" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 79,90">
+      </div>
+      <div class="field">
+        <label for="u-qtd">Verkaufte Menge (optional)</label>
+        <input type="number" id="u-qtd" inputmode="numeric" min="1" step="1" placeholder="Z.B.: 150">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Bruttogewinn pro Einheit</span>
+          <span class="result-value" id="u-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Gewinnspanne</span>
+          <span class="result-value" id="u-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Aufschlag</span>
+          <span class="result-value" id="u-markup">—</span>
+        </div>
+        <div class="result" id="u-total-box" style="display:none">
+          <span class="result-label">Gesamtgewinn (Menge × Einheit)</span>
+          <span class="result-value" id="u-total">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- RECHNER 2: Periodengewinn -->
+    <article class="card" id="calc-lucro-periodo">
+      <h2>Bruttogewinn der Periode</h2>
+      <p class="card-desc">Geben Sie den Gesamtumsatz und den Wareneinsatz ein, um den Bruttogewinn des Monats oder der Periode zu berechnen.</p>
+
+      <div class="field">
+        <label for="p-receita">Bruttoumsatz (€)</label>
+        <input type="number" id="p-receita" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 80.000,00">
+      </div>
+      <div class="field">
+        <label for="p-cmv">Wareneinsatz — Kosten der verkauften Waren (€)</label>
+        <input type="number" id="p-cmv" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 48.000,00">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Bruttogewinn</span>
+          <span class="result-value" id="p-lucro-bruto">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Bruttomarge</span>
+          <span class="result-value" id="p-margem-bruta">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Wareneinsatz vom Umsatz</span>
+          <span class="result-value" id="p-cmv-pct">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       VEREINFACHTE GuV
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-dre">
+    <h2>Vereinfachte GuV — Periodenergebnis</h2>
+    <p>Füllen Sie die Felder unten aus, um die vollständige <strong>Gewinn- und Verlustrechnung</strong> mit Brutto-, Betriebs- und Nettogewinn in Echtzeit zu erstellen.</p>
+
+    <div class="divisor-grid dre-grid">
+
+      <!-- EINGABEN -->
+      <div class="divisor-inputs">
+
+        <fieldset class="field-group">
+          <legend>1. Umsatz</legend>
+          <div class="field field--inline">
+            <label for="d-receita-bruta">Bruttoumsatz</label>
+            <input type="number" id="d-receita-bruta" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-devolucoes">Retouren und Rabatte</label>
+            <input type="number" id="d-devolucoes" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-imp-vendas">Umsatzsteuer (%)</label>
+            <input type="number" id="d-imp-vendas" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>2. Wareneinsatz</legend>
+          <div class="field field--inline">
+            <label for="d-cmv">Wareneinsatz (Kosten der verkauften Produkte)</label>
+            <input type="number" id="d-cmv" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>3. Betriebskosten</legend>
+          <div class="field field--inline">
+            <label for="d-salarios">Gehälter und Lohnnebenkosten</label>
+            <input type="number" id="d-salarios" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-aluguel">Miete / Unternehmerlohn</label>
+            <input type="number" id="d-aluguel" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-energia">Strom, Internet und Dienstleistungen</label>
+            <input type="number" id="d-energia" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-marketing">Marketing und Werbung</label>
+            <input type="number" id="d-marketing" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-outras-desp">Sonstige Betriebskosten</label>
+            <input type="number" id="d-outras-desp" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>4. Finanzergebnis</legend>
+          <div class="field field--inline">
+            <label for="d-juros">Zinsen und Finanzaufwendungen</label>
+            <input type="number" id="d-juros" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-receita-fin">Finanzerträge (Zinserträge)</label>
+            <input type="number" id="d-receita-fin" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>5. Ertragsteuern</legend>
+          <div class="field field--inline">
+            <label for="d-ir">Körperschaft-/Gewerbesteuer (%)</label>
+            <input type="number" id="d-ir" inputmode="decimal" min="0" max="40" step="0.5" placeholder="Z.B.: 15">
+          </div>
+        </fieldset>
+
+      </div>
+
+      <!-- ERGEBNIS: GuV -->
+      <div class="divisor-results">
+        <div class="dre-panel" id="dre-panel" aria-live="polite">
+          <div class="divisor-placeholder">
+            <p>Füllen Sie den Bruttoumsatz aus, um die GuV zu erstellen.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       GEWINNSCHWELLE
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-pe">
+    <h2>Gewinnschwellen-Rechner (Break-even-Punkt)</h2>
+    <p>Ermitteln Sie, wie viele Einheiten (oder wie viel Umsatz) Ihr Unternehmen erreichen muss, um alle Fixkosten zu decken und Gewinn zu erzielen.</p>
+
+    <div class="divisor-grid">
+
+      <div class="divisor-inputs">
+        <div class="field">
+          <label for="pe-fixos">Gesamte monatliche Fixkosten (€)
+            <span class="field-hint">Miete + Gehälter + Strom + Internet + sonstige Fixkosten</span>
+          </label>
+          <input type="number" id="pe-fixos" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 8.000,00">
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Deckungsbeitrag pro Einheit</legend>
+          <div class="field field--inline">
+            <label for="pe-pv">Verkaufspreis pro Einheit (€)</label>
+            <input type="number" id="pe-pv" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 89,90">
+          </div>
+          <div class="field field--inline">
+            <label for="pe-cv">Variable Kosten pro Einheit (€)
+            </label>
+            <input type="number" id="pe-cv" inputmode="decimal" min="0" step="0.01" placeholder="Z.B.: 52,00">
+          </div>
+          <div class="dre-linha dre-linha--sub" style="margin:4px 0 0;padding:8px 0">
+            <span style="font-size:0.82rem;color:var(--color-text-muted)">Berechneter DB pro Einheit:</span>
+            <strong id="pe-mc-unit" style="font-size:0.88rem;color:var(--color-primary-dark)">—</strong>
+          </div>
+        </fieldset>
+
+        <div class="field" style="margin-top:4px">
+          <label for="pe-mc-pct">Oder geben Sie den Deckungsbeitrag (%) ein
+            <span class="field-hint">falls Sie die variablen Kosten pro Einheit nicht kennen</span>
+          </label>
+          <input type="number" id="pe-mc-pct" inputmode="decimal" min="0" max="100" step="0.5" placeholder="Z.B.: 35">
+        </div>
+      </div>
+
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="pe-panel">
+          <div class="divisor-placeholder">
+            <p>Füllen Sie Fixkosten und Deckungsbeitrag aus, um die Gewinnschwelle zu berechnen.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Volumensimulator -->
+    <div id="pe-sim-wrap" style="display:none;margin-top:24px">
+      <h3>Simulator: Ergebnis nach Volumen</h3>
+      <p style="font-size:0.92rem;color:var(--color-text-muted);margin-bottom:12px" id="pe-sim-desc"></p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Verkauftes Volumen</th>
+              <th>Umsatz</th>
+              <th>Variable Kosten</th>
+              <th>Deckungsbeitrag</th>
+              <th>Nettoergebnis</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="pe-sim-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       REDAKTIONELLER INHALT
+  ===================================================== -->
+  <section class="content-section" id="tres-tipos-lucro">
+    <h2>Die drei Gewinnarten: Was jede davon zeigt</h2>
+    <p>Das Wort „Gewinn" wird im Alltag allgemein verwendet, aber das Rechnungswesen unterscheidet drei Ebenen mit unterschiedlichen Zwecken. Jede zu kennen ist entscheidend, um die richtigen Entscheidungen für das Unternehmen zu treffen.</p>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Bruttogewinn</h3>
+        <code>Nettoumsatz − Wareneinsatz</code>
+      </div>
+      <div class="formula-box">
+        <h3>Betriebsgewinn</h3>
+        <code>Bruttogewinn − Betriebskosten</code>
+      </div>
+      <div class="formula-box">
+        <h3>Nettogewinn</h3>
+        <code>Betriebsg. ± Finanzergebnis − Steuern</code>
+      </div>
+    </div>
+
+    <h3>Bruttogewinn: Einkaufs- und Preiseffizienz</h3>
+    <p>Der Bruttogewinn misst, wie viel vom Umsatz übrig bleibt, nachdem nur die verkauften Produkte bezahlt wurden. Ein hoher Bruttogewinn deutet auf gute Preisbildung und/oder gute Einkaufskostenkontrolle hin. Er ist der Ausgangspunkt: Reicht der Bruttogewinn nicht aus, kann keine Reduzierung der Betriebskosten das Ergebnis retten.</p>
+
+    <h3>Betriebsgewinn: Effizienz des operativen Geschäfts</h3>
+    <p>Der Betriebsgewinn zieht die Fixkosten des Betriebs ab. Er beantwortet die Frage: „Ist die Kerntätigkeit des Unternehmens profitabel, unabhängig davon, wie sie finanziert wird?" Ein positiver Betriebsgewinn deutet auf ein gesundes Geschäftsmodell hin — selbst wenn Schulden das Finanzergebnis belasten.</p>
+
+    <h3>Nettogewinn: Was tatsächlich übrig bleibt</h3>
+    <p>Der Nettogewinn ist das Endergebnis nach allen Abzügen — einschließlich der Ertragsteuern. Es ist die Zahl, die das Eigenkapital der Gesellschafter und die Reinvestitionsfähigkeit des Unternehmens speist. Ein Unternehmen kann einen hohen Bruttogewinn und einen niedrigen — oder sogar negativen — Nettogewinn haben, aufgrund unkontrollierter Ausgaben oder hoher Schulden.</p>
+
+    <div class="example-box">
+      <h3>Beispiel: vom Umsatz zum Nettogewinn</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Gewinn- und Verlustrechnung</th><th>Wert</th><th>% des Umsatzes</th></tr></thead>
+          <tbody>
+            <tr><td>Bruttoumsatz</td><td>100.000 €</td><td>—</td></tr>
+            <tr><td>(−) Umsatzsteuer (7 %)</td><td>(7.000) €</td><td>—</td></tr>
+            <tr><td><strong>= Nettoumsatz</strong></td><td><strong>93.000 €</strong></td><td><strong>100 %</strong></td></tr>
+            <tr><td>(−) Wareneinsatz</td><td>(51.150) €</td><td>−55 %</td></tr>
+            <tr style="background:var(--color-highlight-bg)"><td><strong>= Bruttogewinn</strong></td><td><strong>41.850 €</strong></td><td><strong>45 %</strong></td></tr>
+            <tr><td>(−) Betriebskosten</td><td>(28.000) €</td><td>−30,1 %</td></tr>
+            <tr style="background:#ede9fe"><td><strong>= Betriebsgewinn</strong></td><td><strong>13.850 €</strong></td><td><strong>14,9 %</strong></td></tr>
+            <tr><td>(−) Finanzaufwendungen</td><td>(1.200) €</td><td>−1,3 %</td></tr>
+            <tr><td>(−) Körperschaft-/Gewerbesteuer (15 %)</td><td>(1.898) €</td><td>−2 %</td></tr>
+            <tr style="background:var(--color-example-bg)"><td><strong>= Nettogewinn</strong></td><td><strong>10.752 €</strong></td><td><strong>11,6 %</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="ponto-equilibrio-conceito">
+    <h2>Was ist die Gewinnschwelle und warum sie überwachen?</h2>
+    <p>Die Gewinnschwelle (Break-even-Punkt) ist das Verkaufsvolumen, bei dem der Gesamtumsatz alle Kosten deckt — ohne Gewinn oder Verlust. Unterhalb der Gewinnschwelle arbeitet das Unternehmen mit Verlust. Darüber beginnt es, Gewinn zu erzielen.</p>
+
+    <div class="formula-highlight">
+      <strong>Gewinnschwelle (Einheiten) = Fixkosten ÷ Deckungsbeitrag pro Einheit</strong><br>
+      <strong>Gewinnschwelle (Umsatz) = Fixkosten ÷ Deckungsbeitrag %</strong>
+    </div>
+
+    <div class="example-box">
+      <h3>Beispiel</h3>
+      <p>Geschäft mit Fixkosten von 6.000 €/Monat. Produkt verkauft für 80 €, variable Kosten 48 €.</p>
+      <ul>
+        <li>Deckungsbeitrag pro Einheit = 80 € − 48 € = <strong>32 €</strong></li>
+        <li>DB% = 32 € ÷ 80 € = <strong>40 %</strong></li>
+        <li>Gewinnschwelle in Einheiten = 6.000 € ÷ 32 € = <strong>188 Einheiten/Monat</strong></li>
+        <li>Gewinnschwelle in Umsatz = 6.000 € ÷ 0,40 = <strong>15.000 €/Monat</strong></li>
+      </ul>
+      <p>Ab der 189. verkauften Einheit im Monat erzeugt jeder Verkauf 32 € Nettogewinn für das Unternehmen.</p>
+    </div>
+
+    <div class="tip-box">
+      <strong>Tipp:</strong> Nutzen Sie die Gewinnschwelle als Mindestziel für monatliche Verkäufe. Verkaufen Sie dauerhaft unter der Gewinnschwelle, häuft das Unternehmen Verluste an. Liegen Sie deutlich darüber, gibt es Raum, die Struktur zu erweitern oder Gewinne auszuschütten.
+    </div>
+
+    <div class="alert-box">
+      <strong>Deckungsbeitrag ≠ Gewinnspanne:</strong> Der Deckungsbeitrag zieht nur die <em>variablen</em> Kosten ab — nicht die Fixkosten. Er zeigt, wie viel jeder Verkauf zur Deckung der Fixkosten „beiträgt". Erst nachdem alle Fixkosten gedeckt sind, erzeugen Verkäufe Nettogewinn.
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav" aria-label="Links im Footer">
+      <a href="/de/">Startseite</a>
+      <a href="/de/calculadora-markup/">Aufschlag-Rechner</a>
+      <a href="/de/calculadora-preco-venda/">Verkaufspreis</a>
+      <a href="/de/calculadora-desconto/">Rabatt-Rechner</a>
+      <a href="/de/calculadora-lucro/">Gewinn-Rechner</a>
+      <a href="/de/sobre/">Über uns</a>
+      <a href="/de/contato/">Kontakt</a>
+      <a href="/de/politica-de-privacidade/">Datenschutz</a>
+    </nav>
+    <p>© 2025 CalculaMargem — Kostenloses Tool zur Berechnung von Gewinnspanne, Kalkulationsaufschlag und Verkaufspreis.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("de-DE", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(String(el ? el.value : "").replace(",", "."));
+    return isNaN(v) ? null : v;
+  }
+
+  function pct(el) {
+    var v = num(el);
+    return v === null ? null : v / 100;
+  }
+
+  // -------------------------------------------------------
+  // Rechner 1 — Gewinn pro Einheit
+  // -------------------------------------------------------
+  var uCusto   = document.getElementById("u-custo");
+  var uPv      = document.getElementById("u-pv");
+  var uQtd     = document.getElementById("u-qtd");
+  var uLucro   = document.getElementById("u-lucro");
+  var uMargem  = document.getElementById("u-margem");
+  var uMarkup  = document.getElementById("u-markup");
+  var uTotal   = document.getElementById("u-total");
+  var uTotalBox= document.getElementById("u-total-box");
+
+  function calcUnidade() {
+    var c  = num(uCusto);
+    var pv = num(uPv);
+    var q  = num(uQtd);
+
+    if (c === null || pv === null || c < 0 || pv <= 0) {
+      uLucro.textContent = uMargem.textContent = uMarkup.textContent = "—";
+      uTotalBox.style.display = "none";
+      return;
+    }
+
+    var lucro  = pv - c;
+    var margem = lucro / pv;
+    var markup = c > 0 ? lucro / c : null;
+
+    uLucro.textContent  = fmt(lucro);
+    uMargem.textContent = fmtPct(margem);
+    uMarkup.textContent = markup !== null ? fmtPct(markup) : "—";
+
+    if (q !== null && q > 0) {
+      uTotalBox.style.display = "flex";
+      uTotal.textContent = fmt(lucro * q);
+    } else {
+      uTotalBox.style.display = "none";
+    }
+  }
+
+  [uCusto, uPv, uQtd].forEach(function (el) { el.addEventListener("input", calcUnidade); });
+
+  // -------------------------------------------------------
+  // Rechner 2 — Periodengewinn
+  // -------------------------------------------------------
+  var pReceita     = document.getElementById("p-receita");
+  var pCmv         = document.getElementById("p-cmv");
+  var pLucroBruto  = document.getElementById("p-lucro-bruto");
+  var pMargemBruta = document.getElementById("p-margem-bruta");
+  var pCmvPct      = document.getElementById("p-cmv-pct");
+
+  function calcPeriodo() {
+    var r = num(pReceita);
+    var c = num(pCmv);
+
+    if (r === null || r <= 0) {
+      pLucroBruto.textContent = pMargemBruta.textContent = pCmvPct.textContent = "—";
+      return;
+    }
+
+    var cmv   = c !== null && c >= 0 ? c : 0;
+    var lucro = r - cmv;
+
+    pLucroBruto.textContent  = fmt(lucro);
+    pMargemBruta.textContent = fmtPct(lucro / r);
+    pCmvPct.textContent      = fmtPct(cmv / r);
+  }
+
+  [pReceita, pCmv].forEach(function (el) { el.addEventListener("input", calcPeriodo); });
+
+  // -------------------------------------------------------
+  // Vereinfachte GuV
+  // -------------------------------------------------------
+  var dReceita    = document.getElementById("d-receita-bruta");
+  var dDev        = document.getElementById("d-devolucoes");
+  var dImpVendas  = document.getElementById("d-imp-vendas");
+  var dCmv        = document.getElementById("d-cmv");
+  var dSalarios   = document.getElementById("d-salarios");
+  var dAluguel    = document.getElementById("d-aluguel");
+  var dEnergia    = document.getElementById("d-energia");
+  var dMarketing  = document.getElementById("d-marketing");
+  var dOutrasDesp = document.getElementById("d-outras-desp");
+  var dJuros      = document.getElementById("d-juros");
+  var dRecFin     = document.getElementById("d-receita-fin");
+  var dIr         = document.getElementById("d-ir");
+  var drePanel    = document.getElementById("dre-panel");
+
+  function sinal(v) { return v < 0 ? "dre-neg" : (v > 0 ? "dre-pos" : ""); }
+
+  function linhaSimples(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha ' + (classe || "") + '">' +
+      '<span class="dre-desc">' + label + '</span>' +
+      '<span class="dre-val ' + sinal(valor) + '">' + fmt(valor) + '</span>' +
+      '<span class="dre-pct">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function linhaResultado(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha dre-linha--resultado ' + (classe || "") + '">' +
+      '<span class="dre-desc"><strong>' + label + '</strong></span>' +
+      '<span class="dre-val dre-val--resultado ' + sinal(valor) + '"><strong>' + fmt(valor) + '</strong></span>' +
+      '<span class="dre-pct dre-pct--resultado">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function calcDRE() {
+    var rb  = num(dReceita);
+    if (rb === null || rb <= 0) {
+      drePanel.innerHTML = '<div class="divisor-placeholder"><p>Füllen Sie den Bruttoumsatz aus, um die GuV zu erstellen.</p></div>';
+      return;
+    }
+
+    var dev     = num(dDev)       || 0;
+    var impV    = pct(dImpVendas) || 0;
+    var cmv     = num(dCmv)       || 0;
+    var sal     = num(dSalarios)  || 0;
+    var alug    = num(dAluguel)   || 0;
+    var en      = num(dEnergia)   || 0;
+    var mkt     = num(dMarketing) || 0;
+    var outrD   = num(dOutrasDesp)|| 0;
+    var juros   = num(dJuros)     || 0;
+    var recFin  = num(dRecFin)    || 0;
+    var irPct   = pct(dIr);
+
+    var impostoVendas   = rb * impV;
+    var recLiq          = rb - dev - impostoVendas;
+    var lucroBruto      = recLiq - cmv;
+    var totalDesp       = sal + alug + en + mkt + outrD;
+    var lucroOp         = lucroBruto - totalDesp;
+    var resFin          = recFin - juros;
+    var lucroAntesIR    = lucroOp + resFin;
+    var ir              = irPct !== null && lucroAntesIR > 0 ? lucroAntesIR * irPct : 0;
+    var lucroLiq        = lucroAntesIR - ir;
+
+    var html = '<div class="dre-output">';
+    html += '<div class="dre-header">GuV — Gewinn- und Verlustrechnung</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("Bruttoumsatz", rb, recLiq, "dre-receita");
+    if (dev > 0)           html += linhaSimples("(−) Retouren und Rabatte", -dev, recLiq, "dre-linha--sub");
+    if (impostoVendas > 0) html += linhaSimples("(−) Umsatzsteuer (" + fmtPct(impV) + ")", -impostoVendas, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Nettoumsatz", recLiq, recLiq, "dre-linha--bruto");
+    html += '</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("(−) Wareneinsatz", -cmv, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Bruttogewinn", lucroBruto, recLiq, lucroBruto >= 0 ? "dre-linha--bruto" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    if (totalDesp > 0) {
+      html += '<div class="dre-section">';
+      if (sal)   html += linhaSimples("(−) Gehälter und Lohnnebenkosten", -sal, recLiq, "dre-linha--sub");
+      if (alug)  html += linhaSimples("(−) Miete / Unternehmerlohn", -alug, recLiq, "dre-linha--sub");
+      if (en)    html += linhaSimples("(−) Strom, Internet und Dienstleistungen", -en, recLiq, "dre-linha--sub");
+      if (mkt)   html += linhaSimples("(−) Marketing und Werbung", -mkt, recLiq, "dre-linha--sub");
+      if (outrD) html += linhaSimples("(−) Sonstige Betriebskosten", -outrD, recLiq, "dre-linha--sub");
+      html += linhaResultado("= Betriebsgewinn", lucroOp, recLiq, lucroOp >= 0 ? "dre-linha--op" : "dre-linha--prejuizo");
+      html += '</div>';
+    }
+
+    if (resFin !== 0 || ir > 0) {
+      html += '<div class="dre-section">';
+      if (recFin > 0) html += linhaSimples("(+) Finanzerträge", recFin, recLiq, "dre-linha--sub");
+      if (juros > 0)  html += linhaSimples("(−) Zinsen und Finanzaufwendungen", -juros, recLiq, "dre-linha--sub");
+      if (ir > 0)     html += linhaSimples("(−) Körperschaft-/Gewerbesteuer (" + fmtPct(irPct) + ")", -ir, recLiq, "dre-linha--sub");
+      html += '</div>';
+    }
+
+    html += '<div class="dre-section">';
+    html += linhaResultado("= Nettogewinn", lucroLiq, recLiq, lucroLiq >= 0 ? "dre-linha--liq" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    // Zusammensetzungsbalken
+    var pctCmvBar  = recLiq > 0 ? Math.min(cmv / recLiq, 1) : 0;
+    var pctDespBar = recLiq > 0 ? Math.min(totalDesp / recLiq, 1 - pctCmvBar) : 0;
+    var pctIrBar   = recLiq > 0 ? Math.min(ir / recLiq, 1 - pctCmvBar - pctDespBar) : 0;
+    var pctLiqBar  = Math.max(1 - pctCmvBar - pctDespBar - pctIrBar, 0);
+
+    html += '<div class="dre-bar-section">' +
+      '<div class="dre-bar-label">Zusammensetzung des Nettoumsatzes</div>' +
+      '<div class="pv-bar">' +
+        '<div class="pv-bar-cost"   style="width:' + (pctCmvBar * 100).toFixed(1) + '%" title="Wareneinsatz"></div>' +
+        '<div class="pv-bar-taxes"  style="width:' + (pctDespBar * 100).toFixed(1) + '%" title="Betriebskosten"></div>' +
+        '<div class="dre-bar-ir"    style="width:' + (pctIrBar * 100).toFixed(1) + '%" title="Steuern"></div>' +
+        '<div class="pv-bar-profit" style="width:' + (pctLiqBar * 100).toFixed(1) + '%" title="Nettogewinn"></div>' +
+      '</div>' +
+      '<div class="pv-bar-legend">' +
+        '<span class="pv-legend-cost">Wareneinsatz ' + fmtPct(pctCmvBar) + '</span>' +
+        '<span class="pv-legend-taxes">Betriebskosten ' + fmtPct(pctDespBar) + '</span>' +
+        (pctIrBar > 0 ? '<span class="pv-legend-ir">Steuern ' + fmtPct(pctIrBar) + '</span>' : '') +
+        '<span class="pv-legend-profit">Nettogewinn ' + fmtPct(pctLiqBar) + '</span>' +
+      '</div>' +
+    '</div>';
+
+    html += '</div>';
+    drePanel.innerHTML = html;
+  }
+
+  var dreInputs = [dReceita, dDev, dImpVendas, dCmv, dSalarios, dAluguel, dEnergia, dMarketing, dOutrasDesp, dJuros, dRecFin, dIr];
+  dreInputs.forEach(function (el) { el.addEventListener("input", calcDRE); });
+
+  // -------------------------------------------------------
+  // Gewinnschwelle
+  // -------------------------------------------------------
+  var peFixos    = document.getElementById("pe-fixos");
+  var pePv       = document.getElementById("pe-pv");
+  var peCv       = document.getElementById("pe-cv");
+  var peMcPct    = document.getElementById("pe-mc-pct");
+  var peMcUnit   = document.getElementById("pe-mc-unit");
+  var pePanel    = document.getElementById("pe-panel");
+  var peSimWrap  = document.getElementById("pe-sim-wrap");
+  var peSimBody  = document.getElementById("pe-sim-body");
+  var peSimDesc  = document.getElementById("pe-sim-desc");
+
+  function calcPE() {
+    var fixos = num(peFixos);
+    var pvU   = num(pePv);
+    var cvU   = num(peCv);
+    var mcPct = pct(peMcPct);
+
+    // Berechnet DB pro Einheit, falls PV und variable Kosten ausgefüllt sind
+    var mcUnit = null;
+    var mcFrac = null;
+
+    if (pvU !== null && cvU !== null && pvU > 0) {
+      mcUnit = pvU - cvU;
+      mcFrac = mcUnit / pvU;
+      peMcUnit.textContent = fmt(mcUnit) + " (" + fmtPct(mcFrac) + ")";
+    } else {
+      peMcUnit.textContent = "—";
+    }
+
+    // Nutzt direkt eingegebenen DB%, falls kein PV/variable Kosten vorhanden
+    if (mcFrac === null && mcPct !== null) {
+      mcFrac = mcPct;
+    }
+
+    if (fixos === null || fixos <= 0 || mcFrac === null || mcFrac <= 0) {
+      pePanel.innerHTML = '<div class="divisor-placeholder"><p>Füllen Sie Fixkosten und Deckungsbeitrag aus, um zu berechnen.</p></div>';
+      peSimWrap.style.display = "none";
+      return;
+    }
+
+    var peFat   = fixos / mcFrac;
+    var peUnid  = mcUnit !== null && mcUnit > 0 ? fixos / mcUnit : null;
+
+    pePanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Gewinnschwelle (Umsatz)</div>' +
+          '<div class="divisor-main-value">' + fmt(peFat) + '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          (peUnid !== null
+            ? '<div class="divisor-row divisor-row--highlight"><span>Gewinnschwelle in Einheiten</span><strong>' + Math.ceil(peUnid).toLocaleString("de-DE") + ' Einh.</strong></div>'
+            : '') +
+          '<div class="divisor-row"><span>Deckungsbeitrag</span><strong>' + fmtPct(mcFrac) + '</strong></div>' +
+          '<div class="divisor-row"><span>Monatliche Fixkosten</span><strong>' + fmt(fixos) + '</strong></div>' +
+          (mcUnit !== null ? '<div class="divisor-row"><span>DB pro Einheit</span><strong>' + fmt(mcUnit) + '</strong></div>' : '') +
+          (pvU !== null ? '<div class="divisor-row"><span>Verkaufspreis pro Einheit</span><strong>' + fmt(pvU) + '</strong></div>' : '') +
+        '</div>' +
+      '</div>';
+
+    // Volumensimulator
+    peSimWrap.style.display = "block";
+    peSimDesc.textContent = peUnid !== null
+      ? "Gewinnschwelle = " + Math.ceil(peUnid).toLocaleString("de-DE") + " Einheiten | darunter Verlust, darüber Gewinn."
+      : "Gewinnschwelle = " + fmt(peFat) + " Umsatz | ab diesem Wert beginnt das Unternehmen, Gewinn zu erzielen.";
+
+    var multipliers = [0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.50, 3.00];
+    peSimBody.innerHTML = "";
+
+    multipliers.forEach(function (mult) {
+      var unid    = peUnid !== null ? Math.round(peUnid * mult) : null;
+      var fat     = pvU !== null && unid !== null ? pvU * unid : peFat * mult;
+      var custoV  = pvU !== null && cvU !== null && unid !== null ? cvU * unid : fat * (1 - mcFrac);
+      var mc      = fat * mcFrac;
+      var result  = mc - fixos;
+      var isPE    = Math.abs(mult - 1.00) < 0.001;
+
+      var tr = document.createElement("tr");
+      if (isPE) { tr.style.fontWeight = "600"; tr.style.background = "var(--color-highlight-bg)"; }
+
+      var statusTxt, statusCls;
+      if (result < 0)      { statusTxt = "Verlust"; statusCls = "sim-status sim-status--ruim"; }
+      else if (isPE)       { statusTxt = "Gewinnschwelle"; statusCls = "sim-status sim-status--atencao"; }
+      else                 { statusTxt = "Gewinn"; statusCls = "sim-status sim-status--ok"; }
+
+      tr.innerHTML =
+        "<td>" + (unid !== null ? unid.toLocaleString("de-DE") + " Einh." : fmt(fat)) + (isPE ? " (GS)" : "") + "</td>" +
+        "<td>" + fmt(fat) + "</td>" +
+        "<td>" + fmt(custoV) + "</td>" +
+        "<td>" + fmt(mc) + "</td>" +
+        "<td " + (result < 0 ? "style='color:#c2410c'" : "style='color:var(--color-primary-dark)'") + ">" +
+          (result >= 0 ? "+" : "") + fmt(result) +
+        "</td>" +
+        "<td><span class='" + statusCls + "'>" + statusTxt + "</span></td>";
+
+      peSimBody.appendChild(tr);
+    });
+  }
+
+  [peFixos, pePv, peCv, peMcPct].forEach(function (el) { el.addEventListener("input", calcPE); });
+
+})();
+</script>
+
+</body>
+</html>

@@ -88,6 +88,13 @@ body {
   z-index: 50;
 }
 
+.site-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .nav-list {
   display: flex;
   gap: 0;
@@ -96,6 +103,30 @@ body {
   padding: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  padding: 8px 0;
+}
+
+.lang-switcher a {
+  padding: 4px 8px;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-switcher a:hover,
+.lang-switcher a[aria-current="true"] {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
 }
 
 .nav-list li a {

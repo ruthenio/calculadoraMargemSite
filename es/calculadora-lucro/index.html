@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Beneficio: Bruto, Operativo y Neto — CalculaMargem</title>
+<meta name="description" content="Calcula el beneficio bruto, operativo y neto con la cuenta de resultados simplificada interactiva. Incluye punto de equilibrio, simulador de escenarios y análisis de márgenes. Herramienta gratuita.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calculamargem.com.br/es/calculadora-lucro/">
+
+<link rel="alternate" hreflang="pt-BR" href="https://calculamargem.com.br/calculadora-lucro/">
+<link rel="alternate" hreflang="en" href="https://calculamargem.com.br/en/calculadora-lucro/">
+<link rel="alternate" hreflang="es" href="https://calculamargem.com.br/es/calculadora-lucro/">
+<link rel="alternate" hreflang="fr" href="https://calculamargem.com.br/fr/calculadora-lucro/">
+<link rel="alternate" hreflang="de" href="https://calculamargem.com.br/de/calculadora-lucro/">
+<link rel="alternate" hreflang="x-default" href="https://calculamargem.com.br/calculadora-lucro/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de Beneficio: Bruto, Operativo y Neto — CalculaMargem">
+<meta property="og:description" content="Cuenta de resultados simplificada interactiva + punto de equilibrio. Calcula los tres tipos de beneficio en tiempo real.">
+<meta property="og:url" content="https://calculamargem.com.br/es/calculadora-lucro/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="CalculaMargem">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Beneficio — CalculaMargem">
+<meta name="twitter:description" content="Calcula beneficio bruto, operativo y neto con cuenta de resultados interactiva y punto de equilibrio.">
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://calculamargem.com.br/es/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculadora de Beneficio", "item": "https://calculamargem.com.br/es/calculadora-lucro/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://calculamargem.com.br/es/calculadora-lucro/",
+      "name": "Calculadora de Beneficio: Bruto, Operativo y Neto",
+      "description": "Calcula los tres tipos de beneficio con cuenta de resultados simplificada interactiva y punto de equilibrio.",
+      "isPartOf": { "@id": "https://calculamargem.com.br/es/#website" }
+    }
+  ]
+}
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3304555597181143"
+     crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3J38JGCBN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3J38JGCBN');
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="container">
+    <p class="site-brand"><a href="/es/">CalculaMargem</a></p>
+    <h1>Calculadora de Beneficio</h1>
+    <p class="tagline">Beneficio bruto, operativo y neto — cuenta de resultados interactiva y punto de equilibrio</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Navegación principal">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/es/">Inicio</a></li>
+      <li><a href="/es/calculadora-markup/">Calc. Markup</a></li>
+      <li><a href="/es/calculadora-preco-venda/">Precio de Venta</a></li>
+      <li><a href="/es/formacao-de-preco/">Formación de Precio</a></li>
+      <li><a href="/es/como-calcular-markup/">Cómo Calcular</a></li>
+    </ul>
+    <div class="lang-switcher" aria-label="Idioma">
+      <a href="/calculadora-lucro/">PT</a>
+      <a href="/en/calculadora-lucro/">EN</a>
+      <a href="/es/calculadora-lucro/" aria-current="true">ES</a>
+      <a href="/fr/calculadora-lucro/">FR</a>
+      <a href="/de/calculadora-lucro/">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container" id="main">
+
+  <nav class="breadcrumb" aria-label="Ubicación">
+    <a href="/es/">Inicio</a>
+    <span aria-hidden="true">›</span>
+    <span>Calculadora de Beneficio</span>
+  </nav>
+
+  <section class="intro">
+    <p>Cuatro herramientas en una: <strong>beneficio por unidad</strong>, <strong>beneficio del período</strong>, <strong>cuenta de resultados simplificada</strong> con cascada visual de márgenes y <strong>punto de equilibrio</strong> con simulador de volúmenes.</p>
+  </section>
+
+  <!-- ====================================================
+       CALCULADORAS 1 y 2 — una al lado de la otra
+  ===================================================== -->
+  <section class="calculators" aria-label="Calculadoras rápidas de beneficio">
+
+    <!-- CALC 1: Beneficio por unidad -->
+    <article class="card" id="calc-lucro-unidade">
+      <h2>Beneficio por unidad</h2>
+      <p class="card-desc">Indica el coste y el precio de venta de un producto para calcular el beneficio, la margen y el markup unitarios.</p>
+
+      <div class="field">
+        <label for="u-custo">Coste del producto (€)</label>
+        <input type="number" id="u-custo" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 45,00">
+      </div>
+      <div class="field">
+        <label for="u-pv">Precio de venta (€)</label>
+        <input type="number" id="u-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 79,90">
+      </div>
+      <div class="field">
+        <label for="u-qtd">Cantidad vendida (opcional)</label>
+        <input type="number" id="u-qtd" inputmode="numeric" min="1" step="1" placeholder="Ej: 150">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Beneficio bruto unitario</span>
+          <span class="result-value" id="u-lucro">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Margen de beneficio</span>
+          <span class="result-value" id="u-margem">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Markup</span>
+          <span class="result-value" id="u-markup">—</span>
+        </div>
+        <div class="result" id="u-total-box" style="display:none">
+          <span class="result-label">Beneficio total (cant. × unitario)</span>
+          <span class="result-value" id="u-total">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CALC 2: Beneficio del período -->
+    <article class="card" id="calc-lucro-periodo">
+      <h2>Beneficio bruto del período</h2>
+      <p class="card-desc">Indica la facturación total y el coste de las mercancías vendidas para calcular el beneficio bruto del mes o período.</p>
+
+      <div class="field">
+        <label for="p-receita">Ingresos brutos por ventas (€)</label>
+        <input type="number" id="p-receita" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 80.000,00">
+      </div>
+      <div class="field">
+        <label for="p-cmv">Coste de las mercancías vendidas — CMV (€)</label>
+        <input type="number" id="p-cmv" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 48.000,00">
+      </div>
+
+      <div class="results">
+        <div class="result result--highlight">
+          <span class="result-label">Beneficio bruto</span>
+          <span class="result-value" id="p-lucro-bruto">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">Margen bruta</span>
+          <span class="result-value" id="p-margem-bruta">—</span>
+        </div>
+        <div class="result">
+          <span class="result-label">CMV sobre ingresos</span>
+          <span class="result-value" id="p-cmv-pct">—</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       CUENTA DE RESULTADOS SIMPLIFICADA
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-dre">
+    <h2>Cuenta de Resultados Simplificada — Resultado del Período</h2>
+    <p>Rellena los campos de abajo para generar la <strong>Cuenta de Resultados</strong> completa con beneficio bruto, operativo y neto en tiempo real.</p>
+
+    <div class="divisor-grid dre-grid">
+
+      <!-- INPUTS -->
+      <div class="divisor-inputs">
+
+        <fieldset class="field-group">
+          <legend>1. Facturación</legend>
+          <div class="field field--inline">
+            <label for="d-receita-bruta">Ingresos brutos por ventas</label>
+            <input type="number" id="d-receita-bruta" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-devolucoes">Devoluciones y descuentos</label>
+            <input type="number" id="d-devolucoes" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-imp-vendas">Impuestos sobre ventas (%)</label>
+            <input type="number" id="d-imp-vendas" inputmode="decimal" min="0" max="30" step="0.1" placeholder="0">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>2. Coste de las mercancías (CMV)</legend>
+          <div class="field field--inline">
+            <label for="d-cmv">CMV (coste de los productos vendidos)</label>
+            <input type="number" id="d-cmv" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>3. Gastos operativos</legend>
+          <div class="field field--inline">
+            <label for="d-salarios">Salarios y cargas sociales</label>
+            <input type="number" id="d-salarios" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-aluguel">Alquiler / remuneración de socios</label>
+            <input type="number" id="d-aluguel" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-energia">Energía, internet y servicios</label>
+            <input type="number" id="d-energia" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-marketing">Marketing y publicidad</label>
+            <input type="number" id="d-marketing" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-outras-desp">Otros gastos operativos</label>
+            <input type="number" id="d-outras-desp" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>4. Resultado financiero</legend>
+          <div class="field field--inline">
+            <label for="d-juros">Intereses y gastos financieros</label>
+            <input type="number" id="d-juros" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+          <div class="field field--inline">
+            <label for="d-receita-fin">Ingresos financieros (rendimientos)</label>
+            <input type="number" id="d-receita-fin" inputmode="decimal" min="0" step="0.01" placeholder="0,00">
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>5. Impuestos sobre el beneficio</legend>
+          <div class="field field--inline">
+            <label for="d-ir">Impuesto de sociedades (%)</label>
+            <input type="number" id="d-ir" inputmode="decimal" min="0" max="40" step="0.5" placeholder="Ej: 15">
+          </div>
+        </fieldset>
+
+      </div>
+
+      <!-- RESULTADO: Cuenta de resultados -->
+      <div class="divisor-results">
+        <div class="dre-panel" id="dre-panel" aria-live="polite">
+          <div class="divisor-placeholder">
+            <p>Rellena los ingresos brutos para generar la cuenta de resultados.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       PUNTO DE EQUILIBRIO
+  ===================================================== -->
+  <section class="content-section divisor-section" id="calc-pe">
+    <h2>Calculadora de Punto de Equilibrio</h2>
+    <p>Descubre cuántas unidades (o cuánta facturación) necesita alcanzar tu negocio para cubrir todos los costes fijos y empezar a generar beneficio.</p>
+
+    <div class="divisor-grid">
+
+      <div class="divisor-inputs">
+        <div class="field">
+          <label for="pe-fixos">Costes fijos mensuales totales (€)
+            <span class="field-hint">alquiler + salarios + energía + internet + otros fijos</span>
+          </label>
+          <input type="number" id="pe-fixos" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 8.000,00">
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Margen de contribución por unidad</legend>
+          <div class="field field--inline">
+            <label for="pe-pv">Precio de venta unitario (€)</label>
+            <input type="number" id="pe-pv" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 89,90">
+          </div>
+          <div class="field field--inline">
+            <label for="pe-cv">Coste variable unitario (€)
+            </label>
+            <input type="number" id="pe-cv" inputmode="decimal" min="0" step="0.01" placeholder="Ej: 52,00">
+          </div>
+          <div class="dre-linha dre-linha--sub" style="margin:4px 0 0;padding:8px 0">
+            <span style="font-size:0.82rem;color:var(--color-text-muted)">MC unitaria calculada:</span>
+            <strong id="pe-mc-unit" style="font-size:0.88rem;color:var(--color-primary-dark)">—</strong>
+          </div>
+        </fieldset>
+
+        <div class="field" style="margin-top:4px">
+          <label for="pe-mc-pct">O indica la margen de contribución (%)
+            <span class="field-hint">si no sabes el coste variable unitario</span>
+          </label>
+          <input type="number" id="pe-mc-pct" inputmode="decimal" min="0" max="100" step="0.5" placeholder="Ej: 35">
+        </div>
+      </div>
+
+      <div class="divisor-results">
+        <div class="divisor-result-panel" id="pe-panel">
+          <div class="divisor-placeholder">
+            <p>Rellena los costes fijos y la margen de contribución para calcular el punto de equilibrio.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Simulador de volúmenes -->
+    <div id="pe-sim-wrap" style="display:none;margin-top:24px">
+      <h3>Simulador de Resultado por Volumen</h3>
+      <p style="font-size:0.92rem;color:var(--color-text-muted);margin-bottom:12px" id="pe-sim-desc"></p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Volumen vendido</th>
+              <th>Facturación</th>
+              <th>Costes variables</th>
+              <th>Margen de contribución</th>
+              <th>Resultado neto</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="pe-sim-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       CONTENIDO EDITORIAL
+  ===================================================== -->
+  <section class="content-section" id="tres-tipos-lucro">
+    <h2>Los Tres Tipos de Beneficio: qué revela cada uno</h2>
+    <p>La palabra "beneficio" se usa de forma genérica en el día a día, pero la contabilidad distingue tres niveles con finalidades distintas. Conocer cada uno es esencial para tomar decisiones correctas sobre el negocio.</p>
+
+    <div class="formulas">
+      <div class="formula-box">
+        <h3>Beneficio Bruto</h3>
+        <code>Ingresos Netos − CMV</code>
+      </div>
+      <div class="formula-box">
+        <h3>Beneficio Operativo</h3>
+        <code>Beneficio Bruto − Gastos Operativos</code>
+      </div>
+      <div class="formula-box">
+        <h3>Beneficio Neto</h3>
+        <code>Beneficio Op. ± Resultado Financiero − Impuestos</code>
+      </div>
+    </div>
+
+    <h3>Beneficio Bruto: eficiencia de compra y fijación de precios</h3>
+    <p>El beneficio bruto mide cuánto queda de los ingresos después de pagar solo los productos vendidos. Un beneficio bruto alto indica buena fijación de precios y/o buen control de los costes de compra. Es el punto de partida: si el beneficio bruto no es suficiente, ninguna reducción de gastos operativos salvará el resultado.</p>
+
+    <h3>Beneficio Operativo: eficiencia de la operación</h3>
+    <p>El beneficio operativo descuenta los gastos fijos de la operación. Responde a la pregunta: "¿La actividad principal de la empresa es rentable, independientemente de cómo esté financiada?" Un beneficio operativo positivo indica un modelo de negocio saludable — aunque existan deudas que presionen el resultado financiero.</p>
+
+    <h3>Beneficio Neto: lo que va al bolsillo</h3>
+    <p>El beneficio neto es el resultado final tras todos los descuentos — incluidos los impuestos sobre el beneficio. Es el número que alimenta el patrimonio de los socios y la capacidad de reinversión del negocio. Una empresa puede tener un beneficio bruto alto y un beneficio neto bajo — o incluso negativo — por gastos descontrolados o deudas elevadas.</p>
+
+    <div class="example-box">
+      <h3>Ejemplo: de la facturación al beneficio neto</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Cuenta de Resultados</th><th>Valor</th><th>% de los Ingresos</th></tr></thead>
+          <tbody>
+            <tr><td>Ingresos Brutos por Ventas</td><td>100.000 €</td><td>—</td></tr>
+            <tr><td>(−) Impuestos sobre ventas (7%)</td><td>(7.000) €</td><td>—</td></tr>
+            <tr><td><strong>= Ingresos Netos</strong></td><td><strong>93.000 €</strong></td><td><strong>100%</strong></td></tr>
+            <tr><td>(−) CMV</td><td>(51.150) €</td><td>−55%</td></tr>
+            <tr style="background:var(--color-highlight-bg)"><td><strong>= Beneficio Bruto</strong></td><td><strong>41.850 €</strong></td><td><strong>45%</strong></td></tr>
+            <tr><td>(−) Gastos operativos</td><td>(28.000) €</td><td>−30,1%</td></tr>
+            <tr style="background:#ede9fe"><td><strong>= Beneficio Operativo</strong></td><td><strong>13.850 €</strong></td><td><strong>14,9%</strong></td></tr>
+            <tr><td>(−) Gastos financieros</td><td>(1.200) €</td><td>−1,3%</td></tr>
+            <tr><td>(−) Impuesto de sociedades (15%)</td><td>(1.898) €</td><td>−2%</td></tr>
+            <tr style="background:var(--color-example-bg)"><td><strong>= Beneficio Neto</strong></td><td><strong>10.752 €</strong></td><td><strong>11,6%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="ponto-equilibrio-conceito">
+    <h2>Qué es el Punto de Equilibrio y por qué monitorizarlo</h2>
+    <p>El punto de equilibrio (PE) es el volumen de ventas en el que los ingresos totales igualan todos los costes — sin beneficio ni pérdida. Por debajo del PE, el negocio opera en números rojos. Por encima, empieza a generar beneficio.</p>
+
+    <div class="formula-highlight">
+      <strong>PE (unidades) = Costes Fijos ÷ Margen de Contribución Unitaria</strong><br>
+      <strong>PE (facturación) = Costes Fijos ÷ Margen de Contribución%</strong>
+    </div>
+
+    <div class="example-box">
+      <h3>Ejemplo</h3>
+      <p>Tienda con costes fijos de 6.000 €/mes. Producto vendido a 80 €, con coste variable de 48 €.</p>
+      <ul>
+        <li>Margen de contribución unitaria = 80 € − 48 € = <strong>32 €</strong></li>
+        <li>MC% = 32 € ÷ 80 € = <strong>40%</strong></li>
+        <li>PE en unidades = 6.000 € ÷ 32 € = <strong>188 unidades/mes</strong></li>
+        <li>PE en facturación = 6.000 € ÷ 0,40 = <strong>15.000 €/mes</strong></li>
+      </ul>
+      <p>A partir de la unidad 189 vendida en el mes, cada venta genera 32 € de beneficio neto para el negocio.</p>
+    </div>
+
+    <div class="tip-box">
+      <strong>Consejo:</strong> Usa el punto de equilibrio como meta mínima de ventas mensuales. Si vendes consistentemente por debajo del PE, el negocio acumula pérdidas. Si estás muy por encima, hay margen para hacer crecer la estructura o repartir beneficios.
+    </div>
+
+    <div class="alert-box">
+      <strong>Margen de contribución ≠ margen de beneficio:</strong> La margen de contribución descuenta solo los costes <em>variables</em> — no los fijos. Indica cuánto "aporta" cada venta para pagar los fijos. Solo tras cubrir todos los fijos las ventas generan beneficio neto.
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav" aria-label="Enlaces del pie de página">
+      <a href="/es/">Inicio</a>
+      <a href="/es/calculadora-markup/">Calculadora de Markup</a>
+      <a href="/es/calculadora-preco-venda/">Precio de Venta</a>
+      <a href="/es/calculadora-desconto/">Calculadora de Descuento</a>
+      <a href="/es/calculadora-lucro/">Calculadora de Beneficio</a>
+      <a href="/es/sobre/">Sobre nosotros</a>
+      <a href="/es/contato/">Contacto</a>
+      <a href="/es/politica-de-privacidade/">Privacidad</a>
+    </nav>
+    <p>© 2025 CalculaMargem — Herramienta gratuita para calcular margen de beneficio, markup y precio de venta.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  function fmt(v) {
+    return v.toLocaleString("es-ES", { style: "currency", currency: "EUR" });
+  }
+
+  function fmtPct(v) {
+    return (v * 100).toLocaleString("es-ES", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 2
+    }) + "%";
+  }
+
+  function num(el) {
+    var v = parseFloat(String(el ? el.value : "").replace(",", "."));
+    return isNaN(v) ? null : v;
+  }
+
+  function pct(el) {
+    var v = num(el);
+    return v === null ? null : v / 100;
+  }
+
+  // -------------------------------------------------------
+  // Calc 1 — Beneficio por unidad
+  // -------------------------------------------------------
+  var uCusto   = document.getElementById("u-custo");
+  var uPv      = document.getElementById("u-pv");
+  var uQtd     = document.getElementById("u-qtd");
+  var uLucro   = document.getElementById("u-lucro");
+  var uMargem  = document.getElementById("u-margem");
+  var uMarkup  = document.getElementById("u-markup");
+  var uTotal   = document.getElementById("u-total");
+  var uTotalBox= document.getElementById("u-total-box");
+
+  function calcUnidade() {
+    var c  = num(uCusto);
+    var pv = num(uPv);
+    var q  = num(uQtd);
+
+    if (c === null || pv === null || c < 0 || pv <= 0) {
+      uLucro.textContent = uMargem.textContent = uMarkup.textContent = "—";
+      uTotalBox.style.display = "none";
+      return;
+    }
+
+    var lucro  = pv - c;
+    var margem = lucro / pv;
+    var markup = c > 0 ? lucro / c : null;
+
+    uLucro.textContent  = fmt(lucro);
+    uMargem.textContent = fmtPct(margem);
+    uMarkup.textContent = markup !== null ? fmtPct(markup) : "—";
+
+    if (q !== null && q > 0) {
+      uTotalBox.style.display = "flex";
+      uTotal.textContent = fmt(lucro * q);
+    } else {
+      uTotalBox.style.display = "none";
+    }
+  }
+
+  [uCusto, uPv, uQtd].forEach(function (el) { el.addEventListener("input", calcUnidade); });
+
+  // -------------------------------------------------------
+  // Calc 2 — Beneficio del período
+  // -------------------------------------------------------
+  var pReceita     = document.getElementById("p-receita");
+  var pCmv         = document.getElementById("p-cmv");
+  var pLucroBruto  = document.getElementById("p-lucro-bruto");
+  var pMargemBruta = document.getElementById("p-margem-bruta");
+  var pCmvPct      = document.getElementById("p-cmv-pct");
+
+  function calcPeriodo() {
+    var r = num(pReceita);
+    var c = num(pCmv);
+
+    if (r === null || r <= 0) {
+      pLucroBruto.textContent = pMargemBruta.textContent = pCmvPct.textContent = "—";
+      return;
+    }
+
+    var cmv   = c !== null && c >= 0 ? c : 0;
+    var lucro = r - cmv;
+
+    pLucroBruto.textContent  = fmt(lucro);
+    pMargemBruta.textContent = fmtPct(lucro / r);
+    pCmvPct.textContent      = fmtPct(cmv / r);
+  }
+
+  [pReceita, pCmv].forEach(function (el) { el.addEventListener("input", calcPeriodo); });
+
+  // -------------------------------------------------------
+  // Cuenta de Resultados Simplificada
+  // -------------------------------------------------------
+  var dReceita    = document.getElementById("d-receita-bruta");
+  var dDev        = document.getElementById("d-devolucoes");
+  var dImpVendas  = document.getElementById("d-imp-vendas");
+  var dCmv        = document.getElementById("d-cmv");
+  var dSalarios   = document.getElementById("d-salarios");
+  var dAluguel    = document.getElementById("d-aluguel");
+  var dEnergia    = document.getElementById("d-energia");
+  var dMarketing  = document.getElementById("d-marketing");
+  var dOutrasDesp = document.getElementById("d-outras-desp");
+  var dJuros      = document.getElementById("d-juros");
+  var dRecFin     = document.getElementById("d-receita-fin");
+  var dIr         = document.getElementById("d-ir");
+  var drePanel    = document.getElementById("dre-panel");
+
+  function sinal(v) { return v < 0 ? "dre-neg" : (v > 0 ? "dre-pos" : ""); }
+
+  function linhaSimples(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha ' + (classe || "") + '">' +
+      '<span class="dre-desc">' + label + '</span>' +
+      '<span class="dre-val ' + sinal(valor) + '">' + fmt(valor) + '</span>' +
+      '<span class="dre-pct">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function linhaResultado(label, valor, recLiq, classe) {
+    var pctStr = (recLiq && recLiq > 0) ? fmtPct(valor / recLiq) : "";
+    return '<div class="dre-linha dre-linha--resultado ' + (classe || "") + '">' +
+      '<span class="dre-desc"><strong>' + label + '</strong></span>' +
+      '<span class="dre-val dre-val--resultado ' + sinal(valor) + '"><strong>' + fmt(valor) + '</strong></span>' +
+      '<span class="dre-pct dre-pct--resultado">' + pctStr + '</span>' +
+    '</div>';
+  }
+
+  function calcDRE() {
+    var rb  = num(dReceita);
+    if (rb === null || rb <= 0) {
+      drePanel.innerHTML = '<div class="divisor-placeholder"><p>Rellena los ingresos brutos para generar la cuenta de resultados.</p></div>';
+      return;
+    }
+
+    var dev     = num(dDev)       || 0;
+    var impV    = pct(dImpVendas) || 0;
+    var cmv     = num(dCmv)       || 0;
+    var sal     = num(dSalarios)  || 0;
+    var alug    = num(dAluguel)   || 0;
+    var en      = num(dEnergia)   || 0;
+    var mkt     = num(dMarketing) || 0;
+    var outrD   = num(dOutrasDesp)|| 0;
+    var juros   = num(dJuros)     || 0;
+    var recFin  = num(dRecFin)    || 0;
+    var irPct   = pct(dIr);
+
+    var impostoVendas   = rb * impV;
+    var recLiq          = rb - dev - impostoVendas;
+    var lucroBruto      = recLiq - cmv;
+    var totalDesp       = sal + alug + en + mkt + outrD;
+    var lucroOp         = lucroBruto - totalDesp;
+    var resFin          = recFin - juros;
+    var lucroAntesIR    = lucroOp + resFin;
+    var ir              = irPct !== null && lucroAntesIR > 0 ? lucroAntesIR * irPct : 0;
+    var lucroLiq        = lucroAntesIR - ir;
+
+    var html = '<div class="dre-output">';
+    html += '<div class="dre-header">Cuenta de Resultados</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("Ingresos brutos por ventas", rb, recLiq, "dre-receita");
+    if (dev > 0)           html += linhaSimples("(−) Devoluciones y descuentos", -dev, recLiq, "dre-linha--sub");
+    if (impostoVendas > 0) html += linhaSimples("(−) Impuestos sobre ventas (" + fmtPct(impV) + ")", -impostoVendas, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Ingresos netos", recLiq, recLiq, "dre-linha--bruto");
+    html += '</div>';
+
+    html += '<div class="dre-section">';
+    html += linhaSimples("(−) CMV — coste de las mercancías", -cmv, recLiq, "dre-linha--sub");
+    html += linhaResultado("= Beneficio Bruto", lucroBruto, recLiq, lucroBruto >= 0 ? "dre-linha--bruto" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    if (totalDesp > 0) {
+      html += '<div class="dre-section">';
+      if (sal)   html += linhaSimples("(−) Salarios y cargas sociales", -sal, recLiq, "dre-linha--sub");
+      if (alug)  html += linhaSimples("(−) Alquiler / remuneración de socios", -alug, recLiq, "dre-linha--sub");
+      if (en)    html += linhaSimples("(−) Energía, internet y servicios", -en, recLiq, "dre-linha--sub");
+      if (mkt)   html += linhaSimples("(−) Marketing y publicidad", -mkt, recLiq, "dre-linha--sub");
+      if (outrD) html += linhaSimples("(−) Otros gastos operativos", -outrD, recLiq, "dre-linha--sub");
+      html += linhaResultado("= Beneficio Operativo", lucroOp, recLiq, lucroOp >= 0 ? "dre-linha--op" : "dre-linha--prejuizo");
+      html += '</div>';
+    }
+
+    if (resFin !== 0 || ir > 0) {
+      html += '<div class="dre-section">';
+      if (recFin > 0) html += linhaSimples("(+) Ingresos financieros", recFin, recLiq, "dre-linha--sub");
+      if (juros > 0)  html += linhaSimples("(−) Intereses y gastos financieros", -juros, recLiq, "dre-linha--sub");
+      if (ir > 0)     html += linhaSimples("(−) Impuesto de sociedades (" + fmtPct(irPct) + ")", -ir, recLiq, "dre-linha--sub");
+      html += '</div>';
+    }
+
+    html += '<div class="dre-section">';
+    html += linhaResultado("= Beneficio Neto", lucroLiq, recLiq, lucroLiq >= 0 ? "dre-linha--liq" : "dre-linha--prejuizo");
+    html += '</div>';
+
+    // Barra de composición
+    var pctCmvBar  = recLiq > 0 ? Math.min(cmv / recLiq, 1) : 0;
+    var pctDespBar = recLiq > 0 ? Math.min(totalDesp / recLiq, 1 - pctCmvBar) : 0;
+    var pctIrBar   = recLiq > 0 ? Math.min(ir / recLiq, 1 - pctCmvBar - pctDespBar) : 0;
+    var pctLiqBar  = Math.max(1 - pctCmvBar - pctDespBar - pctIrBar, 0);
+
+    html += '<div class="dre-bar-section">' +
+      '<div class="dre-bar-label">Composición de los ingresos netos</div>' +
+      '<div class="pv-bar">' +
+        '<div class="pv-bar-cost"   style="width:' + (pctCmvBar * 100).toFixed(1) + '%" title="CMV"></div>' +
+        '<div class="pv-bar-taxes"  style="width:' + (pctDespBar * 100).toFixed(1) + '%" title="Gastos"></div>' +
+        '<div class="dre-bar-ir"    style="width:' + (pctIrBar * 100).toFixed(1) + '%" title="Impuestos"></div>' +
+        '<div class="pv-bar-profit" style="width:' + (pctLiqBar * 100).toFixed(1) + '%" title="Beneficio Neto"></div>' +
+      '</div>' +
+      '<div class="pv-bar-legend">' +
+        '<span class="pv-legend-cost">CMV ' + fmtPct(pctCmvBar) + '</span>' +
+        '<span class="pv-legend-taxes">Gastos ' + fmtPct(pctDespBar) + '</span>' +
+        (pctIrBar > 0 ? '<span class="pv-legend-ir">Impuestos ' + fmtPct(pctIrBar) + '</span>' : '') +
+        '<span class="pv-legend-profit">Benef. Neto ' + fmtPct(pctLiqBar) + '</span>' +
+      '</div>' +
+    '</div>';
+
+    html += '</div>';
+    drePanel.innerHTML = html;
+  }
+
+  var dreInputs = [dReceita, dDev, dImpVendas, dCmv, dSalarios, dAluguel, dEnergia, dMarketing, dOutrasDesp, dJuros, dRecFin, dIr];
+  dreInputs.forEach(function (el) { el.addEventListener("input", calcDRE); });
+
+  // -------------------------------------------------------
+  // Punto de Equilibrio
+  // -------------------------------------------------------
+  var peFixos    = document.getElementById("pe-fixos");
+  var pePv       = document.getElementById("pe-pv");
+  var peCv       = document.getElementById("pe-cv");
+  var peMcPct    = document.getElementById("pe-mc-pct");
+  var peMcUnit   = document.getElementById("pe-mc-unit");
+  var pePanel    = document.getElementById("pe-panel");
+  var peSimWrap  = document.getElementById("pe-sim-wrap");
+  var peSimBody  = document.getElementById("pe-sim-body");
+  var peSimDesc  = document.getElementById("pe-sim-desc");
+
+  function calcPE() {
+    var fixos = num(peFixos);
+    var pvU   = num(pePv);
+    var cvU   = num(peCv);
+    var mcPct = pct(peMcPct);
+
+    // Calcula MC unitaria si PV y CV están rellenados
+    var mcUnit = null;
+    var mcFrac = null;
+
+    if (pvU !== null && cvU !== null && pvU > 0) {
+      mcUnit = pvU - cvU;
+      mcFrac = mcUnit / pvU;
+      peMcUnit.textContent = fmt(mcUnit) + " (" + fmtPct(mcFrac) + ")";
+    } else {
+      peMcUnit.textContent = "—";
+    }
+
+    // Usa MC% escrita directamente si no hay PV/CV
+    if (mcFrac === null && mcPct !== null) {
+      mcFrac = mcPct;
+    }
+
+    if (fixos === null || fixos <= 0 || mcFrac === null || mcFrac <= 0) {
+      pePanel.innerHTML = '<div class="divisor-placeholder"><p>Rellena los costes fijos y la margen de contribución para calcular.</p></div>';
+      peSimWrap.style.display = "none";
+      return;
+    }
+
+    var peFat   = fixos / mcFrac;
+    var peUnid  = mcUnit !== null && mcUnit > 0 ? fixos / mcUnit : null;
+
+    pePanel.innerHTML =
+      '<div class="divisor-output">' +
+        '<div class="divisor-main">' +
+          '<div class="divisor-main-label">Punto de equilibrio (facturación)</div>' +
+          '<div class="divisor-main-value">' + fmt(peFat) + '</div>' +
+        '</div>' +
+        '<div class="divisor-rows">' +
+          (peUnid !== null
+            ? '<div class="divisor-row divisor-row--highlight"><span>PE en unidades</span><strong>' + Math.ceil(peUnid).toLocaleString("es-ES") + ' unid.</strong></div>'
+            : '') +
+          '<div class="divisor-row"><span>Margen de contribución</span><strong>' + fmtPct(mcFrac) + '</strong></div>' +
+          '<div class="divisor-row"><span>Costes fijos mensuales</span><strong>' + fmt(fixos) + '</strong></div>' +
+          (mcUnit !== null ? '<div class="divisor-row"><span>MC por unidad</span><strong>' + fmt(mcUnit) + '</strong></div>' : '') +
+          (pvU !== null ? '<div class="divisor-row"><span>Precio de venta unitario</span><strong>' + fmt(pvU) + '</strong></div>' : '') +
+        '</div>' +
+      '</div>';
+
+    // Simulador de volúmenes
+    peSimWrap.style.display = "block";
+    peSimDesc.textContent = peUnid !== null
+      ? "PE = " + Math.ceil(peUnid).toLocaleString("es-ES") + " unidades | por debajo hay pérdidas, por encima hay beneficio."
+      : "PE = " + fmt(peFat) + " de facturación | a partir de ese valor el negocio empieza a generar beneficio.";
+
+    var multipliers = [0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.50, 3.00];
+    peSimBody.innerHTML = "";
+
+    multipliers.forEach(function (mult) {
+      var unid    = peUnid !== null ? Math.round(peUnid * mult) : null;
+      var fat     = pvU !== null && unid !== null ? pvU * unid : peFat * mult;
+      var custoV  = pvU !== null && cvU !== null && unid !== null ? cvU * unid : fat * (1 - mcFrac);
+      var mc      = fat * mcFrac;
+      var result  = mc - fixos;
+      var isPE    = Math.abs(mult - 1.00) < 0.001;
+
+      var tr = document.createElement("tr");
+      if (isPE) { tr.style.fontWeight = "600"; tr.style.background = "var(--color-highlight-bg)"; }
+
+      var statusTxt, statusCls;
+      if (result < 0)      { statusTxt = "Pérdida"; statusCls = "sim-status sim-status--ruim"; }
+      else if (isPE)       { statusTxt = "Equilibrio"; statusCls = "sim-status sim-status--atencao"; }
+      else                 { statusTxt = "Beneficio"; statusCls = "sim-status sim-status--ok"; }
+
+      tr.innerHTML =
+        "<td>" + (unid !== null ? unid.toLocaleString("es-ES") + " unid." : fmt(fat)) + (isPE ? " (PE)" : "") + "</td>" +
+        "<td>" + fmt(fat) + "</td>" +
+        "<td>" + fmt(custoV) + "</td>" +
+        "<td>" + fmt(mc) + "</td>" +
+        "<td " + (result < 0 ? "style='color:#c2410c'" : "style='color:var(--color-primary-dark)'") + ">" +
+          (result >= 0 ? "+" : "") + fmt(result) +
+        "</td>" +
+        "<td><span class='" + statusCls + "'>" + statusTxt + "</span></td>";
+
+      peSimBody.appendChild(tr);
+    });
+  }
+
+  [peFixos, pePv, peCv, peMcPct].forEach(function (el) { el.addEventListener("input", calcPE); });
+
+})();
+</script>
+
+</body>
+</html>
