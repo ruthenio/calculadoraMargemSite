@@ -105,5 +105,10 @@ O GitHub Pages publica automaticamente em até 1–2 minutos após o push.
 |---|---|---|
 | Google AdSense | `ca-pub-3304555597181143` | `ads.txt` + script no `<head>` do `index.html` |
 | Google Analytics 4 | `G-L3J38JGCBN` | Script no `<head>` de todas as páginas |
+| Adsterra — Popunder | Zone `4d572957ac4b609c1e2b37e0f905dc3a` | Script no `<head>` (antes de `</head>`) de todas as páginas |
+| Adsterra — Social Bar | Zone `75d677b51862273417012b2f0304d053` | Script no `<body>` (antes de `</body>`) de todas as páginas |
+| Adsterra — Native Banner | Container `93938885da980e6cbaf406610f606487` | Script + `<div>` no fim do conteúdo principal (antes de `</main>`) de todas as páginas |
+
+> **Site ID Adsterra:** `6016253` (calculamargem.com.br). Há também uma unidade **Smartlink** criada (`https://www.profitableratecpmnetwork.com/frdys9jh?key=...`) mas ainda não inserida no site — decidir texto/local antes de publicar.
 
 > **Importante:** o script do AdSense está presente **apenas no `index.html`** — a página com conteúdo editorial completo. As páginas internas não carregam o AdSense enquanto não tiverem conteúdo suficiente.

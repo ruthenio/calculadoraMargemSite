@@ -154,6 +154,10 @@ main.container {
   padding-bottom: 60px;
 }
 
+.native-banner-slot {
+  margin-top: 32px;
+}
+
 .intro {
   text-align: center;
   max-width: 640px;
